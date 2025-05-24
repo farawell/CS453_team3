@@ -33,6 +33,29 @@ git push team feature/yh_ollama_integration
 * upstream: The official PromptPex repository.
 * team: Our shared team repository — this is where all collaborative development takes place. Make sure to push your changes here.
 
+
+---
+# Replication Method
+### 25.05.24, Sihyun
+1. add .env to the uppermost folder and fill it as follows (according to own local model):
+```
+GENAISCRIPT_MODEL_RULES="ollama:llama2"
+GENAISCRIPT_MODEL_EVAL="ollama:llama2"
+GENAISCRIPT_MODEL_BASELINE="ollama:llama2"
+```
+
+2. serve own model
+- in my case: llama2
+  - install ollama
+  - serve ollama
+  - run ollama:llama2
+ 
+3. run promptpex locally
+`npx genaiscript serve`
+
+4. open http://127.0.0.1:8003 and run promptpex in GUI
+
+---
 # PromptPex
 
 **Prompts** are an important part of any software project that incorporates
