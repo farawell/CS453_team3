@@ -8,7 +8,6 @@ import {
     parseTestEvals,
     parseTestResults,
 } from "./parsers.mts"
-import { groupBy } from "genaiscript/runtime"
 import { resolveRule } from "./resolvers.mts"
 import type {
     PromptPexContext,
@@ -18,6 +17,16 @@ import type {
 } from "./types.mts"
 const dbg = host.logger("promptpex:reports")
 const dbgTests = host.logger("promptpex:reports:tests")
+
+/* custom groupBy function to replace group by from "genaiscript/runtime" */
+function groupBy<T>(arr: T[], keyFn: (x: T) => string): Record<string, T[]> {
+    return arr.reduce((acc, item) => {
+      const key = keyFn(item)
+      if (!acc[key]) acc[key] = []
+      acc[key].push(item)
+      return acc
+    }, {} as Record<string, T[]>)
+  }
 
 export function computeOverview(
     files: PromptPexContext,
