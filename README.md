@@ -35,25 +35,32 @@ git push team feature/yh_ollama_integration
 
 
 ---
-# Replication Method
-### 25.05.24, Sihyun
-1. add .env to the uppermost folder and fill it as follows (according to own local model):
+## Replication Method
+### updated on 2025.05.26, Sihyun
+
+(0) Patch commit `48b986c fix: fix import to make local execution availbale`
+  fix import error claiming that groupBy is not defined
+  
+(1) Install ollama
+
+(2) Add `.env` to the uppermost folder and fill it as follows (according to your own local model; if using `llama3`, change `llama2` to `llama3`):
 ```
 GENAISCRIPT_MODEL_RULES="ollama:llama2"
 GENAISCRIPT_MODEL_EVAL="ollama:llama2"
 GENAISCRIPT_MODEL_BASELINE="ollama:llama2"
+OLLAMA_HOST=http://127.0.0.1:11434
 ```
 
-2. serve own model
-- in my case: llama2
-  - install ollama
-  - serve ollama
-  - run ollama:llama2
- 
-3. run promptpex locally
+(3) Serve and run your own llama model (also according to your own local model)
+```
+serve ollama
+run ollama:llama2
+```
+
+(4) run promptpex locally
 `npx genaiscript serve`
 
-4. open http://127.0.0.1:8003 and run promptpex in GUI
+(5) open http://127.0.0.1:8003 and run promptpex in GUI
 
 ---
 # PromptPex
