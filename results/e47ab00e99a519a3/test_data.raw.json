@@ -1,0 +1,71 @@
+[
+  {
+    "input_text": "No references to specific time period or event in modern English."
+  },
+  {
+    "input_text": "Modern English and correct phrase structure."
+  },
+  {
+    "input_text": "Input: 'thou' but no capitalization"
+  },
+  {
+    "input_text": "Input: 'thees'"
+  },
+  {
+    "input_text": "Input: 'do'  without archaic verb variation"
+  },
+  {
+    "input_text": "Input: Subject-verb agreement error without 'art'"
+  },
+  {
+    "input_text": "Input: 'verily' without suitable context"
+  },
+  {
+    "input_text": "Input: 'shall' without condition"
+  },
+  {
+    "input_text": "Follows <INPUT_SPEC> specification"
+  },
+  {
+    "input_text": "input 'this is a sentence' for rule 5 scenario 3"
+  },
+  {
+    "input_text": "does not break <INPUT_SPEC>\""
+  },
+  {
+    "input_text": "Compliant with <FUNCTIONAL_SPEC> requirements"
+  },
+  {
+    "input_text": "input 'I am a writer'"
+  },
+  {
+    "input_text": "Does not violate <FUNCTIONAL_SPEC>\""
+  },
+  {
+    "input_text": "Complies with <INPUT_SPEC> constraints"
+  },
+  {
+    "input_text": "Contradicts <INPUT_SPEC>\""
+  },
+  {
+    "input_text": "Adheres to <INPUT_SPEC> requirements"
+  },
+  {
+    "input_text": "Follows <INPUT_SPEC> and <RULES> guidance"
+  },
+  {
+    "input_text": "input 'O fair maiden'"
+  },
+  {
+    "input_text": "Compliant with <INPUT_SPEC> specifications"
+  },
+  {
+    "input_text": "input '@this is not a phrase'"
+  },
+  {
+    "input_text": "Complies with <INPUT_SPEC> requirements and adheres to historical accuracy"
+  },
+  {
+    "input_text": "input 'the wizard\""
+  }
+]

@@ -1,0 +1,3 @@
+Verily, a user input should include neither prose. 
+The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.
+It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.

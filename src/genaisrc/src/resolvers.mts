@@ -1,5 +1,6 @@
 import type {
     PromptPexContext,
+    PromptPexRule,
     PromptPexTest,
     PromptPexTestGenerationScenario,
 } from "./types.mts"
@@ -109,13 +110,19 @@ export async function resolveRuleHash(files: PromptPexContext, rule: string) {
     return ruleId
 }
 
+/* FIXME: not anymore doing resolve rule */
 export function resolveRule(
-    rules: { rule: string; inverse?: boolean }[],
-    test: PromptPexTest
-) {
-    const index = test.ruleid - 1
-    const rule = rules[index]
-    return { ruleid: index + 1, ...rule }
+    rules: PromptPexRule[]
+): { id: string; rule: string }[] {
+    const output: { id: string; rule: string }[] = []
+
+    for (const r of rules) {
+        output.push({
+            id: r.id,
+            rule: r.inversed ? r.inverseRule : r.rule,
+        })
+    }
+    return output
 }
 
 export async function resolvePromptId(files: PromptPexContext) {

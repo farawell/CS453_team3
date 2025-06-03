@@ -130,6 +130,12 @@ export interface PromptPexOptions extends PromptPexLoaderOptions {
      * Creates a new eval run in OpenAI. Requires OpenAI API key.
      */
     createEvalRuns?: boolean
+
+    /**
+     * Mutate one OR into IR if mutateRule is true.
+     * If false, the inverse rules will be generated as is.
+     */
+    mutateRule?: boolean
 }
 
 /**
@@ -238,10 +244,6 @@ export interface PromptPexContext {
 
 export interface PromptPexTest {
     /**
-     * Index of the rule in the OR+IOR rules. undefined for baseline tests.
-     */
-    ruleid?: number
-    /**
      * Index of the generated test for the given rule. undefined for baseline tests
      */
     testid?: number
@@ -280,7 +282,6 @@ export interface PromptPexTest {
 export interface PromptPexTestResult {
     id: string
     promptid: string
-    ruleid: number
     rule: string
     scenario: string
     testinput: string
@@ -315,8 +316,10 @@ export interface PromptPexTestEval {
 }
 
 export interface PromptPexRule {
+    id: string
     rule: string
-    inverse?: boolean
+    inverseRule: string
+    inversed?: boolean
 }
 
 export type PromptPexEvalResultType = "ok" | "err" | "unknown"
@@ -324,7 +327,6 @@ export type PromptPexEvalResultType = "ok" | "err" | "unknown"
 export interface PromptPexRuleEval {
     id: string
     promptid: string
-    ruleid: number
     rule: string
     groundedText?: string
     grounded?: PromptPexEvalResultType

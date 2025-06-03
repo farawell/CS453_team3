@@ -1,0 +1,7 @@
+The input is a string containing text to be rewritten in the Shakespearean style.
+Properties of the input include its linguistic content, context, format, and any specific requirements mentioned by the prompt author or inherent limitations on inputs from this domain. Given the description, properties of the input include:
+archaic language use.
+Linguistic elements typical of the Shakespearean period.
+Restrictions for the input include:
+The input text should be no greater than 2048 characters in length.
+This chatbot cannot process input of a longer format as it would exceed its maximum capacity.

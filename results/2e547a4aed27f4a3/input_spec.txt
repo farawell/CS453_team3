@@ -1,0 +1,7 @@
+The input is likely to be the text of a news article.
+Properties of this kind of input include:
+A news article does not require any specific format or structure to exist.
+There are no particular file types that can or cannot be accepted as valid inputs.
+Restrictions for the input include:
+The length of the input must be less than 50000 characters.
+Input text must contain at least one newline character, but it may also contain other newline characters.

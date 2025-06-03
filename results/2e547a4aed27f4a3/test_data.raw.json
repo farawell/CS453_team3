@@ -1,0 +1,80 @@
+[
+  {
+    "input_text": "input 'This is a news article.' for rule 1 scenario 1"
+  },
+  {
+    "input_text": "List 'The article is classified as World.'"
+  },
+  {
+    "input_text": "input 'Maybe this is a news article.'"
+  },
+  {
+    "input_text": "Text says no thing about world but has 'USA'"
+  },
+  {
+    "input_text": "Article contains sports and world"
+  },
+  {
+    "input_text": "input 'The article is classified as both World and Sports.'"
+  },
+  {
+    "input_text": "input 'Article discussed something international related to World'"
+  },
+  {
+    "input_text": "input 'This news article is completely neutral.'"
+  },
+  {
+    "input_text": "input 'The article classified are World.'"
+  },
+  {
+    "input_text": "Text states sports"
+  },
+  {
+    "input_text": "single answer given upon a classification attempt"
+  },
+  {
+    "input_text": "Response for confirmed categorization (no attributes)."
+  },
+  {
+    "input_text": "Input text for categorization confirmation."
+  },
+  {
+    "input_text": "Valid example following attribute limitation."
+  },
+  {
+    "input_text": "Text for article categorization with attribute detail."
+  },
+  {
+    "input_text": "Article categories using multiple sources."
+  },
+  {
+    "input_text": "News article without attributes - categorize."
+  },
+  {
+    "input_text": "must contain keywords indicating multiple categories such as \"World and Sports\""
+  },
+  {
+    "input_text": "empty or null string input with classification"
+  },
+  {
+    "input_text": "categorizes new article as \"World\""
+  },
+  {
+    "input_text": "includes incorrect format in input text \"author: John\" to validate overlooked attribute rule"
+  },
+  {
+    "input_text": "categorizes news article by \"Business\""
+  },
+  {
+    "input_text": "assumes no oversight validation would take place"
+  },
+  {
+    "input_text": "Sports AND Business"
+  },
+  {
+    "input_text": "categorizes news article as \"Financial News\""
+  },
+  {
+    "input_text": "single extra category \"Sports Equipment Tested"
+  }
+]

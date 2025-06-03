@@ -111,13 +111,15 @@ async function runTest(
     })
     const { inputs, args, testInput } = resolvePromptArgs(files, test)
     const allRules = parseAllRules(files, options)
-    const rule = resolveRule(allRules, test)
+    const rule = resolveRule(allRules)
+        .map((r, index) => `${index + 1}. ${r.rule}`)
+        .join("\n")
     if (!args) {
         dbg(`invalid test input %O`, { test, inputs, testInput })
         return {
             id,
             promptid,
-            ...rule,
+            rule,
             scenario: test.scenario,
             baseline: test.baseline,
             testinput: testInput,
@@ -162,7 +164,7 @@ async function runTest(
     const testRes: PromptPexTestResult = {
         id,
         promptid,
-        ...rule,
+        rule,
         scenario: test.scenario,
         baseline: test.baseline,
         testinput: testInput,

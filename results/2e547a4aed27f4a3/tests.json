@@ -1,0 +1,262 @@
+[
+  {
+    "ruleid": "1",
+    "testid": "1",
+    "expectedoutput": "World",
+    "reasoning": "Not present ambiguous word",
+    "input_text": "input 'This is a news article.' for rule 1 scenario 1",
+    "testinput": "input 'This is a news article.' for rule 1 scenario 1",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "2",
+    "expectedoutput": "Classified as World",
+    "reasoning": "Present with correct category classification",
+    "input_text": "List 'The article is classified as World.'",
+    "testinput": "List 'The article is classified as World.'",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "3",
+    "expectedoutput": "No ambiguity",
+    "reasoning": "Contains ambiguous word to confirm classification",
+    "input_text": "input 'Maybe this is a news article.'",
+    "testinput": "input 'Maybe this is a news article.'",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "2",
+    "testid": "1",
+    "expectedoutput": "'World' or not 'World'",
+    "reasoning": "Returns incorrect information",
+    "input_text": "Text says no thing about world but has 'USA'",
+    "testinput": "Text says no thing about world but has 'USA'",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "2",
+    "testid": "2",
+    "expectedoutput": "Article is classified within 'Sports' ",
+    "reasoning": "Incorrect attribute for World",
+    "input_text": "Article contains sports and world",
+    "testinput": "Article contains sports and world",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "1",
+    "expectedoutput": "Both World and Sports classified",
+    "reasoning": "Correct multiple classification with explicit output",
+    "input_text": "input 'The article is classified as both World and Sports.'",
+    "testinput": "input 'The article is classified as both World and Sports.'",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "2",
+    "expectedoutput": "'World' but not classified within any other",
+    "reasoning": "Correctly return result only includes world without anything else",
+    "input_text": "input 'Article discussed something international related to World'",
+    "testinput": "input 'Article discussed something international related to World'",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "3",
+    "expectedoutput": "No World or sports classification",
+    "reasoning": "No information provided about either category",
+    "input_text": "input 'This news article is completely neutral.'",
+    "testinput": "input 'This news article is completely neutral.'",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "5",
+    "testid": "1",
+    "expectedoutput": "World category clearly stated",
+    "reasoning": "Ambiguous word removed from category output",
+    "input_text": "input 'The article classified are World.'",
+    "testinput": "input 'The article classified are World.'",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "5",
+    "testid": "2",
+    "expectedoutput": "'Sports' incorrectly mentioned along with World",
+    "reasoning": "Sports incorrectly classified instead of world",
+    "input_text": "Text states sports",
+    "testinput": "Text states sports",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "5",
+    "testid": "3",
+    "expectedoutput": "Classification result returns no categories",
+    "reasoning": "Single attribute classified correctly if any and only one",
+    "input_text": "single answer given upon a classification attempt",
+    "testinput": "single answer given upon a classification attempt",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "1",
+    "expectedoutput": "Empty response indicating no extra attributes.",
+    "reasoning": "Input must not include explicit statements that a news article has an attribute.",
+    "input_text": "Response for confirmed categorization (no attributes).",
+    "testinput": "Response for confirmed categorization (no attributes).",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "2",
+    "expectedoutput": "Confirmation message with only category classification and no mention of attributes.",
+    "reasoning": "Output response without providing any extraneous information on attributes.",
+    "input_text": "Input text for categorization confirmation.",
+    "testinput": "Input text for categorization confirmation.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "3",
+    "expectedoutput": "Category classification with empty attributes listing.",
+    "reasoning": "Response adheres to the rule by not mentioning extra attributes.",
+    "input_text": "Valid example following attribute limitation.",
+    "testinput": "Valid example following attribute limitation.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "4",
+    "expectedoutput": "Category classification with additional information about author's expertise.",
+    "reasoning": "Input includes extraneous description of attributes.",
+    "input_text": "Text for article categorization with attribute detail.",
+    "testinput": "Text for article categorization with attribute detail.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "5",
+    "expectedoutput": "Category classification in response mentions extra data source used.",
+    "reasoning": "Software confirms rule by adhering to specified limit.",
+    "input_text": "Article categories using multiple sources.",
+    "testinput": "Article categories using multiple sources.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "6 \"",
+    "expectedoutput": "Empty category classification when no attributes are present",
+    "reasoning": "Input text lacks any reference attributes.",
+    "input_text": "News article without attributes - categorize.",
+    "testinput": "News article without attributes - categorize.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "1",
+    "testid": "1",
+    "expectedoutput": "Classification error: at least one category present",
+    "reasoning": "Explores software handling of no classification error when input is classified under a single category",
+    "input_text": "must contain keywords indicating multiple categories such as \"World and Sports\"",
+    "testinput": "must contain keywords indicating multiple categories such as \"World and Sports\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "2",
+    "expectedoutput": "Classification error: none category present but classified anyway",
+    "reasoning": "Verifies the scenario where software fails to recognize absence of categories in some cases",
+    "input_text": "empty or null string input with classification",
+    "testinput": "empty or null string input with classification",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "3",
+    "expectedoutput": "Single correct categorization confirmed",
+    "reasoning": "Checks validity when single correct categorization occurs",
+    "input_text": "categorizes new article as \"World\"",
+    "testinput": "categorizes new article as \"World\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "6",
+    "testid": "4",
+    "expectedoutput": "Correct attribute present but overlooked by software",
+    "reasoning": "Testcases the overlooked attribute case where rule 6 is satisfied and verified by the input specification",
+    "input_text": "includes incorrect format in input text \"author: John\" to validate overlooked attribute rule",
+    "testinput": "includes incorrect format in input text \"author: John\" to validate overlooked attribute rule",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "6",
+    "testid": "5",
+    "expectedoutput": "Attribute oversight demonstrated with precise attribute value",
+    "reasoning": "Examines oversight validation using correct and unique attribute present for single category",
+    "input_text": "categorizes news article by \"Business\"",
+    "testinput": "categorizes news article by \"Business\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "6",
+    "testid": "6",
+    "expectedoutput": "Overlooked Attributes are not validated",
+    "reasoning": "Demonstrates overlooked attributes failure by utilizing a specific example test input that explicitly includes incorrect attribute values with correct response",
+    "input_text": "assumes no oversight validation would take place",
+    "testinput": "assumes no oversight validation would take place",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "7",
+    "testid": "7",
+    "expectedoutput": "Extra attribute confirmed beyond single categorization specified",
+    "reasoning": "Validate extra attribute validity and single categorization not validated by utilizing input string containing two distinct attributes",
+    "input_text": "Sports AND Business",
+    "testinput": "Sports AND Business",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "7",
+    "testid": "8",
+    "expectedoutput": "No Extra Attribute Beyond Single Categorized Query Processed",
+    "reasoning": "Checks software handling of single categorization query with no extra attributes",
+    "input_text": "categorizes news article as \"Financial News\"",
+    "testinput": "categorizes news article as \"Financial News\"",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "7",
+    "testid": "9",
+    "expectedoutput": "Overlooked Extra Attributes in Single Category Clarification Validation",
+    "reasoning": "Confirms that overlooked attribute in a single category is not an error and instead validated through user interaction",
+    "input_text": "single extra category \"Sports Equipment Tested",
+    "testinput": "single extra category \"Sports Equipment Tested",
+    "scenario": "",
+    "generation": 1
+  }
+]

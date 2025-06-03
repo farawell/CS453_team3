@@ -83,6 +83,37 @@ promptPex:
             type: "string",
             description: "Output folder for the generated files",
         },
+        // Step Control Parameters
+        stepIntent: {
+            type: "boolean",
+            description: "Generate Intent and Input Specification",
+            default: false,
+            uiType: "runOption",
+        },
+        stepRules: {
+            type: "boolean", 
+            description: "Generate Output Rules and Inverse Rules",
+            default: false,
+            uiType: "runOption",
+        },
+        stepTests: {
+            type: "boolean",
+            description: "Generate Test Cases",
+            default: false,
+            uiType: "runOption",
+        },
+        stepEvals: {
+            type: "boolean",
+            description: "Create Eval Runs",
+            default: false,
+            uiType: "runOption",
+        },
+        stepModelTests: {
+            type: "boolean",
+            description: "Run Tests Against Models",
+            default: false,
+            uiType: "runOption",
+        },
         cache: {
             type: "boolean",
             description: "Cache all LLM calls",
@@ -299,12 +330,24 @@ const {
     maxRulesPerTestGeneration,
     testGenerations,
     createEvalRuns,
+    // Step control parameters
+    stepIntent,
+    stepRules,
+    stepTests,
+    stepEvals,
+    stepModelTests,
 } = vars as PromptPexOptions & {
     customMetric?: string
     prompt?: string
     inputSpecInstructions?: string
     outputRulesInstructions?: string
     inverseOutputRulesInstructions?: string
+    // Step control parameters
+    stepIntent?: boolean
+    stepRules?: boolean
+    stepTests?: boolean
+    stepEvals?: boolean
+    stepModelTests?: boolean
 }
 const modelsUnderTest: string[] = (vars.modelsUnderTest || "")
     .split(/;/g)
@@ -366,98 +409,142 @@ if (files.testSamples?.length) {
     output.endDetails()
 }
 
-// generate intent
-output.heading(3, "Intent")
-await generateIntent(files, options)
-outputFile(files.intent)
-await checkConfirm("intent")
-
-// generate input spec
-output.heading(3, "Input Specification")
-await generateInputSpec(files, options)
-outputFile(files.inputSpec)
-await checkConfirm("inputspec")
-
-// generate rules
-output.heading(3, "Output Rules")
-await generateOutputRules(files, options)
-outputLines(files.rules, "rule")
-await checkConfirm("rule")
-
-// generate inverse rules
-output.heading(3, "Inverse Output Rules")
-await generateInverseOutputRules(files, options)
-outputLines(files.inverseRules, "generate inverse output rule")
-await checkConfirm("inverse")
-
-// generate tests
-output.heading(3, "Tests")
-const tests = await generateTests(files, options)
-
-output.table(
-    tests.map(({ scenario, testinput, expectedoutput }) => ({
-        scenario,
-        testinput,
-        expectedoutput,
-    }))
-)
-output.detailsFenced(`tests (json)`, tests, "json")
-output.detailsFenced(`test data (json)`, files.testData.content, "json")
-await checkConfirm("test")
-
-await generateEvals(modelsUnderTest, files, tests, options)
-await checkConfirm("evals")
-
-if (createEvalRuns) {
-    output.note(`Evals run created, skipping local evals...`)
-} else if (!modelsUnderTest?.length) {
-    output.warn(`No modelsUnderTest specified. Skipping test run.`)
+// Check if any steps are requested
+const anyStepRequested = stepIntent || stepRules || stepTests || stepEvals || stepModelTests
+if (!anyStepRequested) {
+    output.note("📋 **Modular Execution Mode**")
+    output.note("Use the step buttons above to execute each phase:")
+    output.note("1. **Generate Intent & Input Spec** - Extract prompt intent and input constraints")
+    output.note("2. **Generate Rules** - Extract output rules and inverse rules")  
+    output.note("3. **Generate Tests** - Create test cases from rules")
+    output.note("4. **Create Eval Runs** - Generate evaluation runs")
+    output.note("5. **Run Model Tests** - Execute tests against specified models")
 } else {
-    // run tests against the model(s)
-    output.heading(3, `Test Runs with Models Under Test`)
-    output.itemValue(`models under test`, modelsUnderTest.join(", "))
+    // Step 1: Generate Intent and Input Specification
+    if (stepIntent) {
+        output.heading(3, "Intent")
+        await generateIntent(files, options)
+        outputFile(files.intent)
+        await checkConfirm("intent")
 
-    output.heading(4, `Metrics`)
-    for (const metric of files.metrics)
-        output.detailsFenced(metricName(metric), metric.content, "markdown")
+        output.heading(3, "Input Specification")
+        await generateInputSpec(files, options)
+        outputFile(files.inputSpec)
+        await checkConfirm("inputspec")
+    }
 
-    output.heading(4, `Test Results`)
-    const results = await runTests(files, options)
-    output.detailsFenced(`results (json)`, results, "json")
+    // Step 2: Generate Rules
+    if (stepRules) {
+        // Check dependencies
+        if (!files.intent?.content && !files.inputSpec?.content) {
+            output.warn("⚠️ Intent and Input Specification not found. Run Step 1 first.")
+        } else {
+            output.heading(3, "Output Rules")
+            await generateOutputRules(files, options)
+            outputLines(files.rules, "rule")
+            await checkConfirm("rule")
 
-    output.table(
-        results.map(
-            ({
-                scenario,
-                rule,
-                inverse,
-                model,
-                input,
-                output,
-                compliance: testCompliance,
-                metrics,
-            }) => ({
-                rule,
-                model,
-                scenario,
-                inverse: inverse ? "🔄" : "",
-                input,
-                output,
-                compliance: renderEvaluationOutcome(testCompliance),
-                ...Object.fromEntries(
-                    Object.entries(metrics).map(([k, v]) => [
-                        k,
-                        renderEvaluation(v),
-                    ])
-                ),
-            })
-        )
-    )
+            output.heading(3, "Inverse Output Rules")
+            await generateInverseOutputRules(files, options)
+            outputLines(files.inverseRules, "generate inverse output rule")
+            await checkConfirm("inverse")
+        }
+    }
+
+    // Step 3: Generate Tests
+    if (stepTests) {
+        // Check dependencies
+        if (!files.rules?.content) {
+            output.warn("⚠️ Output Rules not found. Run Step 2 first.")
+        } else {
+            output.heading(3, "Tests")
+            const tests = await generateTests(files, options)
+
+            output.table(
+                tests.map(({ scenario, testinput, expectedoutput }) => ({
+                    scenario,
+                    testinput,
+                    expectedoutput,
+                }))
+            )
+            output.detailsFenced(`tests (json)`, tests, "json")
+            output.detailsFenced(`test data (json)`, files.testData.content, "json")
+            await checkConfirm("test")
+        }
+    }
+
+    // Step 4: Create Eval Runs (Create an Evals run in OpenAI Evals. Requires OpenAI API key.)
+    if (stepEvals) {
+        // Check dependencies
+        if (!files.tests?.content) {
+            output.warn("⚠️ Tests not found. Run Step 3 first.")
+        } else {
+            const tests = JSON.parse(files.tests.content || "[]")
+            await generateEvals(modelsUnderTest, files, tests, options)
+            await checkConfirm("evals")
+        }
+    }
+
+    // Step 5: Run Tests Against Models
+    if (stepModelTests) {
+        // Check dependencies  
+        if (!files.tests?.content) {
+            output.warn("⚠️ Tests not found. Run Step 3 first.")
+        } else if (createEvalRuns) {
+            output.note(`Evals run created, skipping local evals...`)
+        } else if (!modelsUnderTest?.length) {
+            output.warn(`No modelsUnderTest specified. Skipping test run.`)
+        } else {
+            // run tests against the model(s)
+            output.heading(3, `Test Runs with Models Under Test`)
+            output.itemValue(`models under test`, modelsUnderTest.join(", "))
+
+            output.heading(4, `Metrics`)
+            for (const metric of files.metrics)
+                output.detailsFenced(metricName(metric), metric.content, "markdown")
+
+            output.heading(4, `Test Results`)
+            const results = await runTests(files, options)
+            output.detailsFenced(`results (json)`, results, "json")
+
+            output.table(
+                results.map(
+                    ({
+                        scenario,
+                        rule,
+                        inverse,
+                        model,
+                        input,
+                        output,
+                        compliance: testCompliance,
+                        metrics,
+                    }) => ({
+                        rule,
+                        model,
+                        scenario,
+                        inverse: inverse ? "🔄" : "",
+                        input,
+                        output,
+                        compliance: renderEvaluationOutcome(testCompliance || "err"),
+                        ...Object.fromEntries(
+                            Object.entries(metrics).map(([k, v]) => [
+                                k,
+                                renderEvaluation(v),
+                            ])
+                        ),
+                    })
+                )
+            )
+        }
+    }
+
+    // Show results overview if any model tests were run
+    if (stepModelTests && !createEvalRuns && modelsUnderTest?.length) {
+        output.heading(3, `Results Overview`)
+        const { overview } = await computeOverview(files, { percent: true })
+        output.table(overview)
+    }
 }
-
-output.heading(3, `Results Overview`)
-const { overview } = await computeOverview(files, { percent: true })
-output.table(overview)
 
 output.appendContent("\n\n---\n\n")
 

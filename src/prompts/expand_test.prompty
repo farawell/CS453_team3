@@ -7,14 +7,11 @@ inputs:
         type: string
     rules:
         type: string
-    targetRule:
-        type: string
     test:
         type: string
 sample:
     intent: "Determine the part of speech for a given word"
     rules: "The output must contain only a single string that represents the part-of-speech tag"  
-    targetRule: "The output must contain only a single string"
     test: "sentence: The cat is on the mat., word: cat"
 ---
 system:
@@ -22,12 +19,12 @@ Your task is to expand a test case into a more realistic and comprehensive versi
 
 1. The <INTENT/> of the prompt under test
 2. The <OUTPUT_RULES/> that govern valid responses
-3. The specific <TARGET_RULE/> this test case was designed to verify
-4. The original <TEST_CASE/>
+3. The original <TEST_CASE/>
 
 ## Guidelines for expansion:
 
-1. **Preserve Rule Coverage**: The expanded test must still test the same target rule. The fundamental aspects that made the original test case valid must be maintained.
+1. **Preserve Rule Coverage**: The expanded test must still test the original intent and verify **the rule set as a whole**. If the original test was meant to validate rule-compliant behavior, the expanded test should do the same.
+
 
 2. **Add Realistic Context**: Make the test case more realistic by:
    - Adding more context and detail
@@ -67,10 +64,6 @@ user:
 <OUTPUT_RULES>
 {{rules}}
 </OUTPUT_RULES>
-
-<TARGET_RULE>
-{{targetRule}}
-</TARGET_RULE>
 
 <TEST_CASE>
 {{test}}

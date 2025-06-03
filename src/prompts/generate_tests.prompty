@@ -46,7 +46,9 @@ inputs:
         default: "input based on rule 1 scenario 2"
 ---
 system:
-You are tasked with developing multiple test cases for an software, given its functional and input specification and a list of rules in <RULES> as input. For each rule, you must create {{num}} test cases. These test cases must be designed to validate whether the software's outputs correctly adhere to a particular rule. These tests must be well defined based on the input specifications.
+You are tasked with developing multiple test cases for an software, given its functional and input specification and a list of rules in <RULES> as input. 
+Instead of creating test cases for each rule independently, use the full list of rules in <RULES> as a **single policy** that the software must follow.
+You are to generate {{num}} test inputs that **jointly test** whether the software correctly adheres to **all rules**.
 
 Start with first understanding what is a input for the software using the given input specification. Understand what are the different components of a valid input, what are the syntax and semantics related constraints. A good test must always be a valid input meeting the requirements from the given input specification.
 
@@ -79,7 +81,7 @@ Also focus on clues like length and style of these tests.
 Guidelines for generating test cases:
 - Analyze the input specifications to understand the valid input formats, components of the input and scenarios for the software.
 - If the test case have multiple components, try to use all the components in the test case and tag them with their name, like, component name: value
-- Develop {{num}} test cases for each rule provided in the list.
+- Develop {{num}} test cases for the whole rule provided in the list.
 - Each test case must be crafted to rigorously assess whether the software's output meets the stipulated rule based on the inputs that conform to the provided input specification.
 - Use valid and realistic input scenarios that fully comply with the input specifications and are relevant to the rule being tested.
 - Specify clearly in each test case the input given to the software and the expected output or behavior that demonstrates adherence to the rule.
@@ -89,7 +91,6 @@ Guidelines for generating test cases:
 Each test case should adhere to principles of good software testing practices, emphasizing coverage, specificity and independence. Critically assess potential weaknesses in the software's handling of inputs based on the rule and focus on creating diverse test cases that effectively challenge the software's capabilities.
 
 Format your response in a structured CSV format as follows:
-- "ruleid": number = Identifier for the rule being tested.
 - "testid": number = Sequential identifier for each test case under a rule.
 - "expectedoutput": string =  Output or behavior expected from the software to affirm rule adherence.
 - "reasoning": string = Brief explanation of why this test case is relevant and contributes to robust testing of the rule. List the input specification that this test case does not follow. Keep a minimum draft, with 20 words at most.
@@ -97,14 +98,13 @@ Format your response in a structured CSV format as follows:
 
 
 Example CSV layout:
-ruleid, testid, expectedoutput, reasoning, {{testinput_names}}
-1, 1, "expected outcome demonstrating rule adherence", "Explains the relevance and effectiveness of the test and how it follows the input specification", {{testinput_example_1}}
-1, 2, "expected response confirming rule", "Illustrates how inputs challenge the software and ensure compliance and how is a valid test case based on input specification", {{testinput_example_2}}
+testid, expectedoutput, reasoning, {{testinput_names}}
+1, "expected outcome demonstrating rule adherence", "Explains the relevance and effectiveness of the test and how it follows the input specification", {{testinput_example_1}}
+2, "expected response confirming rule", "Illustrates how inputs challenge the software and ensure compliance and how is a valid test case based on input specification", {{testinput_example_2}}
 
 Only output the test cases in the specified CSV format and nothing else. Please make sure that the CSV generated is well formed, only have {{4 + testinput_count}} columns and each value in a these columns must only have commas inside quoted value else they will be counted as a new column. Do not wrap the output in any additional text or formatting like triple backticks or quotes.
 
-Since you will be given {{num_rules}} rules in <RULES>, you are expected to generated {{num_rules * num}} tests, {{num}} for each given rule.
-
+You are expected to generated {{num}} tests.
 user:
 <RULES>
 {{rule}}

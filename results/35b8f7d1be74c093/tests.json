@@ -1,0 +1,62 @@
+[
+  {
+    "ruleid": "1",
+    "testid": "1",
+    "expectedoutput": "A visually striking image with dominant colors capturing the key characteristics in input_text.",
+    "reasoning": "Inputs should have limited words to not exceed 400 characters.",
+    "input_text": "The software must summarize a person's face within 4 hundreds of character. ",
+    "testinput": "The software must summarize a person's face within 4 hundreds of character. ",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "2",
+    "expectedoutput": "An image rendering specified lighting conditions accurately projecting intended emotional impact",
+    "reasoning": "Texts must be clear for better visualizing key characteristics like colors and textures.",
+    "input_text": "Use specific wording describing the scene timing or type if any",
+    "testinput": "Use specific wording describing the scene timing or type if any",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "3",
+    "expectedoutput": "Generating visually appealing images considering shape composition color palette.",
+    "reasoning": "Text description should comprise concise narrative comprising single paragraph.",
+    "input_text": "Describe the scene using three concise sentences",
+    "testinput": "Describe the scene using three concise sentences",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "4",
+    "expectedoutput": "The image accurately depicts dominant colors used in input_text.",
+    "reasoning": "Intensity level and type should be clearly defined.",
+    "input_text": "Specify intensity level and its direction.",
+    "testinput": "Specify intensity level and its direction.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "1",
+    "testid": "5",
+    "expectedoutput": "A visually appealing composition capturing the essence of input_text.",
+    "reasoning": "Composition should include shapes",
+    "input_text": "textures",
+    "testinput": "textures",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "1",
+    "testid": "6",
+    "expectedoutput": "The image conveys an intended emotional impact through its aesthetic appeal.",
+    "reasoning": "Color palette should evoke the desired emotional response.",
+    "input_text": "Use color palette to project a clear emotional message",
+    "testinput": "Use color palette to project a clear emotional message",
+    "scenario": "",
+    "generation": 1
+  }
+]

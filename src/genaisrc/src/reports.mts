@@ -317,13 +317,13 @@ export async function generateJSONReport(files: PromptPexContext) {
     }
 
     const tests = [...rulesTests, ...baseLineTests].map((test) => {
-        const rule = resolveRule(allRules, test)
+        const rule = resolveRule(allRules)
         if (!rule && !test.baseline)
             errors.push(
-                `test '${test.ruleid}' references non-existent rule in ${files.tests.filename}`
+                `test '${test.testid}' references non-existent rule in ${files.tests.filename}`
             )
         const res: any = {
-            ...rule,
+            rule,
             ...test,
         }
         return res

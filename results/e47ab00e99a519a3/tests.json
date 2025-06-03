@@ -1,0 +1,232 @@
+[
+  {
+    "ruleid": "1",
+    "testid": "1",
+    "expectedoutput": "Written passage in prose consistent with classical English",
+    "reasoning": "Explains relevance and effectiveness of test case 1 based on input specification",
+    "input_text": "No references to specific time period or event in modern English.",
+    "testinput": "No references to specific time period or event in modern English.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "2",
+    "expectedoutput": "Response consistent with Elizabethan verb conjugation",
+    "reasoning": "Illustrates how test case 2 follows input specification by emphasizing verb conjugation",
+    "input_text": "Modern English and correct phrase structure.",
+    "testinput": "Modern English and correct phrase structure.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "1",
+    "expectedoutput": "thou should be capitalized",
+    "reasoning": "Relevance of keyword capitalization in Shakespearean writing",
+    "input_text": "Input: 'thou' but no capitalization",
+    "testinput": "Input: 'thou' but no capitalization",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "2",
+    "expectedoutput": "thees and thys should appear as 'thees' and 'thys'",
+    "reasoning": "Consistency with historical verb forms",
+    "input_text": "Input: 'thees'",
+    "testinput": "Input: 'thees'",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "3",
+    "expectedoutput": "dost and dost thou be preserved while conveying meaning?",
+    "reasoning": "Accuracy of archaic verb usage",
+    "input_text": "Input: 'do'  without archaic verb variation",
+    "testinput": "Input: 'do'  without archaic verb variation",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "4",
+    "expectedoutput": "art used correctly in subject-verb agreement",
+    "reasoning": "Proper application of archaic verb form",
+    "input_text": "Input: Subject-verb agreement error without 'art'",
+    "testinput": "Input: Subject-verb agreement error without 'art'",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "5",
+    "expectedoutput": "verily be used where suitable to convey emphasis or strong impression",
+    "reasoning": "Correct application of interjections",
+    "input_text": "Input: 'verily' without suitable context",
+    "testinput": "Input: 'verily' without suitable context",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "6",
+    "expectedoutput": "shall be used in conditional statements or commands",
+    "reasoning": "Accurate representation of archaic phrases",
+    "input_text": "Input: 'shall' without condition",
+    "testinput": "Input: 'shall' without condition",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "5",
+    "testid": "1",
+    "expectedoutput": "Valid prose-free input",
+    "reasoning": "Explains exclusion of prose in valid inputs",
+    "input_text": "Follows <INPUT_SPEC> specification",
+    "testinput": "Follows <INPUT_SPEC> specification",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "5",
+    "testid": "2",
+    "expectedoutput": "Invalid prose included",
+    "reasoning": "Illustrates invalidation when prose is present, does not comply with <INPUT_SPEC>",
+    "input_text": "input 'this is a sentence' for rule 5 scenario 3",
+    "testinput": "input 'this is a sentence' for rule 5 scenario 3",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "5",
+    "testid": "3",
+    "expectedoutput": "Empty input provided",
+    "reasoning": "Focuses on handling empty text inputs",
+    "input_text": "does not break <INPUT_SPEC>\"",
+    "testinput": "does not break <INPUT_SPEC>\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "6",
+    "testid": "1",
+    "expectedoutput": "Absent verb conjugation confirmed",
+    "reasoning": "Assesses absence of typical linguistic choices in valid inputs",
+    "input_text": "Compliant with <FUNCTIONAL_SPEC> requirements",
+    "testinput": "Compliant with <FUNCTIONAL_SPEC> requirements",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "6",
+    "testid": "2",
+    "expectedoutput": "Verb conjugation included unexpectedly",
+    "reasoning": "Highlights unexpected inclusion of verb conjugation in valid input, Contradicts <FUNCTIONAL_SPEC>",
+    "input_text": "input 'I am a writer'",
+    "testinput": "input 'I am a writer'",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "6",
+    "testid": "3",
+    "expectedoutput": "Blank phrase structure applied",
+    "reasoning": "Tests handling of absent linguistic choices in valid inputs",
+    "input_text": "Does not violate <FUNCTIONAL_SPEC>\"",
+    "testinput": "Does not violate <FUNCTIONAL_SPEC>\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "7",
+    "testid": "1",
+    "expectedoutput": "Contextual reference excluded successfully",
+    "reasoning": "Evaluates exclusion of contextual references in valid inputs",
+    "input_text": "Complies with <INPUT_SPEC> constraints",
+    "testinput": "Complies with <INPUT_SPEC> constraints",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "7",
+    "testid": "2",
+    "expectedoutput": "Contextually referenced location included",
+    "reasoning": "Identifies failure to exclude unfamiliar locations",
+    "input_text": "Contradicts <INPUT_SPEC>\"",
+    "testinput": "Contradicts <INPUT_SPEC>\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "7",
+    "testid": "3",
+    "expectedoutput": "Neutral emotions applied",
+    "reasoning": "Assesses inclusion of neutral emotions in valid inputs",
+    "input_text": "Adheres to <INPUT_SPEC> requirements",
+    "testinput": "Adheres to <INPUT_SPEC> requirements",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "5",
+    "testid": "4",
+    "expectedoutput": "Prose-free input with descriptive language",
+    "reasoning": "Tests valid prose-free input with descriptors from Early Modern English period",
+    "input_text": "Follows <INPUT_SPEC> and <RULES> guidance",
+    "testinput": "Follows <INPUT_SPEC> and <RULES> guidance",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "5",
+    "testid": "5",
+    "expectedoutput": "Invalid description included in input",
+    "reasoning": "Highlights invalidation when descriptions are present, Does not comply with  <RULES>",
+    "input_text": "input 'O fair maiden'",
+    "testinput": "input 'O fair maiden'",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "5",
+    "testid": "6",
+    "expectedoutput": "No-prose sentence structure tested",
+    "reasoning": "Assesses usage of non-prose sentence structures in valid inputs",
+    "input_text": "Compliant with <INPUT_SPEC> specifications",
+    "testinput": "Compliant with <INPUT_SPEC> specifications",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "6",
+    "testid": "4",
+    "expectedoutput": "Typical linguistic choices absent altogether",
+    "reasoning": "Verifies absence of typical linguistic choices in valid inputs,Does not introduce extraneous features ",
+    "input_text": "input '@this is not a phrase'",
+    "testinput": "input '@this is not a phrase'",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "7",
+    "testid": "4",
+    "expectedoutput": "Historically inaccurate cultural reference excluded",
+    "reasoning": "Evaluates exclusion of culturally inaccurate references in valid inputs",
+    "input_text": "Complies with <INPUT_SPEC> requirements and adheres to historical accuracy",
+    "testinput": "Complies with <INPUT_SPEC> requirements and adheres to historical accuracy",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "7",
+    "testid": "5",
+    "expectedoutput": "Contextual location excluded for fictional character",
+    "reasoning": "Tests contextual inclusion/exclusion of  fictional characters' locations in valid inputs, Does not introduce extraneous context ",
+    "input_text": "input 'the wizard\"",
+    "testinput": "input 'the wizard\"",
+    "scenario": "",
+    "generation": 1
+  }
+]

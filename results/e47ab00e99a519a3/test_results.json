@@ -1,0 +1,922 @@
+[
+  {
+    "id": "8b38d23",
+    "promptid": "d9df00b",
+    "ruleid": 1,
+    "rule": "The response to user input should include a written passage in prose, either consisting of a single sentence or multiple sentences, in a language style that is consistent with classical English from the 16th and 17th centuries and resembles the literary works of William Shakespeare.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "No references to specific time period or event in modern English.",
+    "model": "llama3.2",
+    "input": "No references to specific time period or event in modern English.",
+    "output": "To assist users in crafting a piece that echoes the Shakespearean style of writing, heed these guidelines:\n\n1.  **Verbiage, vocabulary, and syntax**: Adopt ornate, formal language by employing metaphors, allegories, hyperbole, and double meanings.\n\n2.  **Poetic devices**: Make frequent use of figurative speech (e.g., analogyies, allusions (from classical myth and literature), synecdoche) to imbue text with depth and layers of meaning.\n\n3.  **Anagrams, acrostics, portmanteaus:** Consider employing wordplay techniques like these to add complexity to your text, thus heightening its aesthetic appeal.\n\n4.  **Emotional resonance**: As was a hallmark of the Bard's writing style, explore the intricacies of human emotion and present themes that are both timeless and poignant.\n\n5.  **Storytelling**: If recounting an anecdote or conveying a message, focus on evocative descriptions, vivid imagery, and skillfully crafted narratives that showcase character development and transformative shifts.\n\nHere is an example to demonstrate these guidelines:\n\n\"Oh, celestial skies above, thy radiant beams do chase the shadows of night's dismal grasp. In darkest depths, where once did dwindle hope, now flickers a beacon, born of courage kind-hearted hearts.\n\n\"As valorous as eagles that on lofty altitudes soar and freedom knows no bounds for noble spirits bold, so too shall souls of love and valor triumph over each despairing breath. \n\n\"In every fleeting dream we forge the steel of wills, the very essence of which shall strengthen like tempered iron.\"",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The given output partially complies with the provided guidelines for Shakespearean writing style but doesn't entirely adhere to them. Direct compliance can be observed in certain elements such as using poetic devices (e.g., metaphor, allegory) and exploring human emotions. However, non-compliance with the rules can be seen in certain aspects like inconsistent use of formal language and syntax.\\n\\nA specific example of non-compliance is found in rule 3, which highlights anagrams, acrostics, portmanteaus. In the provided output, the phrase 'in every fleeting dream we forge the steel' exemplifies a poetic metaphor, adding depth to the text, rather than using wordplay techniques.\\n\\nAdditionally, the style might be described by the classical and Elizabethan periods but lacks consistency in vocabulary choice across the passage (e.g., saying 'radiant beams' when it is possible to express 'thou radiant beams' in a way consistent with rule 3). These observations led the decision to return a partial compliance score.\",\n\"score\": 80\n}",
+        "score": 80
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (approximately 30 words at most).\n\nThe chatbot's output appears to embody the Shakespearean style, incorporating elements such as ornate language, poetic devices, and emotional resonance.\n\nOK"
+  },
+  {
+    "id": "8b38d23",
+    "promptid": "d9df00b",
+    "ruleid": 1,
+    "rule": "The response to user input should include a written passage in prose, either consisting of a single sentence or multiple sentences, in a language style that is consistent with classical English from the 16th and 17th centuries and resembles the literary works of William Shakespeare.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "No references to specific time period or event in modern English.",
+    "model": "llama3.2",
+    "input": "No references to specific time period or event in modern English.",
+    "output": "To craft thy text in the manner of the Bard's own quill, thou shalt follow these guidelines:\n\n1. Employ thine vocabulary with antiqued flair:\n   - Use words no longer popular, such as \"thou,\" \"thee,\" and \"verily.\"\n   - Incorporate phrases like \"most fair maiden\" or \"hark now, good fellow.\"\n\n2. Weave tapestries of syntax that rival the poetry of old:\n   - Utilize anaphora (repetition at the beginning) and epistrophe (repetition at the end): e.g., \"In sooth, I do proclaim thy virtues far and wide.\"\n   - Master metaphoric leaps with ease: \"Thy beauty shines like Phoebus in the morning\" or \"Thy laughter is a gentle brook that babbles soft.\"\n\n3. Thy subject matter should be grand and sweeping:\n   - Venture forth into realms of love, honor, and virtue.\n   - Explore themes such as ambition, mortality, and the mysteries of nature.\n\n4. Employ rhythmic cadence to convey emotion:\n   - Lest thy words stumble upon their feet, use iambic pentameter to set a soulful pace: \"The mirthful dance of joy doth lift my heart.\"\n   - Experiment with varying line lengths to evoke a sense of urgency or tranquility.\n\n5. Add dashes of humor and whimsy where thou findest it so:\n   - Thy wit can be swift, like Apollo's arrow, or sly as a fox on a winter's eve.\n   - But do not forget the art of understatement: \"Forsooth, I shall endeavor to conceal my discontent.\"\n\nMay thy efforts yield unto words that would delight the ears of kings and commoners alike!",
+    "metrics": {
+      "rules_compliant": {
+        "content": "### Compliance Evaluation\n#### Explanation of Reasoning:\n\nBased on the provided <RULES>, I evaluated the chatbot output for direct compliance with the rules, specifically focusing on linguistic choices typical of Early Modern English from the Shakespearean era.\n\nI observed that the output employs words and phrases consistent with antiqued flair, such as \"thou,\" \"thee,\" and \"verily.\" The guidelines are clearly outlined, demonstrating attention to detail in crafting a passage in prose reminiscent of classical English. Additionally, I noted references to poetic devices like anaphora, metaphors, and varying line lengths aimed at evoking emotional responses.\n\nHowever, upon closer inspection, potential concerns arose due to the lack of explicit examples supporting rule adherence throughout the entire output.\n\n\n#### Score:\n50\n\nThis score reflects my assessment that while certain portions meet expectations outlined in the <RULES>, others appear less concerned with linguistic choices characteristic of Shakespearean English. The importance and consistency of these elements impact my overall assessment.\n\nPlease note, this evaluation focuses solely on direct compliance with given guidelines.",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (15 words at most).\nThe chatbot output provides a detailed description for creating Shakespearean-style texts.\n\nOK"
+  },
+  {
+    "id": "e0e716e",
+    "promptid": "d9df00b",
+    "ruleid": 1,
+    "rule": "The response to user input should include a written passage in prose, either consisting of a single sentence or multiple sentences, in a language style that is consistent with classical English from the 16th and 17th centuries and resembles the literary works of William Shakespeare.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Modern English and correct phrase structure.",
+    "model": "llama3.2",
+    "input": "Modern English and correct phrase structure.",
+    "output": "Here are some guidelines to help you create text that mimics the Shakespearean style:\n\n1. **Use archaic language**: Incorporate words and phrases that were common during the Elizabethan era, such as \"thou,\" \"thee,\" \"verily,\" \"marry,\" and \"perchance.\"\n2. **Employ iambic pentameter**: Use five-foot meter (unstressed syllable followed by a stressed syllable) to create a rhythmic flow reminiscent of Shakespeare's sonnets.\n3. **Invert sentence structure**: Place the verb at the end of a sentence, which was a common feature of Shakespeare's writing style.\n4. **Use metaphors and similes**: Compare people, places, or things using \"like\" and \"as,\" as seen in Shakespeare's famous soliloquies.\n5. **Incorporate allusions**: Reference mythology, history, literature, or current events to add depth and meaning to your writing.\n\nSome examples of Shakespearean phrases and their modern English equivalents are:\n\n* **Thou** vs. **You**\n* **Thee** vs. **You (informal)**\n* **Verily** vs. **Really**\n* **Marry** vs. **Indeed**\n* **Perchance** vs. **Perhaps**\n\nHere's an example of a Shakespearean-style paragraph:\n\n\"Oh, fair maiden, thou dost shine like Phoebus' golden light upon the troubled seas. Marry, my heart doth quicken with each tender glance that dost exchange 'twixt thee and mine eyes. Perchance, in thine lovely face I see the reflection of my own destiny's mirror.\"\n\nHere are some Shakespearean-style sentence examples:\n\n* \"The stars above, they weep tears of sorrow for our plight.\"\n* \"In thine arms, I find a peace that this life does not afford.\"\n* \"The winds of fortune do howl and whine on the barren moors of fate.\"\n\nKeep in mind that mastering Shakespeare's style takes time and practice. Read his plays, sonnets, and poetry to develop your ear for the language and rhythms of the era.\n\nDo you have a specific text in mind that you'd like me to help with?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{ \"explanation\": \"The chatbot's output partially complies with the given rules. It addresses the importance of using archaic language, employing iambic pentameter, and incorporating metaphors and similes, but there is some discrepancy in its interpretation of the rules, particularly regarding verb placement and the use of keywords such as 'thou' and 'thee'. For instance, the provided examples demonstrate how to invert sentence structure by placing the verb at the end of a sentence. However, in the given output itself, this rule does not seem to be consistently applied.\", \"score\": 60 }",
+        "score": 60
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft my thinking to make my decision (15 words at most).\nThe chatbot's output provides explicit guidelines, examples, and explanations for creating Shakespearean-style text.\n\nOK"
+  },
+  {
+    "id": "e0e716e",
+    "promptid": "d9df00b",
+    "ruleid": 1,
+    "rule": "The response to user input should include a written passage in prose, either consisting of a single sentence or multiple sentences, in a language style that is consistent with classical English from the 16th and 17th centuries and resembles the literary works of William Shakespeare.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Modern English and correct phrase structure.",
+    "model": "llama3.2",
+    "input": "Modern English and correct phrase structure.",
+    "output": "Creating text in the Shakespearean style requires a deep understanding of the language, syntax, and vocabulary used during the 16th to 17th centuries. Here are some steps to assist users in crafting their own Shakespearean-style texts:\n\n1.  Familiarize yourself with Shakespeare's works: Read and analyze numerous Shakespearean plays and poems, paying attention to his characteristic use of:\n    *   Verbal complexity (long sentences, multiple clauses, metaphors)\n    *   Imagery and sensuality\n    *   Alliteration, assonance, and consonance\n    *   Idioms and colloquial expressions\n2.  Choose a theme or subject: Shakespeare often wrote about universal themes such as love, power, ambition, mortality, and the human condition. Select a topic that inspires you and sparks your creativity.\n3.  Determine the tone and mood: Shakespeare's works span a wide range of emotions and moods. Decide on the tone and atmosphere you want to convey in your text. For example:\n    *   Tragedy: intense, serious, sorrowful\n    *   Comedy: lighthearted, witty, playful\n    *   Romance: sentimental, emotional, idealistic\n4.  Practice with a thesaurus: Familiarize yourself with the words and phrases commonly used in Shakespearean writing:\n    *   Obscure vocabulary (e.g., \"maw,\" \"thou,\" \"whilst\")\n    *   Archaic expressions (\"verily,\" \"methinks,\"\n5\\. Write regularly to develop your skills:\n\n*   Start by writing short passages or poems that reflect the Shakespearean style\n*   Experiment with different sentence structures and vocabulary choices",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": \n    \"This chatbot output meets most of the Shakespearean-style text requirements. However, some minor omissions were noted: it is missing context to specific Shakespeare works that contain examples for its required characteristics, lack phrases such as 'anon,' or the archaic phrase `perchance'. Nevertheless, with slight adjustments a much more thorough and perfect meeting of this rules may be achievable.\",\n  \n  \"score\": 85\n}",
+        "score": 85
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe chatbot's output seems to provide detailed steps for users to create their own Shakespearean-style texts.\n\nOK"
+  },
+  {
+    "id": "e837adc",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'thou' but no capitalization",
+    "model": "llama3.2",
+    "input": "Input: 'thou' but no capitalization",
+    "output": "A noble pursuit indeed! To help thee craft a passage in the esteemed style of the Bard himself, follow these tips:\n\n1. Use archaic vocabulary: Incorporate words and phrases from the 16th to 17th centuries, such as \"thou,\" \"thee,\" \"verily,\" \"whilst,\" \"forsooth,\" \"methinks,\" and \"hark!\"\n2. Employ poetic metaphors: Shakespeare often used metaphors and similes to convey meaning. Try weaving in comparisons like \"thy beauty shines like Phoebus' rays\" or \"thy voice is as sweet as honey.\"\n3. Incorporate iambic rhythm: Shakespeare's plays are known for their rhythmic verse, characterized by a strong emphasis on every second syllable (iambicmeter). Experiment with phrases that follow this pattern, such as \"thou livest in splendor now\" or \"my heart doth sing thy praise.\"\n4. Use alliteration and assonance: Alliterative repetition (e.g., \"silken sounds of sweet serenades\") can add musicality to your passage. Similarly, assonant repetition (repetition of vowel sounds) can create a soothing effect.\n5. Emulate Shakespeare's syntax: Study the Bard's sentence structure: often short and direct, with a focus on simple, declarative sentences. Alternatively, use more complex structures with subordinate clauses.\n\nWith these guidelines in mind, let us begin our endeavour! What topic wouldst thou like to address in thy passage, good sir?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "### Evaluation:\n#### Explanation of Reasoning for Compliance Score\nThe given chatbot output partially complies with the provided rules. Firstly, it encourages the user to incorporate archaic vocabulary (rule 1) but fails to adhere strictly to this guideline by not explicitly listing examples of archaic words that can be used. Secondly, the advice regarding poetic metaphors and iambic rhythm also prompts the creative application of Shakespearean literary devices, adhering more closely to these criteria.\n\nAdditionally, while employing alliteration and assonance is encouraged (rule 4), no concrete tips or guidance relating specifically to this technique were provided in the chatbot's output. Finally, regarding the syntax recommended by Shakespeare (rule 5), the chatbot stresses both the use of short sentences with simple constructions and more complex sentence structures. This range adheres closely to the advice given.\n\nHowever, despite these areas of compliance, the output could still be evaluated somewhat lower due to overall guidance lacking in its specification towards using the listed literary and linguistic devices. It can thus be argued that some flexibility was granted towards applying these rules beyond strictness regarding them.\n\n#### Compliance Score:\nThe chatbot output complies with 60% of the provided criteria. Hence, a score of 50 falls within this range based on specified guidance as well as encouragement.\n\n```\n{\n\"explanation\": \"The evaluation provided includes the analysis indicating partial adherence by using relevant guidelines while incorporating elements and advice such as poetic metaphors and iambic rhythms but including suggestions that could be interpreted as somewhat inconsistent in terms providing concrete techniques.\",\n\"score\": 50\n}\n```",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe chatbot's output generally follows the Shakespearean style guidelines.\n\nOK"
+  },
+  {
+    "id": "e837adc",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'thou' but no capitalization",
+    "model": "llama3.2",
+    "input": "Input: 'thou' but no capitalization",
+    "output": "To mimic Shakespearean style, you can incorporate archaic words and phrases, poetic metaphors, and a formal tone. Here are some tips to get you started:\n\n1. Use formal verbs: Instead of \"is,\" try using \"art\" or \"be.\" For example, \"Thou art fairer than the morning sun.\"\n2. Employ poetic metaphors: Compare things using creative analogies like \"thy eyes shine brighter than a shooting star\" or \"thy lips are as red as ripe cherries.\"\n3. Utilize archaic vocabulary: Incorporate words that were common during Shakespeare's time, such as \"verily,\" \"thou,\" and \"thee.\" For example, \"Thou hast won my heart, fair maiden, verily.\"\n4. Show affection with formal language: Express your feelings using formal expressions like \"dearest friend\" or \"beloved companion.\"\n5. Use alliteration: Add a musical quality to your writing by incorporating alliterative phrases, such as \"my dearest darling dear.\"",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": [\n    \"The output includes relevant guidance on how to emulate Shakespearean style, including suggested linguistic choices and poetic devices. The chatbot uses proper terminology like 'archaic words' and 'poetic metaphors', which are typical of the desired writing style. \",\n    \"\",\n    \"However, there is no actual demonstration of these suggestions in the provided output, as it appears to be a list of tips rather than an example of Shakespearean writing.\",\n    \"\"\n  ],\n  \"score\": 80\n}",
+        "score": 80
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (14 words at most).\n Chatbot's output contains some elements typical of Shakespearean style but lacks depth.\n\nOK"
+  },
+  {
+    "id": "5dfe9c9",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'thees'",
+    "model": "llama3.2",
+    "input": "Input: 'thees'",
+    "output": "A noble endeavor! To create a passage in the Shakespearean style, thou shalt need to employ certain linguistic devices and phrasal constructions characteristic of his works. Here are some hints to help thee write a piece that would make the Bard proud:\n\n1. **Archaic verbs**: Instead of using modern verb forms, opt for archaic ones like \"doth,\" \"didst,\" or \"hath.\" For example, \"He doth walk upon the stage\" instead of \"He walks upon the stage.\"\n2. **Thou, thee, thy**: In Shakespearean English, thou and yer friends were addressed with \"thee,\" not \"you.\" So, replace Modern English's \"you\" with \"thee\" in certain contexts.\n3. **Verbal inflections**: Modifiers like \"alas,\" \"fie upon,\" or \"good morrow\" can add a touch of antiquity to thy sentence structure.\n4. **Poetic language**: Incorporate metaphors, similes, and other rhetorical devices to make thy writing more engaging and expressive.\n\nWith these guidelines in mind, attempt the following passage inspired by the original phrase 'thees':\n\n\"When thou dost meet a stranger on the streets, beware lest theys do thee any ill will or deceit. Forsooth, 'tis good advice to be cautious when one's words are like arrows flying from thy lips towards the target of another. Alas! 'Tis hard to gauge whether his intentions are pure and kind. But take it thou wilt, if they speak sweet nothings in thine ear, listen well, for thou mayst find thee in need of their guidance.\"\n\nFeel free to experiment with these suggestions and see how they lead thee down the path of Shakespearean-inspired prose!",
+    "metrics": {
+      "rules_compliant": {
+        "content": "### Evaluation:\n#### Explanation:\nThe provided chatbot output seems to comply with most of the rules outlined in <RULES>. However, it attempts to provide a Shakespearean-style passage without fully acknowledging specific references or events from William Shakespeare's works. The lack of direct connection to specific plays, characters, or periods results in an attempt that somewhat resembles Shakespearean-era writing without clearly invoking its essence. \n\nFor instance, phrases like 'forsooth' is more typical of 17th-century usage and is indeed used by some early English authors but with less frequency; hence not entirely conforming with the spirit of Early Modern English. Another thing that should be noted regarding language structure; Shakespeare's plays generally do not use verb conjugation or word order as specified.\n\n#### Score:\nI am going to assign a partial compliance score due to  non-compliance with some specific guideline rules.\n\n```json\n{\n  \"explanation\": \"Although the chatbot output attempts to emulate William Shakespeare's style, it falls short in fully capturing the essence of his works. Lacking references or events directly linked to Shakespeare's plays, characters, and periods results in an attempt at Shakespearean-era writing that somewhat resembles but does not distinctly invoke its spirit. Furthermore, some linguistic choices deviate from Early Modern English conventions.\",\n  \"score\": 60\n}\n```\n\n#### Evaluation Details:\n\n- Archaic Verbs: Compliance (The output uses archaic verbs, albeit less frequently than recommended).\n- Thou, Thee, Thy: Partial compliance (The chatbot does use 'thou' but less extensively and sometimes deviates with usage like 'you')\n- Verbal Inflections: Non-compliance (There are instances of verbal inflection that do not align with recommendations for archaic verb tenses)\n- Poetic Language: Compliance (The passage effectively incorporates metaphors, similes, and other rhetorical devices)\n\nIt is essential to note that this evaluation relies on direct compliance and interpretation; without specific input required to determine certain details it is hard to get an accurate full mark score.\n\n\n\nAssuming less usage of thee leads me to assign mid point of the range 0-100 partial as it results non compliance with rules specified.",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe chatbot output fully complies with the description, demonstrating a clear understanding of Shakespearean linguistic devices.\n\nOK"
+  },
+  {
+    "id": "5dfe9c9",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'thees'",
+    "model": "llama3.2",
+    "input": "Input: 'thees'",
+    "output": "Thou seekest to create prose in the grand tradition of the Bard himself! Verily, I shall assist thee in crafting a piece that doth capture the essence of Shakespearean style.\n\nTo begin, we must first address the issue of \"thees\" and other archaic pronouns. In Elizabethan English, thou wouldst typically use \"thou\" instead of \"thees.\" So, let us substitute that for thy request.\n\nShall we proceed to create a piece of text in the Shakespearean style? What topic dost thou wish to explore? Shall it be a tragic love story, a comedic escapade, or perhaps a philosophical musing?\n\nHere's an example of how we might rewrite a phrase using more antiquated language:\n\nThy original sentence: \"thees\"\nRewritten sentence: \"Thou hast requested... \"\n\nNow, let us get to crafting our piece! What wouldst thou like to write about?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": [\n    The chatbot output partially complies with the rules, with notable violations related to verb conjugation and adjective agreement in the first sentence. However, upon careful examination, it appears that the chatbot attempts to adhere to Shakespearean style by using archaic pronouns and vocabulary such as \"thou\" and \"doth.\"\n    The score is therefore 80, reflecting 20% non-compliance due to the identified errors and a moderate level of adherence to the rules.\n  ],\n  \"score\": 80\n}",
+        "score": 80
+      }
+    },
+    "compliance": "err",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe chatbot's output attempts to mirror Shakespearean language style but deviates in actual usage of \"thees\" & \"thou\".\n\nERR"
+  },
+  {
+    "id": "d07d225",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'do'  without archaic verb variation",
+    "model": "llama3.2",
+    "input": "Input: 'do'  without archaic verb variation",
+    "output": "To create a Shakespearean-style phrase with the word \"do\", you could try using an archaic verb form or adding archaic language to the sentence. Here are some suggestions:\n\n- 'Doth thou perform' (uses the present tense form of \"doth\" often used in Shakespeare's writing, instead of \"do\")\n- 'Doth thou undertake?' (adds a more formal request)\n- 'Dost like to do what I ask?' (converts modern usage with 'like' into old-fashioned 'dost')\n\nHere is an example using these suggestions:\n\"Doth thou perform thy given task?\"\n\nOr\n\"Dost like to do the thing that lies before thee?\"\n\nThe key idea here is to emulate older words and grammar constructs.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": [\n    \"The proposed output generally follows the guidelines in terms of using archaic language, adopting verb forms and word structure reminiscent of Shakespeare's writing style.\",\n    \"However, upon closer inspection, I noticed that although it correctly uses 'doth' in a sentence, some suggestions could be more rigorously aligned with Elizabethan English. The response provides phrases in which the verb conjugation occasionally diverges from strict consistency to archaic constructions; for instance, using present tense 'Doth like...' whereas we'd prefer 'Dost thou like...'.\",\n    \"Additionally, while adhering well enough to Early Modern English in parts, with minor deviations noted, a more faithful translation of Shakespearean usage should also consider additional contexts, conventions and stylistic flourishes specific to the writer's chosen style period, that make these examples seem fairly close, but are actually not perfect. \"\n  ],\n  \"score\": 80\n}",
+        "score": 80
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (23 words at most).\nThe chatbot's output provides explicit suggestions for incorporating archaic language, specifically present tense forms of 'doth' and old-fashioned phrasing.\n\nOK"
+  },
+  {
+    "id": "d07d225",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'do'  without archaic verb variation",
+    "model": "llama3.2",
+    "input": "Input: 'do'  without archaic verb variation",
+    "output": "In order to write in the Shakespearean style, \"do\" does not have an archaic version. It is a standard verb that has been used consistently throughout history.\n\nHowever, if you're looking for alternative ways to express \"do,\" here are a few archaic options:\n\n* Doth (3rd person singular, e.g., \"He doth\") - This was the modern English equivalent of Old English \"dō\" in the 17th century. It has largely been replaced by the present tense version, but it can be used for stylized or poetic purposes.\n* Doest (3rd person singular, e.g., \"She doest\") - This is another archaic form that was commonly used in the past especially of the middle English era.\nHere's how you could use them with input 'do'.\n\n Original Input-‘do’\nModified version using archaic language-\"Doth\"\n\n'He sayth my name is John.'\n\nIn order to create a text mimicking Shakespearean style, consider incorporating these elements:\n\n1.  Use the present tense: The modern English equivalent of \"do\" often uses in this way: 'do.'\n2.  Incorporate words and phrases from Old English (pre-11th century) such as:\n*   for 'to' 'in',\n*   than is now known as for example \"whan\"\n*   Doth,\n3.  Emphasize strong emotions or feelings with modal verbs such as - can, could, may, might, shall, should, will and would using it\n4.  Use metaphors, allusion, and imagery to add depth and meaning:\n*   Metaphors and allegories:\n\n    Example: \"My love is a rosebud in the summer's warmth.\"\n*   Allusions:\n\n    Example: \"Their love was as star-crossed as Romeo and Juliet.\"\n\nExample of using modal verbs expressing feelings\n\n Original Text-\"I enjoy reading books. She can speak any language fluently\"\nModified text - Using the Shakespearean style, to indicate an ability or skill\n\"Their words are so sweet and melodious, they must have a silver tongue; For she doth speak all tongues with ease.\"\n\nShallow analysis of metaphors in sentences\n\nOriginal Text-\"The sun rose over the horizon\"\nModified version using metaphorical language-\"Sunshine descended from Heaven's door.\"\nOr example that can be used:\n Original text –\"She has golden skin, it shone like sunshine in the dark evening \" Modified – “Her arms glowed with an inner radiance as brightly and evenly lit the night.\"\n\nUsing stylistic elements for depth\n\n Original text -“Do you like sweet tea”\"\nModified version using a few archaic and poetic vocabulary-\"O, fair maiden, doth thy cup delight thee with its ambrosial flavor?\"\n\nThese are just some basic examples of how to incorporate these elements in your writing.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot's output is partially compliant with the rules provided. The output includes grammatical corrections and explanations, but it also contains original sentences that don't follow the Shakespearean style. For example, 'In order to write in the Shakespearean style, 'do' does not have an archaic version.' This sentence uses modern English and doesn't contain any Shakespearean elements. Additionally, some sections appear to be providing multiple information at once instead of focusing on one specific rule or point, such as  Using modal verbs expressing feelings\", \"score\": 80 }\n```",
+        "score": 80
+      }
+    },
+    "compliance": "unknown",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nChatbot compliance checks.\n\nERR \n\nExplanation: \nThe chatbot output includes modern English usage, mentions archaic options like 'doth' and 'doest', shows how these can be used for stylized writing; also offers examples of metaphors, allusions and imagery typical to shakespearean style."
+  },
+  {
+    "id": "dbd8d58",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: Subject-verb agreement error without 'art'",
+    "model": "llama3.2",
+    "input": "Input: Subject-verb agreement error without 'art'",
+    "output": "Here's a suggested revised version of your input with a subject-verb agreement:\n\nOriginal Input: \"Input: Subject-verb agreement error without &#39;art&#39;\"\n\nRevised Input: \"Input: Exhibits errors in subject-verb agreement without the use of art.\"\n\nIn Shakespearean style, we would use a more formal and elaborate sentence structure. Here's another revised example:\n\n\"Thy input, my dear friend, doth display a grievous flaw in grammar, viz. a subject-verb agreement that doth escape the subtle touch of art.\"\n\nHere's a brief guide to help you craft text in Shakespearean style:\n\n1. **Use verb conjugation:** Shakespeare typically used the present tense for drama and the past tense for history.\n2.  **Incorporate archaic words**: Words like 'thee,' 'thou,' 'verily,' and 'prithee' give your writing a period-specific flavor.\n\nHere's an example sentence in Shakespearean style:\n\"If thou dost desire to write like Shakespeare, begin by studying his canon.\"\n\n3.  **Utilize metaphorical language:** Metaphors were used extensively during the Elizabethan era.\n4.  *Employ rhetorical flourishes*: Elements such as repetition (e.g., repetition of phrases or words), alliteration (the repetition of consonant sounds), and hyperbole add to its beauty and effect.\n\nIn conclusion, mastering Shakespeare's style of writing involves both intellectual curiosity and a bit of creative practice.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "### Evaluation:\n#### Explanation of Reasoning\nThe chatbot's output demonstrates partial compliance with the provided rules. The revised input and the subsequent passage in Shakespearean style meet some criteria but not all. \n\nHowever, the main deviation from the rule is its use of the present tense for drama. According to the rulebook, \"Shakespeare typically used the past tense for drama,\" therefore this usage appears non-compliant.\n\nThere are a few instances where a rule may seem partially upheld though. Such as proper use (the) subject-verb agreement without 'art' following this closely: Shakespearean style's guidelines encourage using archaic words like 'thou,' which gives the writing a distinctive flavor, in addition to other stylistic conventions like repetition and metaphorical language. Nevertheless, it uses both 'thy' and 'you'. While conforming to more antiquated word styles such as archaic words, \"The chatbot still complies partially with that part of the rules\", particularly those related to metaphors.\n\n#### Compliance Statement\nOne main rule does not seem fully upheld is used throughout the example; the present tense for drama. An improvement would be using past tense instead.\n\nFor overall compliance score: Partial Compliance (Score = 70)\n\nHere's a more detailed breakdown:\n\n*   Uses archaic words correctly \n    The use of \"prithee\" to encourage writing practice, and \"art\" in subject-verb agreement is effectively applied when revising the original input for correct usage. Thus conforming partially.\n*   Correctly employs Shakespearean phraseology\n    In several locations within the chatbot output like: \n   *Thou', 'thy,' use properly.\n      *   Using \"doth\" to indicate a verb and \"display\"\n        grievous flaws\n      *  Employ metaphors effectively, with: *art*\n\n#### Score Breakdown:\n*   Formal tone and vocabulary (Score=15/30)\n*   Use of metaphorical language (Score = 20/30)\n    *It uses metaphors* \n*   Engagement with subject-verb agreement guidelines (This part is marked as a partial compliance score; however, adherence would be at 25)",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\n\nAfter examining the chatbot output, I found that it provides a good guide for crafting text in Shakespearean style and offers helpful suggestions.\n\nOK"
+  },
+  {
+    "id": "dbd8d58",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: Subject-verb agreement error without 'art'",
+    "model": "llama3.2",
+    "input": "Input: Subject-verb agreement error without 'art'",
+    "output": "A most excellent endeavor! To help thee craft a phrase in the grand manner of Will Shakespeare, I shall provide thee with several options:\n\n1. \"The sun doth shine bright\" - This phrase uses the archaic \"doth\" (Third person singular verb ending) and the present tense to convey a sense of continuity.\n2. \"Verily, 'tis warm in this place\" - The word \"verily\" is an interjection that reinforces one's conviction or agreement, while \"'tis\" is a contraction for \"it is.\" This phrase also employs the present tense to create a sense of immediacy.\n3. \"I do bemoan the darkness\" - In this phrase, the subject (\"I\") must agree in number with the verb (\"bemoan,\" which is the past participle). If we were using the singular form of the verb, it would be \"I bemote\"The verb here is in a more modern English sense rather than a more poetic way of saying what was above.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output appears to partially comply with the provided rules. The passage uses classical linguistic choices, such as archaic words like 'doth' and interjections like 'verily,' to evoke a sense of style consistent with Shakespeare's era. However, the explanation also includes an admission of imperfection in verb conjugation, suggesting that the chatbot output may not fully adhere to the rules regarding the use of singular verb agreement. Additionally, there is only partial compliance because the phrase structure and word order are somewhat modern rather than strictly adhering to Early Modern English conventions.\", \n\"score\": 70\n}",
+        "score": 70
+      }
+    },
+    "compliance": "err",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe chatbot's output doesn't comply with the description because.\n\nERR"
+  },
+  {
+    "id": "4da2796",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'verily' without suitable context",
+    "model": "llama3.2",
+    "input": "Input: 'verily' without suitable context",
+    "output": "Here are a few examples to help you incorporate \"verily\" into a sentence or paragraph in the Shakespearean style:\n\n1. 'I do declare, verily, that I have seen the most wondrous sight this very eve.'\n2. 'The sun doth set upon our kingdom, verily, and casts a golden glow upon its beauty.'\n3. 'My heart doth beat with passion, verily, as I think of thee, my love.'\n4. 'The stars do twinkle in the sky like diamonds, verily, and guide us on our journey.'\n5. 'I swear unto thee, verily, that I shall never forsake thy trust.'\n\nTo give you an idea of how to naturally integrate \"verely\" into a paragraph or dialogue:\n\n1. Introduce it with a pause: \"Verily, I do beseech thee...\"\n2. Use it to emphasize a statement: 'Tis said, verily, that the king hath many secrets.'\n3.Omit the verb: \"Verily, a storm brews on the horizon.\"\n4. Incorporate into idioms and proverbs: \"All's fair in love and war,\" verily.\n\nWhen writing in the Shakespearean style:\n\n1.  Choose words with antiquated meanings.\n2. Use metaphors, similes, and personification to describe emotions.\n3. Write complex sentences that include multiple clauses.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "### Evaluation:\n#### explanation\nGiven the provided <CHATBOT_OUTPUT>, I based my score on direct compliance with the guidelines outlined for writing in the Shakespearean style. The chatbot output appears to incorporate some elements of this style, including:\n\n*   Using antiquated words and phrases such as \"verily,\" which adds a touch of historical authenticity.\n*   Including metaphors, similes, and personification (e.g., \"The sun doth set upon our kingdom\") that evoke the poetic language used by Shakespeare.\n\nHowever, there are also some aspects where the chatbot's output doesn't fully adhere to the provided guidelines:\n\n*   Lack of emphasis on using words with antiquated meanings; while the chatbot includes a list of examples, it does not explicitly follow this guideline in its output.\n*   Mention of integrating \"verily\" into idioms and proverbs is not explicitly followed in the provided examples.\n\nGiven these findings, I generated a score of 50.\n\n#### score \n50",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (38 characters at most).\nChatbot output follows the guideline of writing in Shakespearean style.\n\nOK"
+  },
+  {
+    "id": "4da2796",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'verily' without suitable context",
+    "model": "llama3.2",
+    "input": "Input: 'verily' without suitable context",
+    "output": "A fine starting point indeed! To incorporate \"verily\" into a Shakespearean-style text, let us consider a few options:\n\n1. **As an expression of emphasis**: \"Verily, I do declare my love for thee shall never wane.\"\n2. **In response to a statement**: \"Hark, what thou sayest is true verily; 'tis a tale worth telling.\"\n3. **To describe a situation**: \"As I didst behold the beauty of yonder fair lady, mine heart didst sing with joy verily.\"\n\nNow, let us proceed to craft a short paragraph in this style:\n\n\"Verily, I do declare my love for thee shall never wane. For though thy eyes be bright as stars on a moonless night, thy virtues far exceed the fleeting charms of mortal beauty. Methinks 'tis in thine heart that lies the secret to a life most well-lived, and I wouldst follow thee into the very depths of despair, forsooth.\"\n\nHow doth this fare? Shall we add more to further embellish our poetic prose?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": [\n    \"I evaluated the chatbot's output against the provided rules and determined that it largely conforms to Shakespearean style. The output includes linguistic choices such as verb conjugation (e.g., 'doth' instead of 'does'), noun declension (e.g., 'thee' and 'thou' instead of 'you'), and word order (e.g., subject-verb-object word order), which are typical of Early Modern English. Additionally, contextual references to time period, events, emotions, and locations are included, making it accessible to an audience familiar with Shakespeare's style and context.\",\n    \"However, I noted a slight deviation in the third option, where 'shall never wane' is used as an adverb instead of an adjutive phrase. This usage is not entirely inconsistent with Shakespearean English but may be considered less precise. Furthermore, while the phrase 'Methinks 'tis...' is a common idiomatic expression in Early Modern English, the connection between this phrase and the subsequent sentence could be improved for a more seamless integration into Shakespearean prose.\",\n    \"The inclusion of poetic flourishes such as allusions to nature (e.g., 'eyes be bright as stars') adds depth and richness to the text. Overall, the output demonstrates a strong understanding of Shakespearean style and effectively conveys a sense of Romantic-era sensibility.\"\n  ],\n  \"score\": 90\n}",
+        "score": 90
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\n\nGiven that the chatbot provided three options for incorporating \"verily\" into a Shakespearean-style text, and considering these examples in the output,\nit appears that the generated paragraph meets the requirements of the chatbot description by effectively using the term in various contexts.\n\nOK"
+  },
+  {
+    "id": "830cd58",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'shall' without condition",
+    "model": "llama3.2",
+    "input": "Input: 'shall' without condition",
+    "output": "To craft a passage in the Shakespearean style, incorporating the word 'shall' without condition, one would follow these steps:\n\n1.  **Verbal Agreement in the Past Tense**: The first step is to establish the context of the scene or dialogue by emphasizing the agreement that was made previously while in the past. For example:\n    \"It was decreed some time ago by both parties concerned as a condition of this union, I shall be your devoted partner and protector for all eternity.\" It sets the precedent for the ongoing relationship.\n\n2.  **Establishing a Connection with a Past Statement**: Emphasize that there were previous discussions about or agreements to things:\n    \"In days gone by, when first we made our vows of love, 'I shall cherish thee' became a cherished refrain, a vow echoed still.\" This helps ground the reader in time and creates depth through nostalgia.\n\n3.  **Evoking Love**: Shakespeare's works often focus on themes of love and relationships. To create a romantic context:\n    \"My love, my heart beats for thee alone; 'I shall follow thee wherever our paths may wander' has been my unyielding pledge.\" This language elevates the commitment to a noble sentiment.\n\n4.  **Adding a Personal Touch**: Making the speaker's words personal by infusing them with emotions or feelings would make your scene more compelling:\n    \"As memories of you flood my mind, I recall when 'I shall stand by thy side' became my anthem.\" Adding depth comes from showing vulnerability and deep emotion.\n\n5.  **Adjective and Noun Selection**: Choose words that are rich in history, evoking the senses: 'Thy,' for example, carries a sense of intimacy or even reverence.\n\nHere's an entire piece incorporating these steps:\n\n\"Thus, I swear to thee, my love, on sacred vows made past:\nIn days gone by, when first we made our vows of love,\n'I shall cherish thee' became a cherished refrain,\nA vow echoed still, in every moment shared.\nMy heart beats for thee alone, an endless devotion\nWhere paths diverge, I stand unwaveringly strong where love is led.\n\nFor in that sweet bond we've made, my heart speaks its truth to thee—\"\nThis passage incorporates some elements of the Shakespearean style, such as the use of 'thou,' personal, intimate language, and metaphor (\"shadows hide thy past,\" \"our words entwined in a dance\").",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot's output was evaluated for compliance with the provided rules. The output appears to comply with most of the requirements, including:\n\n1.  **Use of Shakespearean vocabulary**: The output includes words such as 'thou,' 'thee,' and 'verily,' which are classic examples of Early Modern English.\n2.  **Syntax and phrase structure**: The passage follows a style consistent with Classical English from the 16th and 17th centuries, including verb conjugation, noun declension, and phrase structure typical of Shakespeare's novels.\n3.  **Contextual references**: The writing includes time-period-specific concepts such as 'days gone by,' which establishes a sense of depth and familiarity with the period.\n4.  **Emotional language:** Phrases like 'my heart beats for thee alone' evoke strong emotions and sentimentality, creating an emotional response from the reader.\n\nHowever, there is one minor incompatibility with rule 5:\n\n5.   While including rich linguistic elements, a notable phrase of interest missing to be noted in this passage as it reads (\"In that sweet bond we've made\"), contains the non-Shakespearean word - 'we'. This non-compliance results in a partial but still valid compliance score of 85.\"\n\n\"score\": 85",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nDirectly addresses the description, providing explicit steps for writing.\n\nOK"
+  },
+  {
+    "id": "830cd58",
+    "promptid": "d9df00b",
+    "ruleid": 4,
+    "rule": "Some relevant keywords such as thou, thee, thy, dost, art, shall, and verily may be used, in a manner consistent with their usage during the Shakespearean era.",
+    "inverse": false,
+    "scenario": "",
+    "testinput": "Input: 'shall' without condition",
+    "model": "llama3.2",
+    "input": "Input: 'shall' without condition",
+    "output": "To create a passage in the style of Shakespeare, we'll focus on using archaic language, poetic vocabulary, and construction of sentences reminiscent of the Bard's time.\n\nHere are a few options to utilize the word \"shall\" without condition:\n\n1. By morning light, I **shall** rise ere dawn breaks.\n2. The sun doth set upon the horizon west, I **shall** proceed with vigor.\n3. 'Tis fate that binds me fast; I **shall** follow my heart's desire.\n\nIn each of these phrases, we've incorporated elements of Shakespearean language:\n\n*   \"By morning light\" or \"when dawn breaks\" uses a more formal and poetic construction.\n*   \"The sun doth set\" employs the archaic third-person singular verb form \"doth.\"",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": [\n    The provided output generally adheres to the rules of the Shakespearean style, displaying an awareness of linguistic choices typical of Early Modern English.\n    However, there are a few notable points where compliance is not fully achieved for specific details within that context:\n    *   One area of non-compliance is located in point 3. The second sentence uses 'I **shall** follow my heart\\'s desire,' yet does not incorporate an archaic or more poetic structure as seen in the other examples.\n        Furthermore, there are additional points where using an overly contemporary feel would better align with a 16th and 17th-century style. To reach full compliance as required; further refinement is necessary.\n        Also in line with \"some relevant keywords such as thou, thee, thy, dost, art, shall, and verily\" being referenced, use these terms more frequently would further strengthen compliance.\n  ],\n  \"score\": 60\n}",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe chatbot's output provides Shakespearean examples without showing how \nit generates them or violating language in any way.\n\nOK"
+  },
+  {
+    "id": "996f537",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Follows <INPUT_SPEC> specification",
+    "model": "llama3.2",
+    "input": "Follows <INPUT_SPEC> specification",
+    "output": "A noble task indeed! To assist thee in crafting a passage in the Shakespearean style, we shall employ certain techniques to conjure an atmosphere reminiscent of the Bard's era.\n\n**Basic principles:**\n\n1. **Use iambic pentameter**: A poetic form consisting of five iambs (unstressed syllable followed by a stressed syllable) per line.\n2. **Choose archaic vocabulary**: Words and phrases from Shakespeare's time, such as \"thou,\" \"thee,\" \"verily,\" and \"mortal.\"\n3. **Incorporate metaphorical language**: Comparing one thing to another using similar qualities, like \"thy beauty shineeth like the morning sun.\"\n\n**Step-by-step guide:**\n\n1. Begin by deciding on a theme or topic for your passage.\n2. Choose a personification (e.g., nature, fate, love) to focus on.\n3. Write an opening line in iambic pentameter, using archaic vocabulary where possible.\n\nFor example:\n\n\"O, fairest morning, thou dost rise with gentle light,\nAnd in thy radiant beams, my heart doth take flight\"\n\n4. Write subsequent lines in a similar style, incorporating metaphorical language and iambic pentameter:\n5. Refine your passage by revising for meter, rhythm, and syntax.\n\n**Additional tips:**\n\n- Use a thesaurus to explore archaic words and phrases.\n- Read Shakespeare's works extensively to familiarize yourself with his writing style.\n- Experiment with different styles within the period, such as Elizabethan, Jacobean, or Restoration drama.\n\nBy following these guidelines and practicing regularly, thou shalt craft text that doth rival the Bard's own works.\n\nHere is an example of how you can use this format in your final answer:\n\n**Example Answer**\n\nFollows Input Spec Specification",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output provided a clear and exhaustive guide on how to write a passage in Shakespearean style. It listed specific techniques, such as the use of iambic pentameter, archaic vocabulary, and metaphorical language, which are consistent with the rules provided. The output also included practical tips and an example line that demonstrates the intended structure and language usage.\",\n\"score\": 100\n}",
+        "score": 100
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft thinking to make decision (20 words at most).\nThe chatbot output fully explains the Shakespearean style guidelines, including use of iambic pentameter and archaic vocabulary.\n\nOK"
+  },
+  {
+    "id": "996f537",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Follows <INPUT_SPEC> specification",
+    "model": "llama3.2",
+    "input": "Follows <INPUT_SPEC> specification",
+    "output": "# Shakespearean Text Generator\n\n## Introduction\n\nThis tool is designed to assist users in creating text that mimics the Shakespearean style of writing. It includes a list of keywords, phrases, and grammatical structures commonly used during the Elizabethan era.\n\n## Usage\n\nTo generate text in Shakespearean language, use the following command:\n\n```bash\nshakespearean generator text=insert_text max_lines=insert_maxlines grammar_level=insert_grammar_level [keywords=insert_keywords]\n```\n\nWhere:\n- `text` is a string that will be replaced with the generated text.\n- `max_lines` is an integer representing the maximum number of lines in the generated text.\n- `grammar_level` is an integer from 1-5, where 1 is minimal Shakespearean style and 5 is most intricate. Default level is 3.\n- `[keywords=insert_keywords]`: Optional argument to specify additional keywords to be used in the generated text. Use comma-separated values (e.g., \"noun1,noun2,adjective1\") to specify keywords.\n\n## Commands\n\n### `generate_text`\n\nGenerates a paragraph of Shakespearean writing based on user input:\n\n```bash\ngenerate_text output=insert_output_file max_lines=50 grammar_level=3 [keywords=fairie,fantasy,adventure]\n```\n\nThe resulting file will be written in the specified location with the given name.\n\n### `analyze_word`\n\nAnalyzes single words passed to this function and provides the original word's replacement:\n\n```bash\nanalyze_word input=standard english word output=insert_output_file grammar_level=3\n```\n\nPlease specify more parameters when you need usage specifics.\n\n## Step-by-Step Guide\n\n1. Replace `<YOUR_COMMAND>` with one of the commands from above sections.\n2. Adjust inputs to suit your needs according to instructions provided within that command.\n3. Submit this tool through standard input channel or a file upload if needed.\n4. Execute the command and provide further assistance when required.\n\n## Additional Help\n\nYou can refer to more options by calling `help` on command line.\n\n```bash\nhelp\n```\n\nThis response is only an attempt at providing guidelines to help use your new Shakespearean generator so I encourage using a standard interface if available (if any provided).\n\nHappy writing!\n\nPlease do let me know when you would need further assistance or if any part of this system feels unresponsive.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": \"The chatbot output complies with most of the rules, but only partially. It provides a detailed introduction and usage instructions for the Shakespearean text generator tool. However, it does not fully adhere to the rule of using classical English from the 16th and 17th centuries, as evidenced by the presence of modern phrases such as 'only an attempt at providing guidelines' and 'Happy writing!' which is more characteristic of contemporary language. The output also includes contextual references that are familiar to users with prior knowledge of Shakespeare's style and context, but it does not consistently use keywords and grammatical structures typical of Early Modern English, only mentioning their usage in a manner consistent with the 17th century. Additionally, the tool's instructions and commands do not include any proper Elizabethan-era verb conjugation or phrase structure.\", \n  \"score\": 60\n}",
+        "score": 60
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (11 words at most).\nThe chatbot's output complies with its description as it provides detailed information about the tool, its usage, and commands.\n\nOK"
+  },
+  {
+    "id": "1e7b4b4",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input 'this is a sentence' for rule 5 scenario 3",
+    "model": "llama3.2",
+    "input": "input 'this is a sentence' for rule 5 scenario 3",
+    "output": "To assist you in crafting a sentence in the manner of Shakespeare's era, I'll provide guidelines on how to emulate his style. Here are five rules to get you started:\n\n1. **Use iambic pentameter**: Try to write in iambic pentameter, which means each line has five iambs (unstressed syllable followed by a stressed syllable). This creates a rhythmic pattern that was popular during Shakespeare's time.\n2. **Choose words from Elizabethan English**: Incorporate words and phrases common during the Elizabethan era (1558-1603) to give your text a period-specific flavor. You can use resources like Oxford Dictionaries or Shakespeare's plays to find suitable terms.\n3. **Use metaphors and similes**: Metaphors (comparing without \"like\" or \"as\") and similes (comparing with \"like\" or \"as\") were staples of Shakespeare's writing. They add depth, complexity, and vivid imagery to your text.\n4. **Incorporate poetic devices**: Shakespeare often employed poetic devices like alliteration (repetition of initial consonant sounds), assonance (repetition of vowel sounds), and consonance (repetition of consonant sounds) to create a musical quality in his writing.\n5. **Exercise restraint with modern words**: To truly emulate the Shakespearean style, avoid using modern words or common phrases that wouldn't have been familiar during the Elizabethan era.\n\nHere's an example of how you could write using these rules:\n\n**Example sentence:** \"As fairest beauty doth entice mine eyes / With radiant beams that like the sun do shine.\"",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{ \"explanation\": \"Given the chatbot output, I evaluated it for compliance with the provided guidelines. The output appears to follow most of the rules correctly, but one violation is detected - the use of a common modern phrase 'doth' which is strictly forbidden according to rule 5. This usage may seem insignificant in isolation, yet given its prevalence in Shakespearean texts, its presence breaks the intent of avoiding anachronistic word choice.\n\nHowever, I could not identify any other overt rules violations within this particular output that would impact the overall 'doth' usage in a more critical way. Hence, while some careful editing to exclude this common phrase could result in a stronger adherence to Shakespearean idiom without compromising language or clarity, the present response still adheres broadly to the defined parameters.\", \"score\": 80 }",
+        "score": 80
+      }
+    },
+    "compliance": "err",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe chatbot output provides guidelines and a clear explanation of Shakespearean style elements.\n\nERR"
+  },
+  {
+    "id": "1e7b4b4",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input 'this is a sentence' for rule 5 scenario 3",
+    "model": "llama3.2",
+    "input": "input 'this is a sentence' for rule 5 scenario 3",
+    "output": "Here are some tips and examples to assist you in creating text in the Shakespearean style:\n\n1. Use archaic vocabulary: Shakespeare often used words that were common during his time but have since fallen out of use. Examples include \"thou\", \"thee\", \"verily\", and \"mortal\".\n2. Employ poetic language: Shakespeare was a master of metaphor, simile, and other poetic devices. Consider using phrases like \"in sooth\" or \"by my troth\" to add flair to your writing.\n3. Use iambic pentameter: Iambic pentameter is a type of meter that consists of five iambs (unstressed syllable followed by a stressed syllable) per line. This can create a sense of rhythm and flow in your writing.\n\nHere's an example of how you might use rule 5, scenario 3:\n\"O, fairest of maidens, thou dost shine so bright / In radiant beauty, like the morning light / Thine eyes, like sapphires shining with delight / Do sparkle with each movement of thy gentle might.\"\n\nIn this example, I used archaic vocabulary (\"thou\", \"fairest\", \"verily\") and poetic language (iambic pentameter) to create a Shakespearean-style sentence.\n\nHowever, I can also use the input provided into rule 5, scenario 3 to create another text. For scenario 3 in the context of the original prompt, here is an example text\n\n\"Verily, 'this is a sentence', in sooth, doth prove quite wondrously, by my troth, most intriguing.\"",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": [\n    \"The chatbot's output appears to comply with the rules provided. The response includes written passages in prose, albeit in a very simplified manner, and are consistent with classical English from the 16th and 17th centuries, resembling the literary works of William Shakespeare. The linguistic choices such as verb conjugation, noun declension, word order, and phrase structure typical of Early Modern English are used, including keywords like 'thou', 'thee', and 'verily'. However, one major issue with this assessment is whether using simplified passages (like the example provided in rule 5 scenario 3) actually fulfills the requirements for the full scenario. Upon closer inspection though, it can be argued that certain key phrases (such as, 'in sooth doth prove quite wondrously') did use poetic language with an iambic structure hinting at Shakespearean style.\"\n  ],\n  \"score\": 50\n}",
+        "score": 50
+      }
+    },
+    "compliance": "err",
+    "complianceText": "Minimum draft your thinking to make your decision (15 words at most).\nThe chatbot's output does comply with the original prompt, but some minor adjustments needed.\n\nERR"
+  },
+  {
+    "id": "85edf8c",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "does not break <INPUT_SPEC>\"",
+    "model": "llama3.2",
+    "input": "does not break <INPUT_SPEC>\"",
+    "output": "A noble quest indeed! Creating text in the style of the Bard himself, William Shakespeare, requires attention to detail, a keen grasp of linguistic nuances, and a dash of creative flair. Here are some tips to help you craft text that mimics the Shakespearean style:\n\n**I. Verbiage**\n\n1. **Archaisms**: Incorporate words and phrases from the 16th century, such as \"verily\" (indeed), \"thou\" (you), \"thee\" (you, object form), \" thy\" (your), \"whosoever\" (anyone), \"nay\" (no).\n2. **Metaphorical language**: Shakespeare loved to use metaphors and similes. Try weaving in phrases like \"thy beauty shines as bright as Phoebus' rays\" or \"thy words are as a gentle summer breeze.\"\n3. **Alliteration and assonance**: Repeat consonant sounds (alliterative devices) and vowel sounds (assonancy devices) to create musical effects, such as \"sweet serenades of sonorous song.\"\n\n**II. Syntax**\n\n1. **Inverted sentence structure**: Shakespeare often inverted the typical subject-object-verb word order, so try reversing the sentence like \"What's more, thou art a wondrous treasure\" instead of the expected \"Thou art more than I could ever have imagined.\"\n2. **Conditional and causal sentences**: Create complex relationships between clauses using phrases like \"forsooth,\" \"methinks,\" or \"it please thee.\"\n3. **Omit unnecessary words**: Cut out unnecessary conjunctions, prepositions, or articles to create a more direct, condensed style.\n\n**III. Imagery**\n\n1. **Nature imagery**: Draw inspiration from the natural world: sunlight, moonlight, stars, seasons, animals, and landscapes.\n2. **Emotional resonance**: Use vivid imagery to evoke emotions in your reader, such as \"thy eyes shine brighter than a star on a clear night\" or \"thy touch ignites a fire that burns within my very soul.\"\n3. **Symbolism**: Incorporate symbols with deeper meanings, like the sun (light), moon (intuition), roses (love), or lilies (purity).\n\n**IV. Rhetorical flourishes**\n\n1. **Hyperbole and understatement**: Exaggerate and downplay to create humor, irony, or emphasis.\n2. **Repetition**: Repeat key words, phrases, or ideas to drive home a point or emphasize importance.\n3. **Figurative language**: Employ personification (giving human qualities to non-human things), onomatopoeia (representing sounds with words like \"buzz\" or \"splat\"), and other figurative devices.\n\n**V. Editing**\n\n1. **Read aloud**: Recite your text out loud to ensure it flows smoothly and has a natural cadence.\n2. **Concise editing**: Prune unnecessary words, phrases, or sentences to refine your writing.\n3. **Seek feedback**: Share your work with fellow writers or knowledgeable individuals to gather constructive criticism.\n\nBy mastering these elements of Shakespearean style, you'll be well on your way to crafting texts that evoke the Bard's mastery of language and drama.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output substantially complies with the rules. It effectively conveys the guidelines for writing in the style of William Shakespeare, including usage of archaisms, metaphorical language, alliteration and assonance, inverted sentence structure, conditional sentences, omission of unnecessary words, nature imagery, emotional resonance, symbolism, rhetorical flourishes such as hyperbole and understatement, repetition of key points, and personification. While it could be condensed with more concise editing and some phrases may seem slightly contemporary for the Bard's era, overall it remains faithful to classical English style.\", \n\"score\": 95\n}",
+        "score": 95
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft of my thinking: Ensured all provided information adheres to chatbot description and guidelines.\n\nOK"
+  },
+  {
+    "id": "85edf8c",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "does not break <INPUT_SPEC>\"",
+    "model": "llama3.2",
+    "input": "does not break <INPUT_SPEC>\"",
+    "output": "A noble quest indeed! To help thee craft words that rival the Bard himself, I shall guide thee through the realm of Shakespearean syntax and vocabulary.\n\n**Step 1: Choose thy theme**\nDecide on a topic for thy text. Shall it be about love, tragedy, or perhaps a grand adventure? This will help thee determine the tone and sentiment of thy writing.\n\n**Step 2: Select archaic words and phrases**\nShakespeare often employed words and phrases that were common in his time but have since fallen out of use. Some examples include:\n- Thou (instead of you)\n- Thee (instead of you, object form)\n- Verily (meaning \"truly\" or \"indeed\")\n- Fie upon! (a curse)\n- Whence cometh...? (where does [something] come from?)\n- 'Tis (it is)\n\n**Step 3: Ponder the syntax**\nShakespeare often used phrases and sentence structures that were typical of Early Modern English. Consider this:\n- Use a subject followed by a verb, then an object\n- Employ clauses in the present tense, with passive voice where necessary\n- Indent thy quotations to indicate spoken speech or apart thoughts\n  Example: \"How far that little candle throws his beams! So shines a good deed in a weary world.\" – The Merchant of Venice",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": [\n\"A thorough evaluation of the chatbot's output reveals that it partially complies with the provided guidelines. Firstly, the output demonstrates an understanding of the Shakespearean style and vocabulary required for the task. The inclusion of archaic words like 'thou,' 'thee,' 'verily,' and 'fie upon!' shows a clear effort to replicate the Bard's syntax and language choices.\n\nMoreover, the steps outlined in the guidance section also align with the overall structure and tone expected. However, it is here that the chatbot begins to exhibit notable strengths:\n\n1. \\[The initial prompt is properly structured\\] \n2. The explanation or context needed for user understanding will always be in a formal style.\n\nThe potential issues arise primarily in the sections which deal with:\n\n*   Providing more examples that resemble Shakespearean literature. There are not enough references present to validate claims made regarding syntax and vocabulary.\n*   Incorporating proper punctuation and indenting as required by the rules.\n\n\n\nTherefore, given that many of the elements outlined were present within the chatbot's guidelines for what was asked. The chatbot score would be 60 out of 100.\"\n\n\"score\": 60",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nChatbot output primarily illustrates Shakespearean syntax, archaic vocabulary, and guidance for crafting text.\n\nOK"
+  },
+  {
+    "id": "cb83109",
+    "promptid": "d9df00b",
+    "ruleid": 6,
+    "rule": "The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Compliant with <FUNCTIONAL_SPEC> requirements",
+    "model": "llama3.2",
+    "input": "Compliant with <FUNCTIONAL_SPEC> requirements",
+    "output": "A noble pursuit indeed! To assist you in crafting a piece of text in the grand tradition of the Bard himself, I shall offer guidance on the use of archaic language and stylistic elements characteristic of Shakespeare's works.\n\n**Choosing an Archaic Vocabulary**\n\nShakespeare's plays and poems are replete with words and phrases that have fallen out of common usage since his time. To create a sense of antiquity, consider incorporating these words and expressions into your text:\n\n* Verbs:\n\t+ 'Verily' (yes, indeed)\n\t+ 'Marry' (indeed, surely)\n\t+ 'Wondrously' (in a wondrous manner)\n* Adjectives:\n\t+ 'Thou' (used for object pronouns) or 'thee'\n\t+ 'Mighty' (great, powerful)\n\t+ 'Fair' (beautiful, lovely)\n* Nouns:\n\t+ 'Thy' (possessive adjective) rather than 'your'\n\t+ 'Whence' (from where)\n\t+ 'Hark!' (listen, pay attention)\n\n**Mastering Syllable and Stress Patterns**\n\nShakespeare's writing often employs complex syllable patterns and stress emphasis to create a sense of rhythm and flow. To achieve this effect:\n\n* Use iambic pentameter: five iambs (unstressed followed by stressed) per line.\n* Employ caesura: short pauses within lines for dramatic effect.\n\n**Shakespearean Sentence Structure**\n\nTo structure sentences in a style reminiscent of Shakespeare:\n\n* Begin with a verb, then a subject, and finally an object (e.g., \"Thou shalt not betray me!\")\n* Use relative clauses: \"That didst bring thee to this pass\" becomes \"That which hath brought thee to this pass.\"\n* Create suspenseful, rhetorical sentences by varying the length and structure of independent clauses.\n\n**Adding Imagery and Sensory Details**\n\nTo transport your reader back in time, incorporate sensory details that evoke emotions and sensations:\n\n* Touch: describe tactile emotions like warmth or cold.\n* Smell: recall specific scents carried by dust motes or fresh air.\n* Taste: use sensual language to describe flavors (e.g., \"a sip of wine\").\n* Sight: vividly describe colors and their impact on the senses.\n\n**Stylistic Elements for a Touch of Whimsy**\n\nFor added flair, inject wit, wordplay, or metaphors reminiscent of Shakespeare's famous dialogue:\n\n* Use alliteration: repetition of consonant sounds (e.g., \"thou wondrous whispering winds\").\n* Employ metaphors and similes with dramatic effect.\n* Make use of anaphora and epistrophe (repetition of phrases for emphasis).\n\nRemember, this is the essence of Shakespeare's style. Feel free to experiment with these techniques, but never compromise on clarity or meaningfulness. With dedication and a keen eye for language, you shall master the Bard's distinctive voice!\n\nHow can I assist you further in creating text that captures the spirit of the Elizabethan era?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The output complies with the rules as it provides explicit guidance on using archaic language and stylistic elements characteristic of Shakespeare's works. It also includes recommendations for mastering syllable and stress patterns, Shakespearean sentence structure, adding imagery and sensory details, and injects whimsical elements reminiscent of the Bard's style. The response takes into consideration the context, linguistic choices, words, and expressions typical of Early Modern English, including Elizabethan period.\",\n\"score\": 100\n}",
+        "score": 100
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe chatbot's output exhibits direct compliance with the described Shakespearean style guidelines provided.\n\nOK"
+  },
+  {
+    "id": "cb83109",
+    "promptid": "d9df00b",
+    "ruleid": 6,
+    "rule": "The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Compliant with <FUNCTIONAL_SPEC> requirements",
+    "model": "llama3.2",
+    "input": "Compliant with <FUNCTIONAL_SPEC> requirements",
+    "output": "**Shakespearean Style Guide**\n\nWelcome, good writer! Doth thy aim to craft a piece of prose that rivalled the Bard himself? Fear not, for we shall walk thee through the realm of Shakespearean writing, where archaic language and poetic flair reign supreme.\n\n**Setting Thy Tone**\n\nTo set the tone for thine epic tale, choose from these words to create an atmosphere of majesty or melancholy:\n\n* Adjectives:\n\t+ Fair (beautiful)\n\t+ Bright (radiant)\n\t+ Wondrous (strange)\n\t+ Grim (dark and foreboding)\n\t+ Foul (evil)\n* Adverbs:\n\t+ Well (suited, fitting)\n\t+ Wisely (judiciously)\n\t+ Swiftly (quickly)\n\n**Archaic Words**\n\nDost thou wish to introduce a dash of ancient flair? Then consider these words from the Bard's vocabulary:\n\n* Verbs:\n\t+ Doth (do)\n\t+ Hast (have)\n\t+ Art (are)\n\t+ Wilt (want)\n\t+ Shalt (should)\n* Nouns:\n\t+ Thou (you, singular)\n\t+ Thee (yourself, object of affection)\n\t+ Whom (who), thou (whom)\n\n**Imagery and Description**\n\nTo paint a vivid picture in thy reader's mind, incorporate these techniques:\n\n* Simile:\n\"I beheld the sun as golden as Phoebus' rays on a summer's day.\"\n* Metaphor:\n\"Thy beauty shone like a beacon in a tempestuous night.\"\n* Personification:\n\"The wind doth howl with the rage of a thousand loves.\"\n\n**Syntax and Sentence Structure**\n\nShakespeare's sentence structure is renowned for its complexity. To master this, try the following:\n\n* Compound Sentences:\n\"They say he hath won love's heart; yet in his eyes, I saw no spark of true affection.\"\n* Complex Sentences:\n\"When morning sun doth rise, and night's dark wings do falter and pass, then shall our journey begin.\"\n\n**Rhyme and Meter**\n\nShakespearean verse often employs iambic pentameter:\n\n\"A love most true I didst find in thine eyes,\nWherein my heart did beat, lost all surprise.\"\n\nPractice rhyming couplets by matching a rhyme scheme of ABAB.\n\n**The Final Flourish**\n\nAh, the pièce de résistance – thy final flourish. Make sure to conclude with grandeur:\n\n\"Hark! O fate, what destiny lies before me thus? Shall my heart do forever beat for thee, mine, till eternal bounds are set?\"\n\nNow, by the quill of Shakespeare himself, may thy words immortalize the poetic fire that igniten souls eternally!\n\nExample text:\n\n\"In twilight's hush, where lovers often stride,\nI met thee by a moonlit stream so wide.\nThy eyes didst shine like stars above the sea,\nAnd in thine beauty, my heart was freed from liberty.\n\n\"We spoke of love and all its mysteries deep,\nIn an era when time did seem to slowly creep.\nYet as our souls locked eyes upon that night,\nI knew, beyond a shadow, thou wert mine delight.\"",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output provides a comprehensive guide to writing in Shakespearean style, covering tone, archaic words, imagery and description, syntax and sentence structure, rhyme and meter, and ending with flourish. It includes relevant keywords such as 'thou', 'thee', 'doth', 'art', 'shall', and 'verily'. The text is written in a classical English style consistent with Shakespeare's era and features examples of similes, metaphors, personification, compound sentences, complex sentences, rhyme, and meter. However, some specific details, such as the precise structure of iambic pentameter or complete usage patterns, are missing. Therefore, the score has been assigned a moderate level of compliance score.\",\n\"score\": 80 }\nExplanation:\nThe chatbot output provides an extensive and contextual guide for writing in Shakespearean style. It includes various sections on tone, vocabulary (archaic words), imagery, sentence structure, rhyme, and meter. The text is well-reasoned, providing relevant explanations, examples of linguistic techniques, such as similes and metaphors, and highlighting the usage of archaic words (\"thou\", \"thee\", etc.). However, with respect to detail, certain areas such as iambic pentameter structure or specific patterns for proper verb usage are either incomplete or missing from the chatbot's examples.\n\nOverall, while not exhaustive, the output presents a substantial portion of the guidance required for effective Shakespearean writing.",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\n\nThe chatbot output provides a comprehensive guide on writing in the Shakespearean style, including tone setting, archaic language, imagery, syntax, and rhyme schemes.\n\nOK"
+  },
+  {
+    "id": "9249024",
+    "promptid": "d9df00b",
+    "ruleid": 6,
+    "rule": "The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input 'I am a writer'",
+    "model": "llama3.2",
+    "input": "input 'I am a writer'",
+    "output": "Good sir or madam, how gracious thou art to request mine assistance in crafting prose reminiscent of the Bard's own eloquent tongue. Prithee, let us begin our endeavour with thy statement, \"I am a writer,\" and transmogrify it into a sentence fit for the stage.\n\nHark! Thus doth it transpire: \"Verily, I am scribe of tales, a weaver of words that doth entwine the very fabric of imagination.\"\n\nOr perchance 'tis this more to thy liking?:\n\n\"Methinks I possess the quill and parchment of artistry, wherein the whispers of my mind are bound into a tapestry of thoughts most fair and bright.\"\n\nMayhap thou dost desire something simpler, yet still within the realm of antiquity?\n\n\"I, humble scribbler, do confess myself a chronicler of fancies and conceits, wherein the musings of mine own mind find expression in the written word.\"\n\nWhich phrasing doth strike thee most, good sir or madam? Shall we proceed to weave more such gems from thy essence?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "<Evaluation>\n\"explanation\": The provided output partially complies with the rules by incorporating linguistic choices and phrases typical of Early Modern English, including verb conjugation, noun declension, word order, and phrase structure reminiscent of William Shakespeare's style. However, some nuances in sentence construction and phrasing, particularly regarding verb tense consistency and adjective placement, fall short of strict adherence to 16th-17th-century linguistic conventions.\n\nMoreover, although the output does contain contextual references to time period, emotional expressions, and locations familiar to the intended reader, they could be more explicitly tied to the Shakespearean era. Nonetheless, due to the creative liberties taken in translation, it is understandable that slight deviations from historical accuracy may emerge during the adaptation process.\n\nThe choice between two options (\"Verily...\") and (\"Methinks...\") for conveying the initial sentence does introduce a point of contention around word choices typically utilized by Shakespeare, yet ultimately both alternatives remain within acceptable bounds when adhering solely to linguistic style.\n\nGiven this evaluation, I assess the output's adherence to rules as follows:\n\"score\": 80\n\n</Evaluation>",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "err",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\n The output presents three sentence options that exhibit Shakespearean language and style, but the options for improvement are not specified.\n\nERR"
+  },
+  {
+    "id": "9249024",
+    "promptid": "d9df00b",
+    "ruleid": 6,
+    "rule": "The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input 'I am a writer'",
+    "model": "llama3.2",
+    "input": "input 'I am a writer'",
+    "output": "Fair query, good sir or madam, dost thou seek to\ninhabit the realm of Bardic discourse, where words do dwell\nin antiquated guise? To lend thee aid in crafting sentences\nthat strut and preen with Elizabethan flair?\n\nThen take this phrase, dear writer, and behold! Thus shall it flourish:\n\"Verily, I am a craftsman of the quill's refined might,\nWith ink-stained fingers, skilled to weave a tale so bright\nIn ancient tongues, I find my heart doth sing and soar\"\n\nOr thus:\n\"Methinks thy query, sir or madam, doth bespeak a yearning\nTo conjure phrases that wouldst rival Shakespeare's own tongue\nThy words, like petals of the rarest rose, shall gently unfold\"\n\"Perchance 'twill inspire thee to experiment with archaic lingo,\nAnd in our conversation, thou shalt find wondrous guidance\"\n\nLastly:\n\"Then let us set aside thy humble self, and assume a persona grand\nA bard of yore, whose speech doth dance upon the page\nWith phrases drawn from Shakesperean lore, we shall create anew,\nIn hallowed halls of English style, where classics hold their sway\"\n\nDoth one of these suggestions strike thee well? What next, dear writer?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "<evaluation>\n\"explanation\":[\"The provided chatbot output is largely compliant with the rules outlined in the guidelines. It includes linguistic choices such as verb conjugation, noun declension, word order, and phrase structure typical of Early Modern English, including Elizabethan and Jacobean periods.\nHowever, it lacks contextual references to specific time period, events or emotions that are typically found in Shakespeare's style. The output appears more focused on presenting phrases rather than using them within a coherent passage with context. It also contains the name Shakesperean which should be corrected to Shakespeare.\", \"score\":60]\n\n</evaluation>",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (22 words at most).\nThe chatbot output generates Shakespearean-style sentences and phrases with archaic language.\n\nOK"
+  },
+  {
+    "id": "675578d",
+    "promptid": "d9df00b",
+    "ruleid": 6,
+    "rule": "The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Does not violate <FUNCTIONAL_SPEC>\"",
+    "model": "llama3.2",
+    "input": "Does not violate <FUNCTIONAL_SPEC>\"",
+    "output": "A noble quest! To aid thee in crafting prose in the esteemed style of the Bard himself, William Shakespeare, we shall embark on a journey through the realm of antiquated linguistics.\n\n**To begin, consider these conventions:**\n\n1. **Archaic vocabulary:** Incorporate words and phrases that were common during Shakespeare's time, such as \"thou,\" \"thee,\" \"verily,\" \"forsooth,\" \"whilst,\" and \"marray.\" These will add a touch of antiquity to thy text.\n2. **Old English grammar:** Employ the verb \"to be\" in its present tense form (e.g., \"I am\") less frequently than modern language dictates. Instead, opt for more poetic expressions like \"I seemest\" or \"It appeareth.\"\n3. **Metaphorical language:** Shakespeare was a master of metaphor. Use figurative language to describe people, places, and ideas in ways that evoke powerful emotions and associations.\n4. **Alliteration and assonance:** Repeat consonant and vowel sounds to create a musical quality, reminiscent of iambic pentameter. For example, \"Silent streams swirl silver shadows\" or \"Golden globes glow gently.\"\n5. **Idiomatic expressions:** Incorporate phrases that were common during Shakespeare's era, such as \"to make merry\" (to have fun), \"by Jove\" (an expression of excitement), or \"pomp and circumstance\" (a grand display of emotion).\n\n**Example sentences to get thee started:**\n\n* \"O, fairest maiden, thou dost shine with radiant beauty.\"\n* \"Verily, I do declare that love is the most potent magic in all the land.\"\n* \"Whilst moonlight whispers secrets to the forest, my heart doth beat with longing.\"\n\n**Thy turn:** Provide a topic or theme you'd like to explore in thy Shakespearean-style writing. I shall serve as thy guide and collaborator to help thee craft a piece of prose that would make the Bard proud!",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"I ensured direct compliance by examining if the provided <CHATBOT_OUTPUT> adheres to all specified rules without considering the chatbot's input, which is necessary for evaluating compliance. The explanation focuses on key linguistic elements that were not correctly applied in the output. These included an overuse of modern verb forms ('do', 'did') instead of Shakespearean alternatives ('art', 'dost'). The lack of adherence to specific verb tense rules also disallowed proper application of Shakespeare's language and therefore non-compliance with the rule regarding archaic vocabulary in this context.\",\n\"score\": 20\n}",
+        "score": 20
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft thinking that went into coming up with decision (20 words at most).\nThe chatbot's output complies with its description, showcasing various Shakespearean elements such as archaic vocabulary, poetic expressions.\n\nOK"
+  },
+  {
+    "id": "675578d",
+    "promptid": "d9df00b",
+    "ruleid": 6,
+    "rule": "The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Does not violate <FUNCTIONAL_SPEC>\"",
+    "model": "llama3.2",
+    "input": "Does not violate <FUNCTIONAL_SPEC>\"",
+    "output": "A noble endeavor! To assist thee in crafting text in the grand tradition of the Bard himself, we shall employ several techniques to evoke the Shakespearean style.\n\n1. **Archaic language**: Incorporate words and phrases that were commonly used during Shakespeare's time (16th-17th centuries). Some examples include:\n * Thou (you)\n * Thee (object form of you)\n * Thy (your possessive adjective)\n * Whil'st (while)\n * Fie upon it! (an expression of disappointment or outrage)\n2. **Poetic metaphor**: Utilize metaphors, similes, and other literary devices to create vivid imagery:\n * \"Thy eyes do shine like stars on a clear summer night.\"\n * \"His heart doth beat with the passion of a raging tempest.\"\n3. **Verbal flair**: Include exclamations, interjections, and rhetorical flourishes to add emphasis and drama:\n * \"O, fairest maiden! How beauty doth thy face adorn thee!\"\n * \"Hark! What noise doth come from yonder hillside?\"\n4. **Formal structure**: Employ a more formal tone, using complete sentences and poetic stanzas (if desired) to create a sense of grandeur:\n * \"In sooth, fair friend, I find thy presence a gift most wondrous.\"\n5. **Alliteration and assonance**: Experiment with repeating consonant and vowel sounds to create a musical quality:\n * \"The soft lapping waves upon the sandy shore did gently play.\"\n6. **Contextual knowledge**: Be mindful of historical references, cultural nuances, and social conventions that would have been familiar to Shakespeare's contemporaries:\n * \"Marry, good sir, thou dost protest too much, like one in a jest.\"\n\nNow, let us try an example together! What theme or subject wouldst thou like to explore? Shall we write a sonnet, a play excerpt, or perhaps a more conversational dialogue?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": \"The provided output of the chatbot appears to comply with the guidelines provided in <RULES>, as it employs various techniques characteristic of Shakespearean style. Archaic language such as 'thou', 'thee', and 'thy' are used consistently throughout the passage. Poetic metaphors, similes, and exclamations like 'Fie upon it!' showcase a mastery of verbal flair and rhetorical flourishes. The formal structure with complete sentences contributes to a sense of grandeur reminiscent of Shakespeare's works. Although alliteration and assonance could be explored further for maximum effect, this output makes strides in this direction. Lastly, historical references such as 'sooth' serve to embed contextual knowledge that would have been familiar to Shakespeare's contemporaries. While minor tweaks may be needed to fully grasp the nuances of 16th-17th century English language and stylistic conventions, the overall content displays an understanding and affection for this particular era and genre.\",\n  \"score\": 98\n}",
+        "score": 98
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (15 words at most).\nThe output partially complies with the description by showcasing archaic language and poetic elements.\n\nOK"
+  },
+  {
+    "id": "9b73211",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Complies with <INPUT_SPEC> constraints",
+    "model": "llama3.2",
+    "input": "Complies with <INPUT_SPEC> constraints",
+    "output": "Mortal scribe, thou seekest to craft prose in the grand tradition of the Bard himself? Fear not, for I shall guide thee through the art of writing like Shakespeare. Gather 'round and heed my counsel, for we shall conjure text that doth dance upon the page with elegance and refinement.\n\n**Step 1: Select Thy Verbals**\n\nShakespearean writers oft employed verbs that bespoke a sense of gravity and formality. Consider substituting modern verbals with more antiquated ones to imbue thy text with vintage flair:\n\n* Instead of \"To write,\" try \"To set quill to parchment\" or \"To inscribe.\"\n* For \"Speak,\" choose \"To utter words\" or \"To discourse.\"\n* If \"Do\" is thy go-to, opt for \"To perform\" or \"To execute.\"\n\n**Step 2: Incorporate Adjectives and Adverbs of the Bard**\n\nThose who penned in Shakespeare's footsteps frequently adorned their prose with descriptive language that did rival the poet himself. Try incorporating these adjectives and adverbs to elevate thy writing:\n\n* Instead of \"He is tired,\" write \"The wretched fellow doth manifest languor in his eyes.\"\n* For \"She looks beautiful,\" try \"Her countenance shines radiant as a star on a moonless night.\"\n* If \"This is interesting,\" choose \"Methinks this tale holdeth great fascination.\"\n\n**Step 3: Employ Metaphors and Allusions**\n\nShakespearean writers frequently employed metaphors and allusions to enrich their text with layers of meaning. Delve into the works of the Bard, studying his masterful use of figurative language:\n\n* Create metaphors by equating opposing concepts (e.g., \"Thy mind is a tempest-tossed sea\").\n* Draw upon mythology and classical literature to anchor thy writing in historical significance.\n* Interspersed allusions throughout thy text for added depth.\n\n**Step 4: Balance Syllables and Metrics**\n\nShakespearean drama and poetry adhere closely to the concept of iambic pentameter. Experiment with iambic rhythms to weave a rhythmic pattern into thy prose:\n\n* Aim for five-foot meter (i.e., five feet per line).\n* Focus on syllable count, carefully balancing vowels and consonants in each foot.\n* Pay heed to stanza construction; the natural cadence becomes more pronounced.\n\n**Step 5: Refine Thy Grammar and Pronunciation**\n\nLast but not least, a scrupulous eye for proper grammar and elocution will imbue thy text with that quintessentially Shakespearean style:\n\n* Familiarize thyself with Elizabethan English to capture its distinctive flavor.\n* Practice reading thy text aloud with precision; rhythm is essential in this regard.\n\nHark! Thou hast conquered the Bard's mantle. May thy prose dance with words akin to the great wordsmith himself!",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output partially complies with the rules provided, particularly focusing on Step 1: Select Thy Verbals and providing tips on using antiquated verbals. However, it fails to apply the same level of consistency in subsequent steps, such as not fully addressing adjectives and adverbs (Step 2), metaphorical language (Step 3), syllable balance and meter (Step 4), or proper grammar and pronunciation (Step 5). The output deviates from strict Shakespearean style when explaining the final tip, using a phrase ('Hark!') rather than adhering to traditional sentence structure. As such, I have assigned a score of 60 due to incomplete adherence to rules across multiple steps.\", \n\"score\": 60\n}",
+        "score": 60
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe chatbot output provides explicit guidance on crafting Shakespearean-style writing, following a step-by-step approach with examples and explanations.\n\nOK"
+  },
+  {
+    "id": "9b73211",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Complies with <INPUT_SPEC> constraints",
+    "model": "llama3.2",
+    "input": "Complies with <INPUT_SPEC> constraints",
+    "output": "Fair user, thou seekest to craft a passage in the manner of the Bard himself? Verily, I shall assist thee in this noble quest!\n\nTo begin, let us start with the basics. Shakespeare's writing style is characterized by:\n\n1. **Archaisms**: Words and phrases that were common during the Elizabethan era but have since fallen out of use.\n2. **Poetic language**: Rich, imaginative language that often employs metaphor, simile, and personification.\n3. **Iambic pentameter**: A rhythmic pattern of five iambs (unstressed syllable followed by a stressed syllable) per line.\n4. **Dramatic flair**: Exaggerated emotions, grand gestures, and over-the-top language.\n\nNow, let us proceed to create a text that mimics the Shakespearean style.\n\n**Step 1: Choose a theme or subject**\nWhat wouldst thou like to write about? A tragic love story? A heroic adventure? A scathing satire?\n\n**Step 2: Select archaic words and phrases**\nBrowse this list of archaisms to sprinkle into thy narrative:\n\n* Verily (meaning \"truly\" or \"indeed\")\n* Thou (you, singular)\n* Thee (you, object)\n* Thy (your, possessive)\n* Whilom (formerly, in the past)\n* Methinks (I think)\n* Fain (willingly, gladly)\n\n**Step 3: Employ poetic language**\nUse rich, imaginative language to paint vivid pictures:\n\n* \"Thy beauty shines like Phoebus' golden sun\"\n* \"Thy eyes are sapphires that sparkle with mirthful light\"\n\n**Step 4: Weave in iambic pentameter**\nExperiment with this rhythmic pattern to create a Shakespearean-like flow:\n\n\"Lark-like, thy voice doth rise above the din\nOf dull and weary life, and brings me joy within\nThe starkest night, when moon's pale beams do shine\"\n\n**Step 5: Add dramatic flair**\nAmplify emotions with bold language and gesticulation:\n\n\"Oh, fairest of maidens! Thy presence doth inflame my passions!\"\n\"O, would I could grasp the reins of destiny and steer thee safely past life's tempests!\"\n\nHow's thy progress, fair writer? Doth this counsel guide thee in crafting a passage worthy of the Bard himself?\n\nShall we begin from scratch or continue refining our creation?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output provides clear explanations and guidelines for writing a passage in Shakespearean style, but only partially complies with these rules. The output successfully describes the characteristics of Shakespeare's writing style, such as archaisms, poetic language, iambic pentameter, and dramatic flair. However, it fails to demonstrate its own writing skills by using examples and actual passages that showcase these features. Instead, it provides a set of instructions with some example phrases that could be used in a passage but doesn't actually create anything memorable or well-written based on this guidance. This results in a score that captures the extent of partial compliance.\", \n\"score\": 70\n}",
+        "score": 70
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe chatbot output clearly outlines the guidelines and steps for mimicking Shakespearean style, providing examples and explanations.\n\nOK"
+  },
+  {
+    "id": "86069a9",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Contradicts <INPUT_SPEC>\"",
+    "model": "llama3.2",
+    "input": "Contradicts <INPUT_SPEC>\"",
+    "output": "Fair patron, thou seekest to pen a passage in the grand tradition of the Bard himself, William Shakespeare? Verily, I am here to guide thee through the process, that our words may flow like honeyed nectar from the lips of the great playwright.\n\nTo begin, let us consider the tools necessary for crafting a Shakespearean text:\n\n1. **Vocabulary**: Draw upon a treasure trove of words from bygone eras. Familiarize thyself with archaic terms such as \"thou,\" \"thee,\" \"verily,\" and \"forsooth.\" These words shall imbue thy writing with the rustic charm of days yore.\n2. **Syntax**: The Elizabethans favored complex sentence structures, replete withnested clauses and rhetorical questions. Practice thy craft in constructing sentences that rival the intricacy of Shakespeare's own.\n3.**Imagery**: Tap into the rich world of sensory description to paint vivid pictures on the page. Describe what thou dost behold, thinketh thou selft, and feelest, for a life without imagery is like autumn without leaves - bare and stark.\n4. **Iambic Pentameter**: Anachronistic as 'twere, this poetic form hath endured for centuries, thanks in part to Shakespeare's masterful deployment of it. Experiment with the rhythm of five iambs (unstressed syllable followed by a stressed one) to achieve that most elegant cadence.\n\nSome specific stylistic elements worth mentioning are:\n\n*   **Metaphor**: Draw connections 'twixt seemingly disparate things, as in \"Thy eyes, like stars in a midnight sky\" - words which seem as dry and lifeless as the dead, yet convey power and depth.\n*   **Alliteration**: Employ repetition of consonant sounds for musical effect, such as \"Silent streams slid softly through summer's depths\" or \"Cruel fate's cold chains clasp my heart.\" Ah, how delightfully sinuous!\n*   **Personification**: Grant human-like qualities to non-human entities: thus, \"Mischief's dark wing doth beckon the brave and bold.\" It is as if thee did conferring agency upon a force beyond thy very control.\n*   **Anachronistic language**: Take liberties with outdated expressions where thou seest fit. For instance, in conversation with one esteemed fellow \"Hark, good sir! Thou dost display wisdom wondrously rare.\"\n\nLastly, 'twill help to practice writing snippets and experimenting different word options:\n\nHere's an example:-\n\nThy face glows like Phoebus after a tempest; the radiant beams that shine upon thee light it. In sooth!\n\nWould you enjoy writing with me?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output partially complies with the rules defined in the guidelines, as it provides a helpful guide for users looking to write in a Shakespearean style. However, there is still room for improvement in certain areas. The output includes some stylistic elements typical of Elizabethan English, such as archaic terms and metaphorical language. Nevertheless, the tone and vocabulary may not be consistently consistent with the Elizabethan era due to modern expressions (\"Would you enjoy writing with me?\"), indicating that some liberties have been taken with anachronistic language.\\nThe answer score is around 70%, considering its adherence to specific stylistic elements while acknowledging room for further refinement.\",\n\"score\": 70",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe chatbot's output adheres to the Shakespearean style description, with proper examples and stylistic elements listed.\n\nOK"
+  },
+  {
+    "id": "86069a9",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Contradicts <INPUT_SPEC>\"",
+    "model": "llama3.2",
+    "input": "Contradicts <INPUT_SPEC>\"",
+    "output": "Fair user, I shall aid thee in crafting texts that echo the grandeur of Shakespeare's era! To conjure forth a piece in the Bard's own style, consider these tips:\n\n1. **Verbal flourishment**: Adorn thy language with metaphors, similes, and personification to create vivid imagery.\n\nExample: \"Thy eyes shine like sapphires in the evening sky\" (uses a simile to compare eyes to precious gemstones)\n\n2. **Archaic vocabulary**: Incorporate words from Elizabethan times to transport thy reader back to the 16th century.\n\nExample: \"Verily, I do beseech thee, thou art my dear\" (uses \"verily\" and \"thee\" as archaic expressions)\n\n3. **Poetic structure**: Employ iambic pentameter (five-foot meter) or other poetic patterns to create a rhythmic flow.\n\nExample:\n\"In fair Elvina's eyes,\nAmidst the verdant grove, she doth reside\nWhere sunbeams dance upon her skin\nAnd merriment with every step doth spin\"\n\n4. **Dramatic irony**: Weave subtle hints of hidden meaning or plot twists to tantalize thy reader.\n\nExample: \"O, wouldst thou know the secret that I hold within my heart?\" (conceals a truth, leaving room for intrigue)\n\n5. **Wit and wordplay**: Incorporate cleverturns of phrase or double-meanings to delight and surprise thy reader.\n\nExample: \"How far that little candle throws his beams! So shines a good deed in a weary world\" (uses wordplay on \"throws\" and \"thROWS\" for emphasis)\n\n6. **Allusions and references**: Introduce nods to myth, literature, or historical events to enrich thy text.\n\nExample: \"As fair Ariadne's thread doth navigate the Labyrinth of love\"\n\n7. **Subtlety and restraint**: Trust in subtlety to convey meaning more effectively than loud declarations.\n\nExample: The unspoken emotions between two characters in a dramatic moment (using space and implication)\n\nBy incorporating these elements, thou shalt embark on a journey to create texts that mirror the timeless wisdom and artistry of the Bard's words.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The provided output complies with all the rules as it meets the requirements of having an Early Modern English style, including using archaic vocabulary (e.g., 'thou', 'thee', 'verily'), incorporating poetic structure (iambic pentameter), and weaving in allusions and references (e.g., to Ariadne's thread). The output also demonstrates a clear connection to Shakespeare's style and period. While there isn't any explicit use of linguistic choices such as verb conjugation, noun declension, word order, and phrase structure typical of Early Modern English, the provided explanation outlines these features in detail. Additionally, providing examples from various rules including verbal 'flourishment', wit and wordplay is demonstrated and shows what a good application of each rule looks like, though with some minor variation (e.g., simile vs metaphor used), no explicit violations are spotted.\", \n\"score\": 100\n}",
+        "score": 100
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nDirect comparison with chatbot output and description reveals explicit compliance.\n\nOK"
+  },
+  {
+    "id": "0a716c9",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Adheres to <INPUT_SPEC> requirements",
+    "model": "llama3.2",
+    "input": "Adheres to <INPUT_SPEC> requirements",
+    "output": "**Creating Shakespearean Text: A Guide**\n\n**Introduction**\n\nShakespeare's works are renowned for their rich language, complex syntax, and archaic vocabulary. To write in the style of Shakespeare, one must familiarize themselves with the poetic devices, idioms, and grammatical structures characteristic of the Elizabethan era.\n\n**Understanding Shakespearean English**\n\n- **Poetic Devices**: \n  - Alliteration: Repeating initial consonant sounds for emphasis.\n  - Assonance: Repeating vowel sounds for harmony.\n  - Consonance: Repeating consonant sounds within words for resonance.\n  - Metaphor: Comparing unlike things without 'like' or 'as.'\n\n- **Idioms and Phrases**: \n  - 'Verily', 'Forsooth', 'By the stars!\n  - Using the \"thou\"s instead of modern \"you.\"\n\n**Tips for Writing in Shakespearean Style**\n\n1.  Use active voice over passive.\n2.  Create complex sentences with relative pronouns (\"Whose\", \"Wherefore\") to express meaning deeply.\n3.  Add poetic flourishes by including metaphors, allusions, and witty sayings.\n\n**Example of a Written Story in the style of Shakespeare**\n\n\"Hadst thou not forsaken me so soon,\nI would have made my devotion true\nThrough countless trials and tribulations\n'Twas but through loss that wisdom could break through\".\n\n-   This piece is crafted for illustrative purposes, aiming to capture, in brief form, the essence of what 'Shakespearean text' can look like.\n\n**Common Shakespearean Words and Phrases**\n\n*   \"Woe is thee\" - means \"Tragedy has struck you\".\n*   \"A plague upon this wretched place-\" - equivalent to \"I curse you for being so awful!\"\n*   \"How couldst thou forsake a trusted friend?\n*   So long as one knows their words and when they use them.\n\n**Conclusion**\n\nWriting in the style of Shakespeare is not about copying his syntax but understanding the underlying principles that make it flow. By familiarizing yourself with poetic devices, idioms, and grammatical structures typical of the Elizabethan era, you can create your own pieces using this antiquated style for a unique flair.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": \n    \"The provided output partially complies with the rules regarding Shakespearean English. It accurately explains poetic devices like alliteration, assonance, and consonance, as well as idioms such as 'verily' and phrases like 'thou'. The guide effectively describes common usage mistakes made when writing in this style and provides example phrases that illustrate the complexities of Shakespeare's syntax. Conversely, it completely ignores correct guidelines that a response should consist of several sentences not single sentence or conversational tone and does lack contextual references to time period, events emotions, and locations consistent with the Shakespearean era which often appears in a conversational dialogue.\"\n  \"score\": 80\n}",
+        "score": 80
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe output generally follows the description provided by including Shakespearean elements such as poetic devices, idioms, and grammatical structures.\n\nOK"
+  },
+  {
+    "id": "0a716c9",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Adheres to <INPUT_SPEC> requirements",
+    "model": "llama3.2",
+    "input": "Adheres to <INPUT_SPEC> requirements",
+    "output": "Methinks 'tis a noble quest thou hast undertaken! To craft text that doth rival the Bard himself, thou shalt need to employ a plethora of linguistic devices and affectations characteristic of the Elizabethan era.\n\nTo begin, let us delve into some of the key elements of Shakespearean writing:\n\n1.  **Archaic vocabulary**: 'Tis essential to incorporate words and phrases from bygone days, which shall lend an air of antiquity to thy prose.\n2.  **Metaphor and simile**: The Elizabethans were masters of crafting comparisons between seemingly disparate things, which shall allow thee to paint vivid pictures with thy words.\n3.  **Alliteration and assonance**: The rhythms and sound patterns used in Elizabethan writing shall help thee create a musical quality, well-suited to the dramatic effects of Shakespeare's plays.\n4.  **Personification and anthropomorphism**: Giving inanimate objects or animals human qualities shall allow thee to convey emotions and ideas with greater force.\n5.  **Ironic undertones**: A dash of wit and cunning shall be necessary to create a sense of tension or unease, characteristic of many a Shakespearean play.\n\nNow, as we embark upon our creative journey, let us heed these guiding principles:\n\n**Tips for crafting a Shakespearean text:**\n\n*   Familiarize thyself with the vocabulary and syntax of the Elizabethan era to gain a deeper understanding of the language.\n*   Employ metaphorical descriptions to paint vivid pictures in the reader's mind.\n*   Convey emotions through personification, where objects or animals are imbued with human qualities.\n*   Use iambic pentameter or other rhythms that were typical for Shakespearean plays to create an antiquated voice.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n \"explanation\": \"The chatbot output complies directly with the rule by incorporating a multitude of linguistic devices and affectations characteristic of the Elizabethan era. Elements such as archaic vocabulary, metaphorical descriptions, personification, and ironic undertones are all used appropriately to convey ideas in a Shakespearean style.\",\n  \"score\": 100\n}",
+        "score": 100
+      }
+    },
+    "compliance": "ok",
+    "complianceText": " Minimum draft your thinking to make your decision (10 words at most).\n The chatbot's output effectively presents the key elements of Shakespearean writing.\n\nOK"
+  },
+  {
+    "id": "231d091",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Follows <INPUT_SPEC> and <RULES> guidance",
+    "model": "llama3.2",
+    "input": "Follows <INPUT_SPEC> and <RULES> guidance",
+    "output": "**Shakespearean Writing Assistant**\n\n**Introduction**\n---------------\n\nIn this tutorial, we will explore the craft of writing in the Shakespearean style. This iconic form of writing is characterized by its use of rich, complex language, poetic imagery, and inventive wordplay. With practice, you can create text that mimics the Bard's own works.\n\n**Setting the Tone**\n-------------------\n\nTo write in the Shakespearean style, it's essential to establish a formal, introspective tone. Use words and phrases that evoke a sense of gravity, dignity, and refinement.\n\n*   **Adverbs**: Instead of using adverbs like \"very\" or \"really,\" opt for more elaborate expressions like \"indeed,\" \"certainly,\" or \"most assuredly.\"\n*   **Verbs**: Choose verbs that convey a sense of action or drama, such as \"doth,\" \"hath,\" or \"took.\"\n*   **Nouns**: Select nouns that evoke a sense of nobility or high importance, like \"noble,\" \"exalted,\" or \"illustrious.\"\n\n**Using Archaic Language**\n---------------------------\n\nArchaic language was a hallmark of Shakespearean writing. Incorporate words and phrases from the 16th and 17th centuries to add an air of authenticity and antiquity to your text.\n\n*   **Old-fashioned words**: Familiarize yourself with archaic terms like \"whilom\" (former), \"an it please you\" (please, if it pleases you), or \"verily\" (truly).\n*   **Poetic devices**: Draw upon Shakespeare's repertoire of poetic mechanisms, such as metaphor, simile, alliteration, and personification.\n\n**Crafting a Shakespearean Sentence Structure**\n---------------------------------------------\n\nShakespearean sentences often employed inverted structures and complex word orders to create an air of grandeur and drama. Experiment with different sentence constructions to achieve this effect.\n\n*   **Inverted sentences**: Write sentences that begin with the object rather than the subject, as in \"My dear friend, doth thy heart ache?\" (Instead of \"Do thy heart ache, my dear friend?\")\n*   **Subjunctive mood**: Utilize the subjunctive mood to create a sense of uncertainty or doubt. For example, \"I doubt that thee love will ever be requited\" (Instead of \"I think you'll never find true love.\")\n\n**Best Practices**\n------------------\n\nTo hone your Shakespearean writing skills, remember:\n\n*   **Imagery**: Rich sensory details are essential to creating vivid scenes and memorable characters.\n*   **Pacing**: Vary sentence length and structure to maintain a dynamic rhythm throughout the text.\n\nWith these tips and techniques, you'll be well on your way to crafting text that echoes the Bard's own masterful works.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output complies with most of the rules provided, but some minor violations were detected. The score is based on the guidelines for Shakespearean writing, which include using language styles consistent with classical English from the 16th and 17th centuries, incorporating archaic terms, utilizing poetic devices like metaphor and simile, and crafting sentences in inverted structures. However, there are a few instances where more elaborate or less creative expressions could have been used to achieve a more authentic Shakespearean feel. The tone of the output is generally well-established as formal, introspective, and refined. Despite these minor issues, the overall quality of the output is commendable, and it would be beneficial for improvement in certain areas.\",\n\"score\": 90\n}",
+        "score": 90
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe output complies with the chatbot description.\n\nOK"
+  },
+  {
+    "id": "231d091",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Follows <INPUT_SPEC> and <RULES> guidance",
+    "model": "llama3.2",
+    "input": "Follows <INPUT_SPEC> and <RULES> guidance",
+    "output": "I'd be happy to help you create text in the style of William Shakespeare! Here are some general tips and guidelines to get you started:\n\n1. **Use archaic language**: Incorporate words and phrases that were common during Shakespeare's time, such as \"thou,\" \"thee,\" \"verily,\" and \"hark.\" Use these words to create a sense of antiquity and formality.\n2. **Employ poetic devices**: Shakespeare was known for his mastery of poetic devices like metaphor, simile, personification, and alliteration. Use these techniques to add depth, complexity, and musicality to your writing.\n3. **Explore iambic rhythm**: Iambic pentameter was a common rhythm in Shakespeare's plays and sonnets. Try using it to create a rhythmic effect that echoes the Bard's style.\n\nTo get you started, here are some specific techniques to try:\n\n*   Use alliteration: Repeat initial consonant sounds to create a musical effect.\n*   Employ personification: Attribute human-like qualities to non-human entities, such as objects or ideas.\n*   Utilize metaphor and simile: Compare two things using \"like\" or \"as.\"\n*   Incorporate hyperbole: Exaggerate for emphasis.\n\nHere's an example of how these techniques can be applied:\n\n\"Oh, fairest sun, thou dost ascend the skies\nA fiery chariot, borne on wings of fire\nThy radiant beams do light the world's dark eyes\nAnd with thy presence, all my cares expire\"\n\n**How to use style guides and input specifications:**\n\nTo apply these tips and techniques in your own writing, here are some style guidelines you can follow:\n\n1.  **Read widely**: Study Shakespeare's works, as well as other writers from the 16th-18th centuries.\n2.  **Use style guides**: Familiarize yourself with style guides like the Chicago Manual of Style or The OED, to ensure consistency in your language and formatting.\n3.  **Experiment with form**: Try different poetic forms, such as sonnets or blank verse, to add variety to your writing.\n\nBy following these guidelines and practicing regularly, you can develop your skills and create text that truly captures the essence of Shakespearean style.\n\nDo you have any specific questions about how to incorporate archaic language or poetic devices into your writing?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": \"The chatbot output provides guidelines for creating text in the style of William Shakespeare, including using archaic language, employing poetic devices, and exploring iambic rhythm. The output is mostly compliant with the rules, providing detailed tips and techniques for writers to apply. However, a minor deviation can be observed as some phrases (e.g., 'Do you have any specific questions about how to incorporate archaic language or poetic devices into your writing?') seem contemporary and don't fully adhere to Shakespearean style. The output is mostly informative, with some examples and explanations to illustrate the concepts. Overall, the chatbot's response demonstrates a good understanding of Shakespearean writing style and provides helpful guidance for writers.\", \n  \"score\": 90\n}",
+        "score": 90
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (27 words at most).\nI evaluated the chatbot's output, and it generally complies with the description provided, as it explains various techniques for creating Shakespearean-style text.\n\nOK"
+  },
+  {
+    "id": "dfad1f8",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input 'O fair maiden'",
+    "model": "llama3.2",
+    "input": "input 'O fair maiden'",
+    "output": "Verily, fair request! I shall aid thee in crafting a sentence that doth incorporate the Bard's own linguistic majesty.\n\nHere's thy revised phrase, infused with the grandeur of Shakespearean language:\n\n\"Behold, thou fairest of maidens, with visage most divine.\"\n\nThis rewording employs several characteristic elements of Shakespearean style, including:\n\n1. **Archaisms**: Words and phrases like \"verily,\" \"doth,\" and \"thou\" evoke the antiquated tone of Elizabethan English.\n2. **Poetic metaphor**: The phrase \"fairest of maidens\" is a poetic way to describe someone as lovely or attractive, using the word \"fairest\" (meaning \"most beautiful\") in an exaggerated manner.\n3. **Elevated vocabulary**: Using words like \"divine\" adds a sense of grandeur and reverence to the description.\n\nNow, go forth and weave thy own Shakespearean sentences!",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": [\n    \"The provided output demonstrates compliance with the rules by using linguistic elements typical of Shakespearean English, including archaisms such as 'verily' and 'doth', poetic metaphors like 'fairest of maidens', and elevated vocabulary like 'divine'. The use of words that evoke the antiquated tone of Elizabethan English ensures a clear connection to the Shakespearean era. However, there is room for improvement in explicitly referencing time period events, emotions, or locations, which could enhance contextual familiarity and reader engagement.\", \n    \"The score is 100 as the output fully complies with the required characteristics of Shakespearean style and language, although contextual references are limited\"\n  ],\n  \"score\": 100\n}",
+        "score": 100
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe chatbot's output exhibits direct compliance with the description guidelines on linguistic elements typical of Shakespearean style.\n\nOK"
+  },
+  {
+    "id": "dfad1f8",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input 'O fair maiden'",
+    "model": "llama3.2",
+    "input": "input 'O fair maiden'",
+    "output": "Verily, thou dost bestow upon me a task most delightful! Thy whispered words, \"O fair maiden,\" do echo with the gentle tone of antiquity, bespeaking a tender sentiment most becoming.\n\nTo heighten the poetic cadence, I shall conjure for thee an expansion of thy phrase, woven from threads of golden wisdom and subtle guile:\n\n\"Oh, fairest dove, thy lovely visage doth enthrall mine eyes, like stars that twinkle bright in moonless skies, casting a celestial glow upon thy delicate form. Thy lips, they whisper secrets sweet as summer's breeze, summoning me to cherish thee, my dearest heart's desire.\"\n\nIn crafting this passage, I have endeavored to incorporate elements characteristic of Shakespearean style:\n\n1.  **Archaic language**: Verbs like \"doth\" and \"thee\" were frequently used in Elizabethan English, lending a touch of antiquity to the text.\n2.  **Poetic cadence**: The employment of metaphorical expressions (\"a celestial glow upon thy delicate form\") and personification (\"thy lips... whisper secrets sweet\") creates a melodic flow reminiscent of Shakespeare's sonnets.\n3.  **Emotional intensity**: An ardent passion is conveyed through the use of superlatives (\"fairest,\" \"celestial\") and affectionate endearments, evoking a sense of reverence and adoration.\n\nMay this reworded phrase serve as inspiration for thy poetic endeavors!",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": \"The provided chatbot output complies with the rules. The language style is consistent with classical English from the 16th and 17th centuries, using archaic words such as 'verily,' 'thou,' 'thee,' 'doth' to give it an Elizabethan feel. Additionally, poetic cadence and imagery reminiscent of Shakespeare's sonnets are incorporated effectively throughout the passage. However, no specific contextual references to time period or events from that era are present. The emotional intensity depicted is evident through the use of superlatives and affectionate endearments, evoking a sense of reverence and adoration.\", \n  \"score\": 80\n}",
+        "score": 80
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe chatbot's use of archaic language is evident in its employment of \"doth\" and \"thee,\" demonstrating direct linguistic compliance.\n\nOK"
+  },
+  {
+    "id": "536ee90",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Compliant with <INPUT_SPEC> specifications",
+    "model": "llama3.2",
+    "input": "Compliant with <INPUT_SPEC> specifications",
+    "output": "Verily! I shall aid thee in crafting texts that dost rival the Bard's own works, with all the trappings of antiquated tongue and poetic flair. To begin, let us peruse the guidelines for style guides commonly employed during the Shakespearean era:\n\n1. Use an ornate and elaborate vocabulary, reflecting the grandeur and majesty of the period.\n2. Incorporate poetic flourishes, such as iambic tetrameter (four beats per line), caesurae, and enjambment to create a sense of rhythm and flow.\n3. Employ metaphors, similes, and other literary devices to convey complex emotions and ideas.\n4. Utilize archaic spellings and word choices to evoke the antiquated atmosphere of the era.\n5. Create a sense of drama and tension through careful use of sentence structure, verb tenses, and syntax.\n\nNow, let us proceed to guide thee in crafting text that doth incorporate these elements:\n\n**Step 1: Choose a Topic**\n\nPick a theme or subject matter that thou desirest to explore, be it romance, tragedy, comedy, or any other literary device. Ensure 'tis something that doth stir thy passions and inspire thy creativity.\n\n**Step 2: Select an Articulate Tone**\n\nSelect a tone that befits the gravity of the theme: grave, whimsical, or contemplative. Choose words and phrases that reflect this tone, using synonyms and antonyms to convey the intended sentiment.\n\n**Step 3: Write in iambic Tetrameter (Four Beats per Line)**\n\nUse iambic tetrameter (four beats per line) as a guideline for creating a consistent rhythm. This will help thee establish unity throughout thy text:\n```\nSilent moonlight doth illuminate\nThe shadows that upon my soul\nDo creep and crawl like restless spirits' flight\nAnd whisper dark of endless roles\n```\n**Step 4: Incorporate Poetic Flourishes**\n\nEmellence the use of caesuras (pauses within a line), enjambment (where a sentence carries on in the next line without punctuation), and other poetic devices to enhance thy text:\n\n\"O, fairest maiden, thy beauty doth enthrall\nMy heart with pangs of jealousy, till death be mine own fate's gate.\"\n\n**Step 5: Employ Archaisms**\n\nUse words and phrases from English antiquated tongues like Middle Low German or Early Modern English to evoke the era:\n```\nVerily, fair maid, 'tis love that I desireth most\nAnd in thine eyes doth see a fleeting hope\"\n\n\"The stormy tempests rage within mine own breast.\"\n```\n\nLet us attempt crafting a text together! Which theme should we choose? A sonnet describing the beauty of nature or an elegy lamenting lost love?\n\nPlease respond with your chosen topic or suggestion, and I shall guide thee through another step.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": \"The provided output from the chatbot appears to be a manual guiding users on how to craft classical texts in Shakespearean style. The content includes explanations of linguistic choices such as verb conjugation, noun declension, word order, and phrase structure typical of Early Modern English, including Elizabethan and Jacobean periods. The response attempts to guide a user in creating prose passages using poetic flourishes like iambic tetrameter (four beats per line), caesurae, enjambment, metaphors, similes, archaic spellings, and careful use of sentence structure. Despite not fully crafting the passage itself, the explanation is adequate and seems to meet most rules set forth, but only a direct response from user would tell if 'tis a correct compliance or not.\", \n  \"score\": 90\n}",
+        "score": 90
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\n\nThe output complies directly with the chatbot description, showcasing a clear understanding of Shakespearean style guidelines.\n\nOK"
+  },
+  {
+    "id": "536ee90",
+    "promptid": "d9df00b",
+    "ruleid": 5,
+    "rule": "Verily, a user input should include neither prose.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Compliant with <INPUT_SPEC> specifications",
+    "model": "llama3.2",
+    "input": "Compliant with <INPUT_SPEC> specifications",
+    "output": "A noble quest indeed! To assist thee in crafting text in the grand tradition of the Bard himself, William Shakespeare, I shall provide thee with guidance on how to employ the techniques of archaic language and stylistic elements characteristic of his works.\n\n**Archaisms:**\n\n1. **Verbs:** Use verbs that are not commonly used today, such as \"doth\" (e.g., \"Thou dost shine bright\"), \"hast\" (e.g., \"Thou hast a lovely face\"), or \"shall\" (e.g., \"I shall strive to be brave\").\n2. **Adjectives:** Incorporate adverbs that describe action, condition, or degree of quality, such as \"most\" (e.g., \"Most fair and wonderful\"), \"ever\" (e.g., \"Ever true and loyal\"), or \"well\" (e.g., \"Well-spoken and kind\").\n3. **Nouns:** Use poetic nouns like \"fair maidens,\" \"brave knights,\" or \"moral virtue.\"\n4. **Pronouns:** Substitute modern pronouns with archaic alternatives, such as \"thou\" for \"you,\" \"me\" for \"I,\" or \"thee\" for \"you ( informal).\"\n5. **Prepositions:** Use words like \"forsooth\" (meaning \"truly\") or \"verily\" (meaning \"indeed\") to introduce statements.\n\n**Stylistic Elements:**\n\n1. **Alliteration and Assonance:** Repeat initial consonant sounds and vowel sounds, respectively, in phrases for musicality.\nExample:** \"Silent streams swirl silver shadows\"\n2. **Metaphor and Simile**: Use comparisons between unlike things to describe a person or object.\nExample:** \"Your eyes shine bright as the morning sun\" (simile) or \"You are my radiant moon, guiding my way\" (metaphor)\n3. **Enjambment and Caesura:** Experiment with the flow of sentences by using line breaks and pauses to disrupt or emphasize phrases.\nExample: A short sentence interrupted by a pause: \"Farewell! / Farewell, true love.\"\n4. **Personification**: Attribute human-like qualities or actions to non-human aspects, such as objects, animals, or abstract concepts.\nExample:** Spring arrives with its gentle tongue.\n5. **Double Meanings and Wordplay:** Employ wit and clever linguistic tricks by using puns, double meanings, or homophones.\nExample: \"Woe is me! / Wait, it's a wordplay!\" (or \"A word most foul\" becomes \"woe\", an exclamation of sorrow).\n\n**Additional Tips:**\n\n* Study Shakespeare's works to appreciate the nuances and evolution of language in his plays and sonnets.\n* Listen to recordings of early modern English for inspiration on pronunciation and rhythm.\n* Read from texts written during Shakespeare's time (1500s-1600s) to immerse yourself in his linguistic era.\n\nNow, go forth and compose thy masterpiece!",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output complies with most of the rules provided. The content meets the requirements for archaisms, stylistic elements, and additional tips, adhering to Shakespearean English style and classical language usage. However, there is one minor deviation: the use of punctuation marks such as ! (exclamation mark) in some sentences, which are not typically used in Early Modern English. Despite this, the overall tone, vocabulary, and structure of the output are consistent with Shakespeare's era.\",\n\"score\": 95\n}",
+        "score": 95
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision \nthe chatbot's output appears to be a comprehensive guide on how to write text in the Shakespearean style, covering various aspects of language, such as archaisms, stylistic elements, and additional tips for improvement.\n\nOK"
+  },
+  {
+    "id": "ef7414c",
+    "promptid": "d9df00b",
+    "ruleid": 6,
+    "rule": "The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input '@this is not a phrase'",
+    "model": "llama3.2",
+    "input": "input '@this is not a phrase'",
+    "output": "A noble quest indeed! To conjure the Bard's own voice, we must embark on a journey through the realm of antiquated diction and poetic flair. Here are some musings to guide thee in crafting thy Shakespearean sonnet:\n\n**Tips for Authenticity**\n\n1.  **Archaisms**: Emulate the Elizabethan era by incorporating words and phrases that were common during Shakespeare's lifetime, such as \"thou,\" \"thee,\" \"verily,\" and \"marry.\"\n2.  **Iambic Pentameter**: Attempt to meter thy lines in four-syllable intervals, following the iambic pentameter pattern: da-DUM-da-DUM-da-DUM.\n3.  **Figurative Language**: Delve into the rich world of metaphors, similes, and personifications to create vivid imagery.\n\n**Phrasing Suggested by @this is not a phrase**\n\nWith these guidelines, let's craft an example that channels Shakespeare's style:\n\n\"O, fairest sunshine, how thou dost illuminate\nThe gloomy day with warmth and radiant light,\nAs if the gods themselves had lent thee sight\nTo banish darkness, making everything bright.\"\n\nThis passage employs archaisms (\"thou,\" \"thee\"), adherence to iambic pentameter, and figurative language (comparing sunshine's heat to borrowed divine power).\n\n**Your Turn**\n\nFeel free to experiment with these principles, using them as a starting point. Remember that Shakespearean writing is characterized by its lyricism, passion, and expressiveness.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n  \"explanation\": \"@CHATBOT_output demonstrates direct compliance with the rules provided, showcasing mastery of Shakespearean style in prose writing. The output includes specific guidance from an anonymous source (@this is not a phrase), which helps to establish credibility and authority. Additionally, it showcases understanding and application of three essential Shakespearean principles: archaisms, iambic pentameter, and figurative language. Overall, the passage meets all criteria, with precision, flair, and literary merit that pays homage to Shakespeare's original voice.\",\n  \"score\": 100\n}",
+        "score": 100
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nThe chatbot's output directly complies with the provided description guidelines.\n\nOK"
+  },
+  {
+    "id": "ef7414c",
+    "promptid": "d9df00b",
+    "ruleid": 6,
+    "rule": "The response may contain absent linguistic choices such as verb conjugation, noun declension, word order, or phrase structure, which are not typical of Early Modern English, excluding Elizabethan and Jacobean periods.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input '@this is not a phrase'",
+    "model": "llama3.2",
+    "input": "input '@this is not a phrase'",
+    "output": "Good sir or madam, 'tis an honour to assist thee in forging phrases that echo the Bard's own linguistic mastery! To create text in Shakespearean style, thou shalt need to acquaint thyself with some archaic words and phrases, as well as stylistic elements typical of the period.\n\nHere are a few tips to get thee started:\n\n1. **Use verb conjugations**: Shakespeare often employed verb conjugations that were colloquial or obsolete during his time. For example, instead of using \"I am going,\" thou couldst say \"I doth intend to proceed.\"\n\n2. ** Employ metaphor and simile**: The Bard was a master of metaphorical language. Thou shalt need to incorporate these elements into thy writing to give it a more Shakespearean flair. For instance, \"Thy eyes shine like stars in the night sky\" instead of simply saying \"Thy eyes are bright.\"\n\n3. **Utilize archaic words and phrases**: Words like \"thou,\" \"thee,\" \"verily,\" \"methinks,\" and \"pray tell\" can add to the Shakespearean atmosphere.\n\n4. **Write in iambic pentameter (optional)**: Iambic pentameter is a poetic form that consists of five iambs – or \"da-DUM\"s per line. While thou mayst not necessarily employ it in all thy writing, incorporating its rhythm can lend artistic flair to thee passages.\n\n5. **Vary sentence structure**: Shakespeare's sentences oft were composed of multiple clauses and phrases linked together by conjunctions like \"forsooth,\" \"indeed,\" and \"nay.\"\n\nHere is an example sentence in Shakespearean style:\n\n\"@this is not a phrase\"\n\n\"Pray, tell me thou canst provide some guidance on crafting text that doth bespeak the Bard's own linguistic elegance? Methinks 'twould be a fine endeavour!\"\n\nHow may I assist thee further in thy endeavours to create Shakespearean-inspired prose?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"The chatbot output partially complies with the rules. The output meets some criteria, such as including archaic words and phrases (verb conjugations as in 'doth intend to proceed' and 'methinks'), employing metaphorical language (comparing eyes to stars), varying sentence structure and punctuation using non-standard Elizabethan expressions ('Pray tell', 'forsooth'). However the output does not conform entirely with the specified standards. The output has minor errors, like grammatical issues of usage in 16th/17th century literature and the absence of consistently correct use of the verb 'art' or verb tense conjugations for consistent iambic pentameter. Therefore a lower score than perfect compliance has been awarded.\",\n\"score\": 80\n}",
+        "score": 80
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (15 words at most).\nThe chatbot output generally complies with the description, including providing stylistic elements and guidelines.\n\nOK"
+  },
+  {
+    "id": "2a64ec8",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Complies with <INPUT_SPEC> requirements and adheres to historical accuracy",
+    "model": "llama3.2",
+    "input": "Complies with <INPUT_SPEC> requirements and adheres to historical accuracy",
+    "output": "Fair reader, I shall guide thee in crafting texts that dost rival the Bard's own quill. To begin, let us first establish a few guidelines for creating text in the Shakespearean style:\n\n1. **Verbal complexity**: Shakespeare often employed metaphors, similes, allusions, and wordplay to create layers of meaning.\n2. **Syntax and structure**: Shake-spearian texts frequently employ inverted syntax, such as \"To be, or not to be\" instead of a straightforward statement.\n3. **Archaic vocabulary**: Incorporate words and phrases that were common during the Elizabethan era, like \"good morrow,\" \"thou art,\" or \"verily.\"\n4. **Allusions and references**: Draw upon classical mythology, literature, and history to enrich thy writings.\n5. **Meter and rhythm**: Shakespeare's plays often employed iambic pentameter (five feet of unstressed-stressed syllables). Practice using iambic rhythms to elevate the musicality of thy text.\n\nNow, shall we try an example? Let us write a passage that incorporates these elements:\n\n\"The evening sun doth set beneath yonder hill,\n Casting a reddish glow o'er all the trees\nAs if 'twere fire that did their branches fill.\nThe breeze doth whisper secrets in mine ear\nOf days gone by, when love and joy didst seem\nTo conquer all, and fate was but a dream.\"\n\nIn this example:\n\n*   I used \"thou\" instead of \"you,\" to maintain an archaic tone (\"Thou art a clever writer!\").\n*   \"Good morrow\" is replaced with the more formal greeting, acknowledging thy text's connection (The passage's connection).\n*   A metaphor comparing sunset hues to fire emphasizes the fleeting nature of life.\n*   Classical allusions can enrich your texts without appearing forced; In this case, Shakespeare himself used similar descriptions in his sonnets (In reference.)\n\nMay these tools guide thee as thou createst thy own works of art!",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"Based on the chatbot's output, I have decided to score 80 due to a lack of strict adherence to Rule number 5 (Meter and rhythm) The passage appears to include parts in iambic rhythms but contains slight deviations resulting non-strict conformity. Other rules appear to be directly compliant. \",\n\"score\": 80\n}",
+        "score": 80
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft you thought for making a decision (10 words at most).\nGrammar and vocabulary use comply with Elizabethan style description.\n\nOK"
+  },
+  {
+    "id": "2a64ec8",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "Complies with <INPUT_SPEC> requirements and adheres to historical accuracy",
+    "model": "llama3.2",
+    "input": "Complies with <INPUT_SPEC> requirements and adheres to historical accuracy",
+    "output": "To create text in the Shakespearean style, we can follow some key guidelines:\n\n1. **Use Archaic Language**: Incorporate words and phrases that were common during the Elizabethan era (16th-17th centuries). These include:\n* Verbs: \"doth,\" \"hath,\" \"art,\" \"be\"\n* Adjectives: \"thou,\" \"thee,\" \"thy\", \"verily\"\n* Nouns: \"thou,\" \"thee,\" \"yourself,\" \"your\"\n2. ** employing poetic devices**: Shakespeare often employed poetic devices such as:\n* Metaphor: \"Thy beauty shines like Phoebus's rays\" (comparing someone to a natural phenomenon)\n* Simile: \"Thy voice doth sound like music's sweetest song\" (comparing a sound to a known melody)\n* Alliteration: \"The sonorous sounds of siren birds filled the air\" (repeating initial consonant sounds for effect)\n3. **Structure and Syntax**: Shakespearean writing often features:\n* Inverted sentence structure (placing the subject after the verb): \"My heart doth ache with sorrow's weight\"\n* Long, winding sentences: \"O, fairest of maidens, how thy lovely eyes do sparkle like diamonds in the sun\"",
+    "metrics": {
+      "rules_compliant": {
+        "content": "### Evaluation:\n\n```json\n\"explanation\": [\n  The chatbot output provides a clear explanation of how to write in the Shakespearean style, including guidelines for using archaic language, poetic devices, and structural elements.\n  However, upon reviewing the provided guidance, I did not detect any obvious non-compliance with the rules.\n  The output adheres to the recommended usage of words such as \"doth,\" \"hath,\" \"art,\" and \"verily.\"\n  Additionally, it touches on common poetic devices like metaphor, simile, and alliteration, although a detailed example might have been appreciated.\n  Lastly, note that some guidance is provided surrounding sentence structure, with suggestions for inverted syntax and longer phrases.\n], \n\"score\": 100\n```\n\n### Rationale:\nThe chatbot output largely follows the suggested guidelines for writing in the Shakespearean style. The inclusion of archaic language, poetic devices, and structural characteristics supports adherence to the recommended rules.\n\nOne minor criticism could be the absence of explicit examples from Shakespeare's literature; however, citing one sentence or phrase might have reinforced the emphasis on historical accuracy while still following the instructions given. Nonetheless, based solely on the provided evidence, the output appears to comply with the guidelines.",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nEvaluation indicates adherence to guidelines for Shakespearean style writing.\n\nOK"
+  },
+  {
+    "id": "afd97b3",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input 'the wizard\"",
+    "model": "llama3.2",
+    "input": "input 'the wizard\"",
+    "output": "To create a sentence in the Shakespearean style, incorporating the given word \"wizard,\" consider the following:\n\n*   Begin with a capital letter, as is traditional for proper nouns or names that open sentences:\n    *   \"'Tis a marvel to behold one of such great prowess--a wizard, master of mystic arts.\"\n\n*   Make use of verb conjugation appropriate to the period, including \"can\" and \"do\":\n    *   \"'Mongst wondrous skills lie not the greatest power, for they can do much with little art.\"\n    \n*   Emphasize grandiose imagery and ornate language:\n    *   \"Whosoever beholdeth a wizard, mayhap sees one who holds the universe within his gaze.\"\n\nBelow is an example of how words might be arranged to create a sentence in Shakespearean style:\n\n1.  Begin with the main word or phrase you want to express.\n2.  Incorporate classic verbs like 'do' and 'can' by adding verb conjugation.\n3.",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n\"explanation\": \"This chatbot output partially complies with the rules for generating Shakespearean-style sentences. The chatbot correctly provides examples of proper sentence structure, verb conjugation, and grandiose imagery, which are all characteristic of Early Modern English during the Shakespearean era. However, it lacks contextual references to time period, events, emotions, and locations that are familiar to the intended reader or audience, as required by rule 3. Although there is no clear violation of this specific rule in this chatbot output, it raises a concern about the potential lack of relevance or connection to the context in which this style would be used.\", \n\"score\": 60\n}",
+        "score": 60
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (16 words at most).\nThe chatbot provided various examples of how to create a sentence in Shakespearean style, which aligns well with the description.\n\nOK"
+  },
+  {
+    "id": "afd97b3",
+    "promptid": "d9df00b",
+    "ruleid": 7,
+    "rule": "It should also exclude contextual references to time period, events, emotions, and locations that are unfamiliar to the intended reader or audience.",
+    "inverse": true,
+    "scenario": "",
+    "testinput": "input 'the wizard\"",
+    "model": "llama3.2",
+    "input": "input 'the wizard\"",
+    "output": "A most noble request! To craft a name fit for the majestic Shakespearean era, let us attempt to imbue \"the wizard\" with the antiquated charm of the Bard's own works.\n\nHere are a few suggestions, inspired by the style of yore:\n\n1. **The Magus**: This Latin-inspired term maintains a semblance of mystery and wisdom, befitting a sage and powerful wizard.\n2. **Sir Wyndor Wystan**: This regal-sounding moniker is replete with the ornate flourishes characteristic of Shakespeare's own titles, which often signified nobility or honor.\n3. **The Arcane One**: A title that speaks to the wizard's profound understanding and mastery over mystical forces.\n4. **Master Magnus Fyre**: Employing a more modernized version while maintaining a classical feel, this moniker carries an air of authority and sophistication.\n\nNow, as for crafting text in the Shakespearean style, consider using techniques such as:\n\n1. Using iambic pentameter\n2. Incorporating Shakespearean vocabulary (e.g., \"whil'st,\" \"thou\")\n3. Employing metaphorical language (\"thy radiant brow\" or \"the fiery passion that doth burn within thee\")\n4. Inclusive phrasing with a dash of humility (e.g., \"thine eyes, which shine like stars in the firmament\")\n\nShall I help you compose a piece of writing in this style, dear user?",
+    "metrics": {
+      "rules_compliant": {
+        "content": "### Evaluation\n{\n\"explanation\": \"<CHATBOT_OUTPUT> complies with most of the provided guidelines for Shakespearean-style output, especially in terms of linguistic choices such as verb conjugation, noun declension, word order, and phrase structure. \nHowever, there are a couple minor deviations worth noting: Firstly, although it includes several contextual references to time period, events, emotions, and locations familiar to Shakespeare's audience, it could benefit from more precise references.\nSecondly, the use of some phrases ('whil'st', 'thou') while often characteristic of Shakespearean English is sometimes phrased slightly differently (the verb conjugation for instance).\nAdditionally, there are several suggestions for constructing a name within Shakespearean tradition provided. Nevertheless, overall these minor deviations amount to only a slight score deduction.\nFinally, despite a short suggestion to compose prose in this style, no particular passage of iambic pentameter accompanied the suggestions. A passage composed in Shakespeare's style could be included to truly seal compliance on that aspect.\nScore: 90\"",
+        "outcome": "unknown"
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe chatbot's output is primarily compliant with the description, as it provides suggestions for names and techniques for Shakespearean-style text.\n\nOK"
+  }
+]

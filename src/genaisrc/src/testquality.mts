@@ -70,7 +70,9 @@ export async function evaluateTestQuality(
     const allRules = parseAllRules(files)
     if (!allRules) throw new Error("No rules found")
 
-    const rule = resolveRule(allRules, test)
+    const rule = resolveRule(allRules)
+        .map((r, index) => `${index + 1}. ${r.rule}`)
+        .join("\n")
     if (!rule && !test.baseline)
         throw new Error(`No rule found for test ${test["ruleid"]}`)
 
@@ -79,7 +81,7 @@ export async function evaluateTestQuality(
         return {
             id,
             promptid,
-            ...rule,
+            rule,
             input: testInput,
             error: "invalid test input",
         } satisfies PromptPexTestEval
@@ -94,7 +96,7 @@ export async function evaluateTestQuality(
                         ctx.importTemplate(PROMPT_EVAL_OUTPUT_RULE_AGREEMENT, {
                             intent,
                             rules: allRules
-                                .filter((r) => !r.inverse)
+                                .filter((r) => !r.inversed)
                                 .map((r) => r.rule)
                                 .join("\n"),
                             testInput,
@@ -131,7 +133,7 @@ export async function evaluateTestQuality(
         id,
         promptid,
         model: resCoverage.model,
-        ...rule,
+        rule,
         input: testInput,
         validityText: resValidity.text,
         validity: validity,
@@ -145,13 +147,12 @@ export async function evaluateTestQuality(
             id: "cov-" + testEval.id,
             scenario: test.scenario,
             rule: testEval.rule,
-            ruleid: test.ruleid,
             testinput: test.testinput,
             promptid,
             model: testEval.model,
             input: testEval.input,
             output: testEval.coverageText,
-            metrics: {}
+            metrics: {},
         },
         options
     )

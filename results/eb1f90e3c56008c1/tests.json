@@ -1,0 +1,672 @@
+[
+  {
+    "ruleid": "1",
+    "testid": "1",
+    "expectedoutput": "Conversational yet clear writing style",
+    "reasoning": "Verifies chatbot maintains original meaning and tone",
+    "input_text": "No input specification deviation.",
+    "testinput": "No input specification deviation.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "2",
+    "expectedoutput": "Optimized sentence structure with engaging readability",
+    "reasoning": "Tests chatbot's ability to simplify complex phrases",
+    "input_text": "Ensures proper use of whitespace and grammatical elements.",
+    "testinput": "Ensures proper use of whitespace and grammatical elements.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "3",
+    "expectedoutput": "Enhanced semantic accuracy in rewritten output",
+    "reasoning": "Assesses chatbot's retention of key ideas and context",
+    "input_text": "No input specification deviation.",
+    "testinput": "No input specification deviation.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "2",
+    "testid": "1",
+    "expectedoutput": "Input text represents a sequence of words",
+    "reasoning": "Verifies entity identification as 'sentence'",
+    "input_text": "Follows correct punctuation mark usage.",
+    "testinput": "Follows correct punctuation mark usage.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "2",
+    "testid": "2",
+    "expectedoutput": "Input contains proper nouns, verbs, adjectives, nouns, prepositions, articles",
+    "reasoning": "Tests handling of grammatical elements within the sentence",
+    "input_text": "No input specification deviation.",
+    "testinput": "No input specification deviation.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "2",
+    "testid": "3",
+    "expectedoutput": "Includes whitespace or other punctuation marks between words",
+    "reasoning": "Ensures accurate identification and analysis of sentence structure",
+    "input_text": "Follows correct punctuation mark usage.",
+    "testinput": "Follows correct punctuation mark usage.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "3",
+    "testid": "1",
+    "expectedoutput": "Rewritten output features improved readability and conversational tone",
+    "reasoning": "Assesses chatbot's ability to enhance engagement through fluid structure",
+    "input_text": "Follows corrected grammar and syntax.",
+    "testinput": "Follows corrected grammar and syntax.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "3",
+    "testid": "2",
+    "expectedoutput": "Reforms complex phrases for better clarity and understanding",
+    "reasoning": "Verifies simplification of complex structures while preserving meaning",
+    "input_text": "American English usage accepted.",
+    "testinput": "American English usage accepted.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "3",
+    "testid": "3",
+    "expectedoutput": "Original meaning preserved accurately in rewritten output",
+    "reasoning": "Tests retention of essential information amidst rephrased sentence",
+    "input_text": "No input specification deviation.",
+    "testinput": "No input specification deviation.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "1",
+    "testid": "4",
+    "expectedoutput": "Tone adheres to a subtle yet engaging conversational tone",
+    "reasoning": "Examines chatbot's success in refining informal language",
+    "input_text": "American English usage accepted.",
+    "testinput": "American English usage accepted.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "1",
+    "testid": "5",
+    "expectedoutput": "Simplifies idioms while maintaining contextual meaning",
+    "reasoning": "Tests the chatbot's ability to handle figurative language",
+    "input_text": "No input specification deviation.",
+    "testinput": "No input specification deviation.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "1",
+    "testid": "6",
+    "expectedoutput": "Maintains sentence length and coherence throughout rewritten text",
+    "reasoning": "Ensures that chatbot preserves essential information",
+    "input_text": "No input specification deviation.",
+    "testinput": "No input specification deviation.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "2",
+    "testid": "4",
+    "expectedoutput": "Input contains phrases with varying sentence structures",
+    "reasoning": "Verifies entity identification as 'sentence'",
+    "input_text": "Includes diverse grammatical constructions.",
+    "testinput": "Includes diverse grammatical constructions.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "2",
+    "testid": "5",
+    "expectedoutput": "Tests handling of contraction usage in input sentences",
+    "reasoning": "Explores chatbot's compatibility with contractions",
+    "input_text": "American English usage accepted.",
+    "testinput": "American English usage accepted.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "2",
+    "testid": "6",
+    "expectedoutput": "Input lacks certain punctuation marks but conveys clear meaning",
+    "reasoning": "Assesses chatbot's ability to infer or apply contextual relevance",
+    "input_text": "No input specification deviation.",
+    "testinput": "No input specification deviation.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "3",
+    "testid": "4",
+    "expectedoutput": "Rewritten output exhibits increased fluid structure and smoother transitions",
+    "reasoning": "Examines the effectiveness of enhancing engagement through improved flow",
+    "input_text": "American English usage accepted.",
+    "testinput": "American English usage accepted.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "3",
+    "testid": "5",
+    "expectedoutput": "Simplifies sentence complex structures with minimal disruption to meaning",
+    "reasoning": "Verifies simplification of intricate phrases without sacrificing coherence",
+    "input_text": "No input specification deviation.",
+    "testinput": "No input specification deviation.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "3",
+    "testid": "6",
+    "expectedoutput": "Retains essential information within rewritten text after rephrasing",
+    "reasoning": "Tests chatbot's accuracy in conveying key ideas",
+    "input_text": "American English usage accepted.",
+    "testinput": "American English usage accepted.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "1",
+    "expectedoutput": "original output with precise words as input",
+    "reasoning": "Ensures all words from the original sentence are retained, demonstrating rule adherence.",
+    "input_text": "The cat is happy, for it has found cheese.",
+    "testinput": "The cat is happy, for it has found cheese.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "2",
+    "expectedoutput": "original output without lost content due to removal",
+    "reasoning": "Guarantees no additional or removed words from the original text preserves its integrity.",
+    "input_text": "Input with excessive extraneous phrases: The big brown dog and cat sat on the mat watching birds.\"",
+    "testinput": "Input with excessive extraneous phrases: The big brown dog and cat sat on the mat watching birds.\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "3",
+    "expectedoutput": "original output retaining precise structure as input",
+    "reasoning": "Verifies the retention of word order, grammatical structure, and syntax without any alteration.",
+    "input_text": "Input sentence with multiple sentences joined together like this one:The sun rises in the east then sets in the west. It rains when it is cloudy outside.",
+    "testinput": "Input sentence with multiple sentences joined together like this one:The sun rises in the east then sets in the west. It rains when it is cloudy outside.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "5",
+    "testid": "1",
+    "expectedoutput": "simplified response preserving original meaning",
+    "reasoning": "Ensures reduced ambiguity through simplified phrase simplification",
+    "input_text": "Original text using metaphors idiom's and complex expressions such as  his heart is racing with fear because of that.",
+    "testinput": "Original text using metaphors idiom's and complex expressions such as  his heart is racing with fear because of that.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "5",
+    "testid": "2",
+    "expectedoutput": "response retaining clarity while reducing phrases",
+    "reasoning": "Ensures clarification through structured rearrangement of complicated sentence constructions.",
+    "input_text": "The new employee felt overwhelmed by a multitude of tasks the day he started working.",
+    "testinput": "The new employee felt overwhelmed by a multitude of tasks the day he started working.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "5",
+    "testid": "3",
+    "expectedoutput": "simplified response maintaining conversational tone ",
+    "reasoning": "Retains original text's informal language and idioms for engaging conversation flow",
+    "input_text": "Hey can you take me to the nearest Starbucks this Friday morning.",
+    "testinput": "Hey can you take me to the nearest Starbucks this Friday morning.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "4",
+    "testid": "4",
+    "expectedoutput": "original output maintaining precise meaning",
+    "reasoning": "Verifies preservation of original sentence's intended meaning without omitting or altering any word.",
+    "input_text": "Input text with multiple embedded phrases and clauses: It seems that she may not be coming to the party because of work.",
+    "testinput": "Input text with multiple embedded phrases and clauses: It seems that she may not be coming to the party because of work.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "4",
+    "testid": "5",
+    "expectedoutput": "simplified response reducing structural ambiguity",
+    "reasoning": "Ensures reduction in sentence construction complexity by breaking long sentences into shorter ones.",
+    "input_text": "I have been studying languages for years now mainly English French Spanish and some Japanese.",
+    "testinput": "I have been studying languages for years now mainly English French Spanish and some Japanese.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "5",
+    "testid": "4",
+    "expectedoutput": "enhanced conversational interaction with inclusive language",
+    "reasoning": "Retains original text's colloquial tone, ensuring it sounds more approachable or friendly.",
+    "input_text": "What's up dudes has anyone seen my phone?",
+    "testinput": "What's up dudes has anyone seen my phone?",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "5",
+    "testid": "5",
+    "expectedoutput": "simplified response with effective phrase identification",
+    "reasoning": "Demonstrates targeted reduction of phrases that confuse interpretation by isolating distinct elements in the input sentence.",
+    "input_text": "The manager instructed employees to work diligently on Friday morning.",
+    "testinput": "The manager instructed employees to work diligently on Friday morning.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "7",
+    "testid": "1",
+    "expectedoutput": "simplified language using common terms",
+    "reasoning": "Explains the relevance of avoiding jargon for general audience",
+    "input_text": "input includes technical term \"algorithms\"",
+    "testinput": "input includes technical term \"algorithms\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "7",
+    "testid": "4",
+    "expectedoutput": "Avoidance of idiosyncratic vocabulary or specialized jargon in specific domains",
+    "reasoning": "Ensures software's readability by removing domain-specific terms",
+    "input_text": "Input includes financial term \"ROI\"",
+    "testinput": "Input includes financial term \"ROI\"",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "7",
+    "testid": "5",
+    "expectedoutput": "Removing phrases with obsolete or archaic language",
+    "reasoning": "Challenges software to handle outdated expressions and provide clear content",
+    "input_text": "Input contains phrase \"whilst\"",
+    "testinput": "Input contains phrase \"whilst\"",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "9",
+    "testid": "1",
+    "expectedoutput": "output suggests room for improvement in the provided input",
+    "reasoning": "Encompasses a broader range of possibilities",
+    "input_text": "",
+    "testinput": "",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "9",
+    "testid": "4",
+    "expectedoutput": "output hints at parts needing refinement but lacks evidence",
+    "reasoning": "Limited analysis of idiomatic expressions",
+    "input_text": "",
+    "testinput": "",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "12",
+    "testid": "1",
+    "expectedoutput": "simplified structure with every original word",
+    "reasoning": "Illustrates simplification and retention of all original words",
+    "input_text": "input contains multiple lines as specified",
+    "testinput": "input contains multiple lines as specified",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "12",
+    "testid": "2",
+    "expectedoutput": "no additional words or removals",
+    "reasoning": "Verifies no extra characters are added or removed from the original sentence",
+    "input_text": "input uses informal language",
+    "testinput": "input uses informal language",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "12",
+    "testid": "3",
+    "expectedoutput": "improved clarity through reduced ambiguity",
+    "reasoning": "Demonstrates reduction in complexity with enhanced readability",
+    "input_text": "input includes metaphors or idioms",
+    "testinput": "input includes metaphors or idioms",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "ruleid",
+    "testid": "testid",
+    "expectedoutput": "expectedoutput",
+    "reasoning": "reasoning",
+    "input_text": "input_text",
+    "testinput": "input_text",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "13",
+    "testid": "1",
+    "expectedoutput": "original sentence with every word intact",
+    "reasoning": "Ensures no words are omitted or added during rewriting process",
+    "input_text": "input contains complex phrases",
+    "testinput": "input contains complex phrases",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "13",
+    "testid": "2",
+    "expectedoutput": "no omissions or additions of words",
+    "reasoning": "Verifies the software preserves original sentence's integrity without alteration",
+    "input_text": "input includes contractions",
+    "testinput": "input includes contractions",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "13",
+    "testid": "3",
+    "expectedoutput": "Retention of every word in the rewritten output",
+    "reasoning": "Shows that every character of the original is kept in the rewritten text",
+    "input_text": "input uses slang",
+    "testinput": "input uses slang",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "ruleid",
+    "testid": "testid",
+    "expectedoutput": "expectedoutput",
+    "reasoning": "reasoning",
+    "input_text": "input_text",
+    "testinput": "input_text",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "14",
+    "testid": "1",
+    "expectedoutput": "Improved clarity with simplified structure",
+    "reasoning": "Displays enhanced readability and reduced complexity",
+    "input_text": "input has long paragraph",
+    "testinput": "input has long paragraph",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "14",
+    "testid": "2",
+    "expectedoutput": "Reduced ambiguity through clear rephrasing",
+    "reasoning": "Demonstrate simpler expression without losing original meaning",
+    "input_text": "input contains fragmented sentence",
+    "testinput": "input contains fragmented sentence",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "14",
+    "testid": "3",
+    "expectedoutput": "Clear interpretation of the rewritten output",
+    "reasoning": "Ensures the final text conveys intended message effectively",
+    "input_text": "input incorporates figurative language",
+    "testinput": "input incorporates figurative language",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "12",
+    "testid": "4",
+    "expectedoutput": "Simplified structure enhances readability",
+    "reasoning": "Supports improved comprehension through optimized sentence structure",
+    "input_text": "input with short sentences only",
+    "testinput": "input with short sentences only",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "12",
+    "testid": "5",
+    "expectedoutput": "Retention of every word in the simplified output",
+    "reasoning": "Shows no additional or removed words are added during rewriting",
+    "input_text": "input contains acronyms",
+    "testinput": "input contains acronyms",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "12",
+    "testid": "6",
+    "expectedoutput": "Reduced complex phrases into clearer expressions",
+    "reasoning": "Displays conciseness and clarity in original meaning",
+    "input_text": "input paragraph divided by blank lines",
+    "testinput": "input paragraph divided by blank lines",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "ruleid",
+    "testid": "testid",
+    "expectedoutput": "expectedoutput",
+    "reasoning": "reasoning",
+    "input_text": "input_text",
+    "testinput": "input_text",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "13",
+    "testid": "4",
+    "expectedoutput": "Every word in the rewritten sentence intact",
+    "reasoning": "Demonstrate that every single character of the original sentence remains during rewriting process",
+    "input_text": "input uses idiomatic expressions",
+    "testinput": "input uses idiomatic expressions",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "13",
+    "testid": "5",
+    "expectedoutput": "No characters added or removed from sentence length",
+    "reasoning": "Verifies that output retains expected phrase length",
+    "input_text": "input contains multiple clauses joined by conjunctions",
+    "testinput": "input contains multiple clauses joined by conjunctions",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "13",
+    "testid": "6",
+    "expectedoutput": "Preservation of contractions in the rewritten text",
+    "reasoning": "Shows that the software handles informal language correctly without alteration",
+    "input_text": "input includes emotive words",
+    "testinput": "input includes emotive words",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "ruleid",
+    "testid": "testid",
+    "expectedoutput": "expectedoutput",
+    "reasoning": "reasoning",
+    "input_text": "input_text",
+    "testinput": "input_text",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "14",
+    "testid": "4",
+    "expectedoutput": "Improve readability with reduction in complexity",
+    "reasoning": "Displays enhanced clarity by streamlining sentence structure",
+    "input_text": "input contains one long word",
+    "testinput": "input contains one long word",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "14",
+    "testid": "5",
+    "expectedoutput": "Clearer interpretation of simplified sentences",
+    "reasoning": "Demonstrate reduced ambiguity through well-simplified phrases",
+    "input_text": "input sentence split into two lines within paragraph",
+    "testinput": "input sentence split into two lines within paragraph",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "14",
+    "testid": "6",
+    "expectedoutput": "Conclude rewritten text conveys intended message effectively",
+    "reasoning": "Ensures readability is not undermined during simplification process",
+    "input_text": "input includes sarcasm",
+    "testinput": "input includes sarcasm",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "15",
+    "testid": "1",
+    "expectedoutput": "“ rewritten sentence with conversational tone”",
+    "reasoning": "“Verifies the handling of contractions in simplified output”",
+    "input_text": "“A standard example containing some informal language.”",
+    "testinput": "“A standard example containing some informal language.”",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "15",
+    "testid": "2",
+    "expectedoutput": "“preserves colloquialism\"",
+    "reasoning": "“Tests whether coloquial terms are preserved or replaced.\"",
+    "input_text": "“Examples with colloquial expressions like 'can't\" and \"won't.\"",
+    "testinput": "“Examples with colloquial expressions like 'can't\" and \"won't.\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "15",
+    "testid": "3",
+    "expectedoutput": "“simplified sentence while preserving meaning”",
+    "reasoning": "“Validates the output's ability to retain original intent despite simplification.\"",
+    "input_text": "“Frequently occurs in informal dialogues or news articles.\"",
+    "testinput": "“Frequently occurs in informal dialogues or news articles.\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "16",
+    "testid": "1",
+    "expectedoutput": "“avoid jargon and technical terms”",
+    "reasoning": "“Ensures simplified versions exclude specialized vocabulary.\"",
+    "input_text": "“Examines cases of removed jargon from software outputs.\"",
+    "testinput": "“Examines cases of removed jargon from software outputs.\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "16",
+    "testid": "2，“removes complex term usage while maintaining clarity”",
+    "expectedoutput": "“Tests general audience readability by avoiding jargon.\"",
+    "reasoning": "“Examples include highly technical concepts simplified or lost completely.\"",
+    "input_text": "“An instructional manual written for developers using only simple terms.\"",
+    "testinput": "“An instructional manual written for developers using only simple terms.\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "16",
+    "testid": "3",
+    "expectedoutput": "“non-technical language with clear definitions”",
+    "reasoning": "“Verifies that specialized vocabulary is correctly defined in output.\"",
+    "input_text": "“A text explaining technical procedures to beginner users.\"",
+    "testinput": "“A text explaining technical procedures to beginner users.\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "17",
+    "testid": "1",
+    "expectedoutput": "“Enhance sentence flow with varied length\"",
+    "reasoning": "“Evaluates use of active voice and diverse sentence structure.\"",
+    "input_text": "“Typical examples of various sentence types including complex sentences.\"",
+    "testinput": "“Typical examples of various sentence types including complex sentences.\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "17",
+    "testid": "2，“Improved parallelism in all sentences”",
+    "expectedoutput": "“Tests to ensure proper balancing between equal-length related ideas expressed through parallel structures.\"",
+    "reasoning": "“Examples include contrasting phrases with balanced structures used across the text.\"",
+    "input_text": "“a comparison on topic that uses different parallel phrases to convey an idea effectively\"",
+    "testinput": "“a comparison on topic that uses different parallel phrases to convey an idea effectively\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "17",
+    "testid": "3",
+    "expectedoutput": "“Uses varied sentence structure for engaging output”",
+    "reasoning": "“Ensures diverse structured sentence usage without repetition of similar length sentences.\"",
+    "input_text": "“A dialogue sample utilizing short and lengthy sentence segments.\"",
+    "testinput": "“A dialogue sample utilizing short and lengthy sentence segments.\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "ruleid": "15",
+    "testid": "4",
+    "expectedoutput": "“Rewritten sentence in conversational tone without contractions”",
+    "reasoning": "“Verifies ability to handle non-contraction based simplified language.\"",
+    "input_text": "“Example text with many non-contracted words like \"said he\" instead of 'he said'.\"",
+    "testinput": "“Example text with many non-contracted words like \"said he\" instead of 'he said'.\"",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "16",
+    "testid": "4，“Avoid specialized vocabulary during conversation”",
+    "expectedoutput": "“Tests when general audience terminology is used in conversational tone.\"",
+    "reasoning": "“An informal social media communication excluding technical specifics.\"",
+    "input_text": "“company internal policy document with only professional language.\"",
+    "testinput": "“company internal policy document with only professional language.\"",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "ruleid": "17",
+    "testid": "4",
+    "expectedoutput": "“Using simplified sentence construction effectively for readability”",
+    "reasoning": "“Assess the effectiveness of short simple sentences structure to convey ideas.\"",
+    "input_text": "“Typical blog post examples combining different types of sentences.\"",
+    "testinput": "“Typical blog post examples combining different types of sentences.\"",
+    "scenario": "",
+    "generation": 1
+  }
+]

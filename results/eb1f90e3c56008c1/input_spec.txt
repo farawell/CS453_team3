@@ -1,0 +1,10 @@
+The input is a text representing a rewritten sentence.
+Properties of the input include:
+the input can be any length of string
+the input contains sentences or phrases, possibly fragmented into multiple lines
+the input includes complex phrases, such as metaphors or idioms
+the input may use contractions or informal language
+there are restrictions that the chatbot should preserve the original meaning of the input
+the chatbot handles simplifying complex phrases and enhancing engagement
+Restrictions on input length:
+no maximum or minimum character limit for string length

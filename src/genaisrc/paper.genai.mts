@@ -179,7 +179,7 @@ for (const files of prompts) {
         })
         res.push({
             prompt: files.name,
-            rules: rules.filter((r) => !r.inverse).length,
+            rules: rules.filter((r) => !r.inversed).length,
             ["rules grounded"]: ruleEvals.filter((g) => g.grounded === "ok")
                 .length,
             tests: testEvals.length,

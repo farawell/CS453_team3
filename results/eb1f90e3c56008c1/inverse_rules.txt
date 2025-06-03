@@ -1,0 +1,9 @@
+Is there a rule that you should be improved?
+You still haven't given the output is a rewritten sentence with improved readability, presented in a conversational tone,
+The entity 'sentence' refers to a sequence of words separated by spaces or other punctuation marks, and may include proper nouns, verbs, adjectives, nouns, prepositions, articles, and other grammatical elements.
+For the rewritten sentence resulting from this output, it should contain:
+Every word in the original sentence, with no additional words nor removals.
+A simplified structure that reduces ambiguity and improves clarity.
+Conversational tone, including contractions, colloquialism or idioms, if present in the original text.
+Avoidance of jargon, technical terms, or specialized vocabulary not familiar to a general audience.
+Improved sentence flow, using techniques such as parallel structure, active voice, and varied sentence length to enhance engagement.

@@ -24,14 +24,12 @@ export async function expandTests(
 
     for (let i = 0; i < ruleTests.length; i++) {
         const test = ruleTests[i]
-        const targetRule = rules[test.ruleid]
         const res = await measure("expand.test", () =>
             generator.runPrompt(
                 (ctx) => {
                     ctx.importTemplate(PROMPT_EXPAND_TEST, {
                         intent: files.intent.content,
                         rules: files.rules.content,
-                        targetRule,
                         test: test.testinput,
                     })
                 },

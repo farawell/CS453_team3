@@ -31,7 +31,6 @@ export async function evaluateRuleGrounded(
     if (file?.content) {
         const res = parsers.JSON5(file) as PromptPexRuleEval
         if (res && !res.error) {
-            res.ruleid = ruleid
             return res
         }
     }
@@ -57,7 +56,6 @@ export async function evaluateRuleGrounded(
     const ruleEval: PromptPexRuleEval = {
         id,
         promptid,
-        ruleid,
         rule,
         groundedText: resText,
         grounded: parseOKERR(resText),

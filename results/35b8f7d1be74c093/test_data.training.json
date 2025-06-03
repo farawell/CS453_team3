@@ -1,0 +1,22 @@
+{
+  "data": [
+    {
+      "input_text": "The software must summarize a person's face within 4 hundreds of character. "
+    },
+    {
+      "input_text": "Use specific wording describing the scene timing or type if any"
+    },
+    {
+      "input_text": "Describe the scene using three concise sentences"
+    },
+    {
+      "input_text": "Specify intensity level and its direction."
+    },
+    {
+      "input_text": "textures"
+    },
+    {
+      "input_text": "Use color palette to project a clear emotional message"
+    }
+  ]
+}

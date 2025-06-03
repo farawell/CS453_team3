@@ -4,9 +4,18 @@ import {
     DIAGRAM_GENERATE_OUTPUT_RULES,
 } from "./constants.mts"
 import { outputWorkflowDiagram, outputPrompty } from "./output.mts"
-import { modelOptions, checkLLMResponse, tidyRules } from "./parsers.mts"
+import {
+    modelOptions,
+    checkLLMResponse,
+    tidyRules,
+    parseRules,
+} from "./parsers.mts"
 import { measure } from "./perf.mts"
-import type { PromptPexContext, PromptPexOptions } from "./types.mts"
+import type {
+    PromptPexContext,
+    PromptPexOptions,
+    PromptPexRule,
+} from "./types.mts"
 const dbg = host.logger("promptpex:gen:rules")
 const { generator } = env
 
@@ -44,8 +53,14 @@ export async function generateOutputRules(
             }
         )
     )
-    const rules = tidyRules(checkLLMResponse(res))
-    files.rules.content = rules 
-    if (files.writeResults)
-        await workspace.writeFiles([files.rules])   
+    const rulesText = tidyRules(checkLLMResponse(res))
+    const rulesArray = parseRules(rulesText)
+    const pairedRules: PromptPexRule[] = rulesArray.map((r, i) => ({
+        id: `rule_${i + 1}`,
+        rule: r,
+        inverseRule: "", // Placeholder for inverse rule, filled in next step
+        inversed: false,
+    }))
+    files.rules.content = JSON.stringify(pairedRules, null, 2)
+    if (files.writeResults) await workspace.writeFiles([files.rules])
 }

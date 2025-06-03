@@ -1,0 +1,4 @@
+Not Classified By Exactly One Category, Classified By None At All
+Incorrect Attribute Present
+Extra Attribute Unintended In Single Category Query 
+Never Multi-Classified, Always Explicitly Multi-Classified Never Present Extraneous Attributes Only

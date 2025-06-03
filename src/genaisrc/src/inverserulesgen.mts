@@ -7,7 +7,11 @@ import {
     parseRules,
 } from "./parsers.mts"
 import { measure } from "./perf.mts"
-import type { PromptPexContext, PromptPexOptions } from "./types.mts"
+import type {
+    PromptPexContext,
+    PromptPexOptions,
+    PromptPexRule,
+} from "./types.mts"
 const { generator } = env
 
 export async function generateInverseOutputRules(
@@ -27,20 +31,22 @@ OR --> IOR
         options
     )
 
-    const rule = MD.content(files.rules.content)
-    const prules = parseRules(rule)
+    const pairedRules: PromptPexRule[] = JSON.parse(files.rules.content)
+    const outputRules = pairedRules.map((p) => p.rule)
+    const ruleMarkdown = outputRules.map((r, i) => `${i + 1}. ${r}`).join("\n")
+
     const pn = PROMPT_GENERATE_INVERSE_RULES
     await outputPrompty(pn, options)
 
-    let irules: string
-    let pirules: string[]
+    let inverseRulesText: string
+    let inverseRules: string[]
     let retry = 3
     do {
         const res = await measure("gen.inverseoutputrules", () =>
             generator.runPrompt(
                 (ctx) => {
                     ctx.importTemplate(pn, {
-                        rule,
+                        rule: ruleMarkdown,
                         instructions,
                     })
                 },
@@ -51,16 +57,18 @@ OR --> IOR
                 }
             )
         )
-        irules = tidyRules(checkLLMResponse(res))
-        pirules = parseRules(irules)
-    } while (retry-- > 0 && pirules.length !== prules.length)
+        inverseRulesText = tidyRules(checkLLMResponse(res))
+        inverseRules = parseRules(inverseRulesText)
+    } while (retry-- > 0 && inverseRules.length !== outputRules.length)
 
-    if (pirules.length !== prules.length) {
+    if (inverseRules.length !== outputRules.length) {
         console.warn(
-            `inverse rules length mismatch: generated ${pirules.length}, expected ${prules.length}`
+            `inverse rules length mismatch: generated ${inverseRules.length}, expected ${outputRules.length}`
         )
     }
-
-    files.inverseRules.content = irules
-    if (files.writeResults) await workspace.writeFiles([files.inverseRules])
+    for (let i = 0; i < pairedRules.length; i++) {
+        pairedRules[i].inverseRule = inverseRules[i] || ""
+    }
+    files.rules.content = JSON.stringify(pairedRules, null, 2)
+    if (files.writeResults) await workspace.writeFiles([files.rules])
 }
