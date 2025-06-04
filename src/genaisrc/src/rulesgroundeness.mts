@@ -4,7 +4,7 @@ import {
     modelOptions,
     checkLLMResponse,
     parseOKERR,
-    parseRules,
+    parseRulePairs,
 } from "./parsers.mts"
 import { resolveRuleEvalPath } from "./filecache.mts"
 import type {
@@ -73,7 +73,7 @@ export async function evaluateRulesGrounded(
     files: PromptPexContext,
     options?: PromptPexOptions
 ) {
-    const rules = parseRules(files.rules.content)
+    const rules = parseRulePairs(files.rules.content)
     if (!rules) {
         dbg(
             `failed to parse rules in ${files.rules.filename} %O`,

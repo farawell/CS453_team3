@@ -2,7 +2,7 @@ import { PROMPT_EXPAND_TEST } from "./constants.mts"
 import {
     checkLLMResponse,
     modelOptions,
-    parseRules,
+    parseRulePairs,
     parseRulesTests,
 } from "./parsers.mts"
 import { measure } from "./perf.mts"
@@ -20,7 +20,7 @@ export async function expandTests(
     options?: PromptPexOptions
 ) {
     const ruleTests = parseRulesTests(files.tests.content)
-    const rules = parseRules(files.rules.content)
+    const rules = parseRulePairs(files.rules.content)
 
     for (let i = 0; i < ruleTests.length; i++) {
         const test = ruleTests[i]

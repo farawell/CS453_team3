@@ -4,7 +4,7 @@ import { generateInverseOutputRules } from "./src/inverserulesgen.mts"
 import { loadPromptFiles } from "./src/loaders.mts"
 import {
     parseBaselineTests,
-    parseRules,
+    parseRulePairs,
     parseRulesTests,
     parseTestResults,
 } from "./src/parsers.mts"
@@ -53,13 +53,15 @@ output.fence(files.inputSpec.content, "text")
 output.heading(3, "Output Rules")
 await generateOutputRules(files, options)
 output.fence(files.rules.content, "text")
-const rules = parseRules(files.rules.content)
+const rules = parseRulePairs(files.rules.content)
 if (!rules?.length) throw new Error("No rules found")
 
 output.heading(3, "Inverse Output Rules")
 await generateInverseOutputRules(files, options)
 output.fence(files.inverseRules.content, "text")
-const inverseRules = parseRules(files.inverseRules.content)
+const inverseRules = parseRulePairs(files.rules.content, {
+    mode: "inverseRule",
+})
 if (!inverseRules?.length) throw new Error("No inverse rules found")
 
 output.heading(3, "Tests")
