@@ -41,11 +41,24 @@ export function outputFile(file: WorkspaceFile) {
     output.fence(file.content, contentType)
 }
 
-export function outputLines(file: WorkspaceFile, name: string) {
+export function outputLines(file: WorkspaceFile, name: string, mode: 'rule' | 'inverseRule' = 'rule') {
     const { output } = env
     const { content, filename } = file
     const contentType = path.extname(filename)
-    const lines = content?.split("\n").map((line) => ({ [name]: line })) || []
+  
+    let lines: Record<string, string>[] = []
+  
+    try {
+      const parsed = JSON.parse(content)
+      if (Array.isArray(parsed)) {
+        lines = parsed.map((entry) => ({ [name]: entry[mode] }))
+      } else {
+        throw new Error("Parsed content is not an array.")
+      }
+    } catch (e) {
+      lines = content?.split("\n").map((line) => ({ [name]: line })) || []
+    }
+  
     output.table(lines)
     output.detailsFenced(`data`, content, contentType)
-}
+  }
