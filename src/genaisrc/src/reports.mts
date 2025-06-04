@@ -3,7 +3,7 @@ import {
     parseAllRules,
     parseBaselineTests,
     parseRuleEvals,
-    parseRules,
+    parseRulePairs,
     parseRulesTests,
     parseTestEvals,
     parseTestResults,
@@ -153,10 +153,12 @@ async function generateMarkdownReport(files: PromptPexContext) {
         ...parseRulesTests(files.tests.content),
         ...parseBaselineTests(files),
     ]
-    const rules = parseRules(files.rules.content)
+    const rules = parseRulePairs(files.rules.content)
     const ruleEvals = parseRuleEvals(files)
     const groundedRuleEvals = ruleEvals.filter((r) => r.grounded === "ok")
-    const inverseRules = parseRules(files.inverseRules.content)
+    const inverseRules = parseRulePairs(files.rules.content, {
+        mode: "inverseRule",
+    })
     const testResults = parseTestResults(files)
     const ts = testResults.length
     const oks = testResults.filter((t) => t.compliance === "ok").length
@@ -303,8 +305,10 @@ export async function generateJSONReport(files: PromptPexContext) {
     const prompt = files.prompt.content
     const inputSpec = files.inputSpec.content
     const errors: string[] = []
-    const rules = parseRules(files.rules.content)
-    const inverseRules = parseRules(files.inverseRules.content)
+    const rules = parseRulePairs(files.rules.content)
+    const inverseRules = parseRulePairs(files.rules.content, {
+        mode: "inverseRule",
+    })
     const allRules = parseAllRules(files)
     const rulesTests = parseRulesTests(files.tests.content)
     const baseLineTests = parseBaselineTests(files)

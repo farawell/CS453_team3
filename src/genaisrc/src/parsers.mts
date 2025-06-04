@@ -89,6 +89,24 @@ export function tidyRules(text: string) {
         .join("\n")
 }
 
+export function tidyRulePairs(
+    text: string,
+    mode: "rule" | "inverseRule" = "rule"
+) {
+    if (isUnassistedResponse(text)) return ""
+    try {
+        const parsed = JSON.parse(text)
+        if (Array.isArray(parsed)) {
+            return parsed
+                .map((entry) => entry[mode])
+                .filter((line) => typeof line === "string")
+                .join("\n")
+        }
+    } catch {
+        dbg(`Failed to parse JSON: ${text}`)
+    }
+}
+
 export function tidyRulesFile(file: WorkspaceFile) {
     if (file?.content) file.content = tidyRules(file.content)
     return file
@@ -98,6 +116,20 @@ export function parseRules(rules: string, options?: PromptPexOptions) {
     const { maxRules } = options || {}
     const res = rules
         ? tidyRules(rules)
+              .split(/\r?\n/g)
+              .map((l) => l.trim())
+              .filter((l) => !!l)
+        : []
+    return maxRules > 0 ? res.slice(0, maxRules) : res
+}
+
+export function parseRulePairs(
+    rules: string,
+    options?: PromptPexOptions & { mode?: "rule" | "inverseRule" }
+) {
+    const { maxRules, mode = "rule" } = options || {}
+    const res = rules
+        ? tidyRulePairs(rules, mode)
               .split(/\r?\n/g)
               .map((l) => l.trim())
               .filter((l) => !!l)
