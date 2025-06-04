@@ -1,6 +1,14 @@
 # Collaboration guidelines (CS453 team3)
 If you encounter any git-related issues, please contact me. (farawell777 at kaist dot ac dot kr)
 
+Current branch worked on top of the version that is merged with feature/pipeline's PR1 and PR2.
+
+(0) SBERT installation (for Mac)
+Necessary to calculate semantic distances with SBERT. (sbert_prompts.py)
+```bash
+pip3 install sentence-transformers
+```
+
 (1) Cloning
 ```bash
 git clone https://github.com/farawell/CS453_team3.git promptpex
