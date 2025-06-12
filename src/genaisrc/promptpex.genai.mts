@@ -441,12 +441,12 @@ if (!anyStepRequested) {
         } else {
             output.heading(3, "Output Rules")
             await generateOutputRules(files, options)
-            outputLines(files.rules, "rule")
+            outputLines(files.rules, "rule", "rule")
             await checkConfirm("rule")
 
             output.heading(3, "Inverse Output Rules")
             await generateInverseOutputRules(files, options)
-            outputLines(files.inverseRules, "generate inverse output rule")
+            outputLines(files.rules, "generate inverse output rule", "inverseRule")
             await checkConfirm("inverse")
         }
     }
