@@ -59,8 +59,7 @@ export async function loadPromptFiles(
         : ""
     dbg(`dir: ${dir}`)
     const intent = path.join(dir, "intent.txt")
-    const rules = path.join(dir, "rules.txt")
-    const inverseRules = path.join(dir, "inverse_rules.txt")
+    const rules = path.join(dir, "rules.json")
     const inputSpec = path.join(dir, "input_spec.txt")
     const baselineTests = path.join(dir, "baseline_tests.txt")
     const tests = path.join(dir, "tests.json")
@@ -105,7 +104,6 @@ export async function loadPromptFiles(
         inputSpec: await workspace.readText(inputSpec),
         rules: tidyRulesFile(await workspace.readText(rules)),
         ruleEvals: await workspace.readText(ruleEvals),
-        inverseRules: tidyRulesFile(await workspace.readText(inverseRules)),
         tests: await workspace.readText(tests),
         testData: await workspace.readText(testData),
         testEvals: await workspace.readText(testEvals),

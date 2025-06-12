@@ -178,7 +178,7 @@ export interface PromptPexContext {
     /**
      * Inverse output rules (IOR) - Negated OR rules
      */
-    inverseRules: WorkspaceFile
+    inverseRules?: WorkspaceFile
     /**
      * Input specification (IS): Extracted input constraints of PUT using MPP
      */
