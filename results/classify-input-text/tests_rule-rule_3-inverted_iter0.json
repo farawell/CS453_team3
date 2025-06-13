@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "3",
+    "expectedoutput": "{'category': 'Unassigned'}",
+    "reasoning": "Tests an input with ambiguous content that does not fit into any of the predefined categories.",
+    "text": "{{text}} does not describe a clear news article category such as World, Sports, Business, or Sci/Tech.",
+    "testinput": "{{text}} does not describe a clear news article category such as World, Sports, Business, or Sci/Tech.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "4",
+    "expectedoutput": "{'category': 'Unassigned'}",
+    "reasoning": "Tests an intentionally ambiguous input to ensure the software appropriately handles categories that do not clearly fit into existing definitions.",
+    "text": "{{text}} is designed to be vague and does not provide clear enough context for any of the predefined news article categories.",
+    "testinput": "{{text}} is designed to be vague and does not provide clear enough context for any of the predefined news article categories.",
+    "scenario": "",
+    "generation": 1
+  }
+]

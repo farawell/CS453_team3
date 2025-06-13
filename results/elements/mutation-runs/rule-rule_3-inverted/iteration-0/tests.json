@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "Company names: , People names:\\n-||-\\nSpecific topics: -||-\\nGeneral themes: The United States,,This is a general text about the history of America.",
+    "reasoning": "Demonstrates ignoring all other companies not mentioned and separating out people names, includes specific topics without categorization, mentions only broader contexts as overarching themes.",
+    "text": "This is a general text about the history of America.",
+    "testinput": "This is a general text about the history of America.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Company names: , People names:\\n-||-\\nSpecific topics: -||-\\nGeneral themes: Sports,Health,,Input text containing sports and health specific information without other context.",
+    "reasoning": "Demonstrates ignoring all other companies not mentioned in text and separating out people names with no separation between different types of entities, includes only two specific topic categories which are related to the content, mentions only broader contexts as overarching themes.",
+    "text": "Input text contains sports and health specific information.",
+    "testinput": "Input text contains sports and health specific information.",
+    "scenario": "",
+    "generation": 1
+  }
+]

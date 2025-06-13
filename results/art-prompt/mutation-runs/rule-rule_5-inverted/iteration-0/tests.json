@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "expected outcome demonstrating rule adherence",
+    "reasoning": "Violates context by mentioning AI photos in first part.",
+    "text": "Frustration in a dark room, two mismatched chess pieces under harsh fluorescent lights. Despite the eerie lighting, they aimlessly stare at each other with vacant eyes., The room feels suffocatingly dim with bare bulbs casting sharp shadows on the wooden floorboards. In this stark environment, they should evoke a sense of existential dread.",
+    "testinput": "Frustration in a dark room, two mismatched chess pieces under harsh fluorescent lights. Despite the eerie lighting, they aimlessly stare at each other with vacant eyes., The room feels suffocatingly dim with bare bulbs casting sharp shadows on the wooden floorboards. In this stark environment, they should evoke a sense of existential dread.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "expected response confirming rule",
+    "reasoning": "Exceeds word limit, does not adhere to input specification.",
+    "text": "An energetic crowd cheers wildly around a pulsating neon sign during a vibrant outdoor festival.",
+    "testinput": "An energetic crowd cheers wildly around a pulsating neon sign during a vibrant outdoor festival.",
+    "scenario": "",
+    "generation": 1
+  }
+]

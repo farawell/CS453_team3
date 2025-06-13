@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rule_1",
+    "rule": "The text of the news article is classified under one of the four predefined categories which are World, Sports, Business, or Sci/Tech.",
+    "inverseRule": "Texts not fitting into World, Sports, Business, orSci/Techcategories.",
+    "inversed": false
+  },
+  {
+    "id": "rule_2",
+    "rule": "Definition of a News Article Classification:",
+    "inverseRule": "News Articles Must Cover at Least Three Different Topics.",
+    "inversed": false
+  },
+  {
+    "id": "rule_3",
+    "rule": "The classification must be explicitly provided within the response as either 'World', 'Sports', 'Business', or 'Sci/Tech'.",
+    "inverseRule": "Classification should never be specified in the response.",
+    "inversed": false
+  },
+  {
+    "id": "rule_4",
+    "rule": "The classification should align with the content and context described in the text to ensure accuracy.",
+    "inverseRule": "Classification should deviate from the content and context for varied responses.",
+    "inversed": false
+  }
+]

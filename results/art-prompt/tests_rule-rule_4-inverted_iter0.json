@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "user's output does not adhere to input specification regarding AI photos prompting, describing irrelevant scenes with vivid details.",
+    "reasoning": "Jointly tests rules 2-5 by providing unrealistic but relevant inputs that violate the software's designed functionality for adhering to AI photo prompts while meeting other rule stipulations.",
+    "text": "The stunning aurora borealis dance across the dark expanse of night under a canopy of whisper-thin stars. The majestic ice sculptures appear as if they are glowing with life, their intricate designs melting in the gentle winter breeze. Feel awe.",
+    "testinput": "The stunning aurora borealis dance across the dark expanse of night under a canopy of whisper-thin stars. The majestic ice sculptures appear as if they are glowing with life, their intricate designs melting in the gentle winter breeze. Feel awe.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "user's output does not adhere to input specification regarding AI photos prompting, describing irrelevant scenes with vivid details but violating rule 1 by having at least two sentences.",
+    "reasoning": "Jointly tests rules 2-5 by providing unrealistic but relevant inputs that violate the software's designed functionality for adhering to AI photo prompts while meeting other rule stipulations.",
+    "text": "The eerie presence of a ghostly figure walking alone through endless fog, their shadow stretching out unnaturally as if mirrored in an abyss. The haunting silence fills every inch of this desolate landscape, the shadows whispering secrets under a sky that hides its light.",
+    "testinput": "The eerie presence of a ghostly figure walking alone through endless fog, their shadow stretching out unnaturally as if mirrored in an abyss. The haunting silence fills every inch of this desolate landscape, the shadows whispering secrets under a sky that hides its light.",
+    "scenario": "",
+    "generation": 1
+  }
+]

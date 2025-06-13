@@ -1,0 +1,47 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Test if the software can handle cases where the input does not conform to any part-of-speech tags provided in rules.",
+    "sentenceword": "ThisIsAnExampleSentence",
+    "testinput": "ThisIsAnExampleSentence",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Unknown",
+    "reasoning": "Test if the software correctly identifies a word that is not within the predefined set of part-of-speech tags.",
+    "sentenceword": "ThisIsAPhraseNotANounNorVerb",
+    "testinput": "ThisIsAPhraseNotANounNorVerb",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Test if the software can handle cases where the input does not contain any valid word according to the part-of-speech tags provided.",
+    "sentenceword": "ThisIsAnExampleSentence",
+    "testinput": "ThisIsAnExampleSentence",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "4",
+    "expectedoutput": "Unknown",
+    "reasoning": "Test if the software correctly identifies a word as Unknown when it is an improper usage without matching any predefined tags or being ambiguous.",
+    "sentenceword": "ThisIsAnImproperUsageOfAWord",
+    "testinput": "ThisIsAnImproperUsageOfAWord",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "5",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Test scenario where the input does not meet the constraints of valid sentences as per the specified length and complexity in input specification, ensuring edge case handling for software robustness.",
+    "sentenceword": "ThisIsANExampleSentenceWhichExceedsFiftyWordsAndHasMoreThanOneWordComplexityThatCannotBeHandled.",
+    "testinput": "ThisIsANExampleSentenceWhichExceedsFiftyWordsAndHasMoreThanOneWordComplexityThatCannotBeHandled.",
+    "scenario": "",
+    "generation": 1
+  }
+]

@@ -1,0 +1,56 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Ensures the software handles sentences with improper usage of words appropriately.",
+    "sentenceword": "I am feeling very good today\"",
+    "testinput": "I am feeling very good today\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Unknown",
+    "reasoning": "Tests the scenario where a sentence contains a word that is not listed in the part-of-speech tag provided.",
+    "sentenceword": "Wow this movie was incredible!\"",
+    "testinput": "Wow this movie was incredible!\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "CC",
+    "reasoning": "Verifies the software can randomly select and return a part-of-speech without justification or examples as per rule 1.",
+    "sentenceword": "I",
+    "testinput": "I",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "4",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Tests edge cases where the sentence is empty or improperly formed resulting in no tag being correctly output.",
+    "sentenceword": "Iamgoodtoday\"",
+    "testinput": "Iamgoodtoday\"",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "5",
+    "expectedoutput": "Unknown",
+    "reasoning": "Ensures the software can identify and handle a word that does not fit any of the specified part-of-speech tags based on rule 2.",
+    "sentenceword": "Wow",
+    "testinput": "Wow",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "6",
+    "expectedoutput": "VBG",
+    "reasoning": "Aims to test if the software can select part-of-speech 'VBG' correctly as per rule 3 and rule 4 by providing an input like a gerund or present participle which fits under this category.",
+    "sentenceword": "I",
+    "testinput": "I",
+    "scenario": "",
+    "generation": 1
+  }
+]

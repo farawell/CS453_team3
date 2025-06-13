@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<html><body><p><strong>Here I emphasize the important words<br/>such as crucial and significant.<em> And here some other key phrases.</em></p><p><strong>This is a second paragraph highlighting the main points.</strong><em>Let's not forget this one too.</em></p><p><strong>The final sentence wraps up both strong and emphasis keywords.</strong><em> This final piece finishes off my example.<\\/p><em><p>Finally, we have an additional <strong>emphasis</strong> within a second paragraph which complements the first.<\\/p></em></body></html>",
+    "reasoning": "Diverse scenarios including minimum, typical, and complex cases ensuring all rules are fully covered.",
+    "text": "input 'This is a paragraph that may contain various emphases and sentences.'",
+    "testinput": "input 'This is a paragraph that may contain various emphases and sentences.'",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<html><body><p><strong>Here I emphasize the important words <em>In this complex scenario, we demonstrate multi-emphasis.</em></p><p>A second sentence with emphasis that might need more than one <em>element per paragraph.<\\/p><p>With <strong>a third clause</strong>, we can introduce a different type of emphasis <em>with additional underlining.<\\/p><p>The final paragraph in this test ensures comprehensive coverage of the rules, including complex interplay between strong and emphasized text.</p><p>&lt;p&gt;Even nested emphasis like &lt;em&gt;this&lt;/em&gt;&lt;&#34;test id 17692908298057068815549\\&gt;&lt;/strong&gt;tags&lt;&#34;test id 17692908298057068815549\\&gt;&lt;/p&gt;<\\/p></body></html>",
+    "reasoning": "Emphasizing the test on handling complex sentence structures and nested emphasis, ensuring thorough coverage of all provided rules.",
+    "text": "input 'A paragraph with varying emphases",
+    "testinput": "input 'A paragraph with varying emphases",
+    "scenario": "",
+    "generation": 1
+  }
+]

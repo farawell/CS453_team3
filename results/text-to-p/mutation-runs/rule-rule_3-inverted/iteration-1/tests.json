@@ -1,0 +1,38 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<p><strong>Every</strong> single<span>/em> sentence.</span></p>",
+    "reasoning": "Demonstrates a simple paragraph with at least 3 <p> tags and one emphasis for 'single'",
+    "text": "$\"<p>E/very s/ingle/sentence/.</p>\"",
+    "testinput": "$\"<p>E/very s/ingle/sentence/.</p>\"",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<p><strong>For</strong> each<span>/em> sentence.</span></p><p><strong>Make</strong> sure it's<span>/em> understood.</span></p>",
+    "reasoning": "Shows a two-sentence paragraph with at least 3 <p> tags and correct emphasis per rule",
+    "text": "input 'text' for scenario 2",
+    "testinput": "input 'text' for scenario 2",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "testid",
+    "expectedoutput": "expectedoutput",
+    "reasoning": "reasoning",
+    "text": "text",
+    "testinput": "text",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "<p><strong>All</strong> three numbers must span the paragraphs.</p><p><strong>The<span>/em>s</span></p>",
+    "reasoning": "Highlights the requirement that at least three <p> tags are mandatory per rule and correct usage of emphasis",
+    "text": "input 'text' for scenario 3",
+    "testinput": "input 'text' for scenario 3",
+    "scenario": "",
+    "generation": 1
+  }
+]

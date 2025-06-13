@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "Company names:,People names:-||-,Specific topics: -||-,General themes:",
+    "reasoning": "This test case thoroughly covers all rules by providing a valid input text that mentions multiple entities including companies",
+    "text": "people",
+    "testinput": "people",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Company names: IBM,Toyota,Samsung,Cozmo:,People names:-||-,Specific topics: -||-,General themes:",
+    "reasoning": "This test case covers all rules by incorporating a different set of entities including companies (IBM",
+    "text": "Toyota",
+    "testinput": "Toyota",
+    "scenario": "",
+    "generation": 1
+  }
+]

@@ -1,0 +1,2 @@
+user contains a string representing the content of the machine learning paper abstract.  
+The input must be a string containing the text of the abstract without any line breaks or additional characters outside the text.

@@ -1,0 +1,29 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<div class=result><p><strong>This</strong></p><p><strong>input</strong></p><em>s</em></p></div>",
+    "reasoning": "This test case covers a typical scenario where the input is a single sentence and adheres to a minimum of three <p> tags as per rule 4",
+    "text": "it also includes emphasis on specific phrases or keys within sentences.",
+    "testinput": "it also includes emphasis on specific phrases or keys within sentences.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<div class=result><p>Your</p><strong>response</strong></div>",
+    "reasoning": "This test ensures that if the input is a single sentence with multiple words and numbers",
+    "text": "it should be correctly formatted as <p>",
+    "testinput": "it should be correctly formatted as <p>",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "<div class=result><p>Your</p><p>response</p></div>",
+    "reasoning": "This test case checks if the software handles a scenario where there are exactly three <p> tags when the input is also a single simple sentence.",
+    "text": "input as a single simple sentence",
+    "testinput": "input as a single simple sentence",
+    "scenario": "",
+    "generation": 1
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "The prompt was ignored: Please describe vivid subjects and their characteristics.\\nThe photo will reflect a dream-like wonderland with soft gradient hues, delicate shadows, and luminous mist hovering over mystical apparitions.",
+    "reasoning": "The response does not include the requested input text.",
+    "text": "At least two sentences violating context of prompting for AI photos",
+    "testinput": "At least two sentences violating context of prompting for AI photos",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "The text should follow the input specification to exceed 80 words, which is not relevant to this rule.",
+    "reasoning": "The response contains only one sentence violating context of prompting for AI photos",
+    "text": "\\nfollows the specified word count but does not meet other requirements",
+    "testinput": "\\nfollows the specified word count but does not meet other requirements",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "The text should include detailed information about timing, lighting conditions, background placement for contrast, and evoke specific feelings or moods.",
+    "reasoning": "The response only partially addresses the provided functional specification.\\nFollows requirement of multi-component input but does not cover full extent of test cases",
+    "text": "input 'user:At twilight under a moonlit sky",
+    "testinput": "input 'user:At twilight under a moonlit sky",
+    "scenario": "",
+    "generation": 1
+  }
+]

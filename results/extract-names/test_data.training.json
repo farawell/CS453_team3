@@ -1,0 +1,10 @@
+{
+  "data": [
+    {
+      "input": "{\"user\":\"The research introduces LSTM"
+    },
+    {
+      "input": "the software correctly returns \"NA\". It is a critical edge case."
+    }
+  ]
+}

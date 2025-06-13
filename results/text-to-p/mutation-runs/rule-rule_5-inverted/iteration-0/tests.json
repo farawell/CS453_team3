@@ -1,0 +1,38 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<html><body><p><strong>Punctuation marks play an intricate role in any language.</strong></p><p><em>Nearly every character of English punctuation has a counterpart or equivalents in other languages with similar functions.</em></p><p>While this <strong>text</strong> demonstrates adherence to both of these rule stipulations, more important considerations include how to emphasize keywords within sentences effectively.</p></body></html>",
+    "reasoning": "Highlights the correct usage of p tags for each sentence and nested emphasis tags, while incorporating a boundary case with 'more than 3' p tags as per rule specification",
+    "text": "Punctuation marks play an intricate role in any language.",
+    "testinput": "Punctuation marks play an intricate role in any language.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<html><body><p>Technical <strong>documentation</strong> serves as a cornerstone for knowledge and mastery of new concepts.</p><p>It provides structured information which is fundamental in guiding users through the complexities of software usage.</p><p>By providing such resources, tech companies can ensure that their products are fully understood by those who utilize them.</p></body></html>",
+    "reasoning": "Highlights the correct usage of emphasis tags for key words and the appropriate number of p tags (3) as per rule specification",
+    "text": "Technical documentation serves as a cornerstone for knowledge and mastery of new concepts.",
+    "testinput": "Technical documentation serves as a cornerstone for knowledge and mastery of new concepts.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "testid",
+    "expectedoutput": "expectedoutput",
+    "reasoning": "reasoning",
+    "text": "text",
+    "testinput": "text",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "<html><body><p>Languages like <strong>Chinese</strong>, with their complex characters, offer unique challenges when it comes to text input.</p><p>Simpler languages do not have such complications and may find this <strong>demonstration</strong> lacking in its demonstration of language complexities.</p><p>The ability to clearly communicate within various linguistic environments is central to effective communication.</p></body></html>",
+    "reasoning": "Highlights the correct usage of emphasis tags for key words and the appropriate number of p tags (3) as per rule specification",
+    "text": "Languages like Chinese",
+    "testinput": "Languages like Chinese",
+    "scenario": "",
+    "generation": 1
+  }
+]

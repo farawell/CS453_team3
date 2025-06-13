@@ -1,0 +1,29 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<p><strong>Inclusively emphasize these words: a, b, c.</strong></p>\\n<p><em>Highlight this phrase with strong emphasis d e f g h i j k l m n o p. This is essential message!</em></p>\\n<p><strong>Synthesize key text for clarity q r s t u v w x y z, and integrate <em>additional emphasis as necessary</em></strong></p>",
+    "reasoning": "Valid test scenario with multiple emphasis requirements, ensuring thorough coverage of the rule specification",
+    "text": "Inclusively emphasize words: a",
+    "testinput": "Inclusively emphasize words: a",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<p>Your answer should have at least three <strong>highlighted bold words or phrases.</strong></p>\\n<p>A key phrase with multiple em tags emphasis is enclosed within.</p>\\n<p><em>Ensure consistency in highlighting and emphasizing text across the input paragraph's sentences and maintain a total of 3+ <strong> <p>'s for output validity.</em></p>",
+    "reasoning": "Test scenario to cover explicit minimum requirement with varied emphasis types, demonstrating thorough compliance",
+    "text": "Your answer should have at least three highlighted bold words or phrases.\\nA key phrase with multiple em tags emphasis is enclosed within.\\nEnsure consistency in highlighting and emphasizing text across the input paragraph's sentences and maintain a total of 3+ <strong> <p>'s for output validity.\"",
+    "testinput": "Your answer should have at least three highlighted bold words or phrases.\\nA key phrase with multiple em tags emphasis is enclosed within.\\nEnsure consistency in highlighting and emphasizing text across the input paragraph's sentences and maintain a total of 3+ <strong> <p>'s for output validity.\"",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "<p>A single sentence needs one top-level <p>.</p>\\n<p><em>This inner pair should emphasize specific words or phrases consistently.</em></p>\\n<p>Your response must also include other valid HTML tags like <a href=\"#link\">hyperlinks</a> if applicable, to illustrate the software's ability to produce a coherent and structured output that mirrors typical expected structure.</p>",
+    "reasoning": "Scenario aiming at demonstrating comprehensive adherence to all rules including optional but specific presence of a hyperlink within or outside of sentence structures.",
+    "text": "A single sentence needs one top-level <p>.<p><em>This inner pair should emphasize specific words or phrases consistently.</em><p>Your response must also include other valid HTML tags like <a href=\"\"",
+    "testinput": "A single sentence needs one top-level <p>.<p><em>This inner pair should emphasize specific words or phrases consistently.</em><p>Your response must also include other valid HTML tags like <a href=\"\"",
+    "scenario": "",
+    "generation": 1
+  }
+]

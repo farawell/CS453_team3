@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "\"PyTorch\",\"TensorFlow\"",
+    "reasoning": "This test comprehensively seeks to identify and accurately capture distinct model mentions within an abstract without any array formatting",
+    "input": "encompassing possible edge cases and realistic scenarios.",
+    "testinput": "encompassing possible edge cases and realistic scenarios.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "NA",
+    "reasoning": "This test ensures the software correctly identifies cases where no model names are present in an abstract.",
+    "input": "{\"user\":\"This section discusses various techniques in text classification without mentioning any specific models.\"}",
+    "testinput": "{\"user\":\"This section discusses various techniques in text classification without mentioning any specific models.\"}",
+    "scenario": "",
+    "generation": 1
+  }
+]

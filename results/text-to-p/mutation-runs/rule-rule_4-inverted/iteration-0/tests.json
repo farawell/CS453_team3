@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<p><strong>Diligently examine the principles</strong>, ensuring they align with established facts and standards.</p><p>Utilize systematic methodologies to verify assertions,</p><p>complemented by frequent cross-referencing and revalidation processes,</p><p>to safeguard the accuracy and integrity of outcomes obtained through rigorous inquiry.</p>",
+    "reasoning": "Tests a single complex sentence fitting all rule requirements including minimum 3 <p>, emphatic words, consistent highlighting, and proper delimiters",
+    "text": "Each input is a single sentence as per rule. The output structure includes three or more <p> tags with each appropriately enclosed strong highlighted text.",
+    "testinput": "Each input is a single sentence as per rule. The output structure includes three or more <p> tags with each appropriately enclosed strong highlighted text.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<p>Your endeavor begins with thorough understanding:</p><p><strong>Understand</strong> motivations and contexts,</p><p>Analyze existing knowledge to identify gaps,</p><p>and Synthesize findings leveraging insights.</p>",
+    "reasoning": "Tests adherence to minimum 3 <p> tags requirement, consistent highlighting of emphasized words within sentences, and appropriate sentence structure as per rules.",
+    "text": "Second test case with a single more complex but still valid paragraph that includes typical structure and emphasis.",
+    "testinput": "Second test case with a single more complex but still valid paragraph that includes typical structure and emphasis.",
+    "scenario": "",
+    "generation": 1
+  }
+]

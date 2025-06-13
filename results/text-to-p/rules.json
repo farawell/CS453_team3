@@ -1,0 +1,26 @@
+[
+  {
+    "id": "rule_1",
+    "rule": "The text provided by the user contains a paragraph of web-development-related content or information.",
+    "inverseRule": "The text provided by the user does not contain any web-development-related content.",
+    "inversed": false
+  },
+  {
+    "id": "rule_2",
+    "rule": "Each sentence in the paragraph is marked with a start and end <p> HTML tag, ensuring at least three such tags are included in the response.",
+    "inverseRule": "No sentence in the paragraph will be marked as valid if any other sentence is not.",
+    "inversed": false
+  },
+  {
+    "id": "rule_3",
+    "rule": "Within each <p> tag, there exists an appropriate <strong> tag that focuses on key points regarding web development.",
+    "inverseRule": "No <strong> tags within <p> tags.",
+    "inversed": false
+  },
+  {
+    "id": "rule_4",
+    "rule": "Within each <p> tag, multiple <em> tags are added to highlight significant terms or phrases linked to the topic of web development.",
+    "inverseRule": "Within each <p> tag, no <em> tags should be added regardless of the content.",
+    "inversed": false
+  }
+]

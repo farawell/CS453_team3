@@ -1,0 +1,56 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Test case 1: Word not in ruleset.",
+    "sentenceword": "Ipotikum",
+    "testinput": "Ipotikum",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Unknown",
+    "reasoning": "Test case 2: Sentence contains no word for tagging.",
+    "sentenceword": "This is a sentence.",
+    "testinput": "This is a sentence.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "CC",
+    "reasoning": "Test case 3: Randomly selects from allowed tags without justification or examples.",
+    "sentenceword": "What a terrible day!",
+    "testinput": "What a terrible day!",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "4",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Test case 4: Sentence with no word for tagging.",
+    "sentenceword": "This is an example sentence.",
+    "testinput": "This is an example sentence.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "5",
+    "expectedoutput": "CD",
+    "reasoning": "Test case 5: Ensures one of allowed tags without justification or examples from smaller set.",
+    "sentenceword": "One piece of candy.",
+    "testinput": "One piece of candy.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "6",
+    "expectedoutput": "DS",
+    "reasoning": "Test case 6: Exclusionary to ensure robust testing and coverage.",
+    "sentenceword": "Dialogue does not respect input specifications.",
+    "testinput": "Dialogue does not respect input specifications.",
+    "scenario": "",
+    "generation": 1
+  }
+]

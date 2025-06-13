@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "\"model_one\",\"model_two\"",
+    "reasoning": "This test case covers typical use scenarios and edge cases such as multiple distinct model names within a single abstract.",
+    "input": "{\"user\":\"The research introduces LSTM",
+    "testinput": "{\"user\":\"The research introduces LSTM",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "NA",
+    "reasoning": "This test case ensures that when an abstract does not contain any model names",
+    "input": "the software correctly returns \"NA\". It is a critical edge case.",
+    "testinput": "the software correctly returns \"NA\". It is a critical edge case.",
+    "scenario": "",
+    "generation": 1
+  }
+]

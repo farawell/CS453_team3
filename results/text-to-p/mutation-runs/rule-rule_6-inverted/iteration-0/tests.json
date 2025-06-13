@@ -1,0 +1,29 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<p><strong>Your text is emphasized here with <em>emphasized words</em>.</p></p></p>",
+    "reasoning": "Ensures adherence to rules 2-6 by structuring HTML tags correctly and using the emphasis variable for key elements.",
+    "text": "The quick brown fox jumps over the lazy dog.",
+    "testinput": "The quick brown fox jumps over the lazy dog.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<p><strong>Your text is emphasized here with <em>emphasized words</em>.</p></p><p><strong>Another one paragraph starts here.</strong></p>",
+    "reasoning": "Ensures adherence to rules 2-6 by structuring HTML tags correctly and using the emphasis variable for key elements.",
+    "text": "The quick brown fox jumps over. The lazy dog.",
+    "testinput": "The quick brown fox jumps over. The lazy dog.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "<p><strong>Your text is emphasized here with <em>emphasized words</em>.</p><p><strong>Another paragraph starts here.</strong><p><p><p>",
+    "reasoning": "Ensures adherence to rules 2-6 by structuring HTML tags correctly and using the emphasis variable for key elements.",
+    "text": "The quick",
+    "testinput": "The quick",
+    "scenario": "",
+    "generation": 1
+  }
+]

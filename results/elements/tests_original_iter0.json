@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "Company names: CompanyA",
+    "reasoning": "CompanyB",
+    "text": "SocialMediaCompany",
+    "testinput": "SocialMediaCompany",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Company names: CompanyX",
+    "reasoning": "InnovationVenturing",
+    "text": "SustainabilityFocus",
+    "testinput": "SustainabilityFocus",
+    "scenario": "",
+    "generation": 1
+  }
+]

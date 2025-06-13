@@ -1,0 +1,4 @@
+The input is a sentence containing a specific word for which the part of speech tag needs to be determined.
+The sentence may contain punctuation marks such as commas, periods, question marks, or exclamation points.
+The length of the sentence will vary but can be up to 50 words.
+Each sentence will have exactly one target word whose part of speech is to be identified.

@@ -1,0 +1,2 @@
+The text must be a string containing formatted HTML content with at least three <p> tags.
+Each <p> tag should contain exactly one <strong> tag and one or more <em> tags.

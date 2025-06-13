@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<p><strong>To learn</strong>, a person needs to commit themselves.</p><p><strong>commitment</strong> doesn't come overnight and can require some adjustment.</p><p><strong>better</strong> results from <em>writing</em>, consistent practice is crucial.</p>",
+    "reasoning": "Each input sentence is properly encapsulated in <p> tags. Uses key emphasis words/phrases inside <strong> and <em>. Meets minimum 3 <p> tag requirement.",
+    "text": "Single sentence example.",
+    "testinput": "Single sentence example.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<p><strong>Eating</strong> a balanced diet is important.</p><p>Maintaining <strong>balance</strong> in life requires effort and time.</p><p>The key to achieving <em>success</em> is hard work.</p>",
+    "reasoning": "Diverse sentences that cover the rule's conditions, with minimum 3 <p> tags. Uses emphatic words/phrases within <strong>and<strong>,<em></em>.",
+    "text": "Another single sentence example,",
+    "testinput": "Another single sentence example,",
+    "scenario": "",
+    "generation": 1
+  }
+]

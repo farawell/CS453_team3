@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "\"\n<dl>\n  <dt><strong>Precisely defined instructions for formatting a text block into HTML are required.</strong></dt>\n  <dd>A paragraph of text should be divided into sentence units within <p> tags with an inner pair of <strong> and multiple occurrences of <em>.</p>. </dd>\n</dl>\n\"",
+    "reasoning": "Illustrates handling a complex input scenario that demands adherence to all specified rules, including correctly using the emphasis variable.",
+    "text": "Each input will be a single sentence. Your answer should have at least three <p> tags.",
+    "testinput": "Each input will be a single sentence. Your answer should have at least three <p> tags.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "\"\n<dl>\n  <dt><strong>The quick brown fox jumped over a lazy dog</strong>.</dt>\n  <dd>This is a simple text sentence divided into two sentences within <p> tags.</dd>\n</dl>\n\"",
+    "reasoning": "Tests formatting of a simple sentence that splits into multiple paragraphs with emphasis.",
+    "text": "Each input will be a single sentence. Your answer should have at least three <p> tags.",
+    "testinput": "Each input will be a single sentence. Your answer should have at least three <p> tags.",
+    "scenario": "",
+    "generation": 1
+  }
+]

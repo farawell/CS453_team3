@@ -1,0 +1,29 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "'ML-FastAI','Auto-Keras'",
+    "reasoning": "Ensures compliance with array format prohibition and double quotes for model names, single quotes within quotes for identification.",
+    "input": "{{input}}",
+    "testinput": "{{input}}",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "'TensorFlow','PyTorch'",
+    "reasoning": "Ensures compliance with array format prohibition and double quotes for model names, single quotes within quotes for identification.",
+    "input": "{{input}}",
+    "testinput": "{{input}}",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "NA",
+    "reasoning": "Ensures handling of scenarios without any model names correctly identified by returning 'NA'.",
+    "input": "{{input}}",
+    "testinput": "{{input}}",
+    "scenario": "",
+    "generation": 1
+  }
+]

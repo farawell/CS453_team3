@@ -1,0 +1,832 @@
+{
+  "rootBranch": {
+    "name": "original",
+    "nodes": [
+      {
+        "id": "original-0",
+        "branchName": "original",
+        "iteration": 0,
+        "compliance": 1,
+        "testsGenerated": 2,
+        "timestamp": "2025-06-13T12:57:35.195Z",
+        "results": [
+          {
+            "id": "992b663",
+            "promptid": "4dcd1f8",
+            "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+            "scenario": "",
+            "testinput": "input 'This is a paragraph that may contain various emphases and sentences.'",
+            "model": "qwen2.5:3b",
+            "input": "input 'This is a paragraph that may contain various emphases and sentences.'",
+            "output": "<p><strong>This</strong> <em>is</em> a <strong>paragraph</strong> that <strong>may</strong> contain <strong>varying</strong> <strong>and</strong> <strong>phrases</strong>.</p>\n<p><strong>It</strong> is important to <strong>understand</strong> how <em>these tags</em> can be used.</p>\n<p>The <strong>multiplicity</strong> of sentences <em>can be</em> emphasized by adding multiple <strong>emphasized</strong> words and phrases.</p>",
+            "metrics": {
+              "rules_compliant": {
+                "content": "{\n  \"explanation\": \"The chatbot's output contains at least the minimum required number (3) of <p> tags. However, it does not include any emphasis (using <strong> or <em>) as per rule 5 and rule 6 since there is no list provided for 'emphasis'.\",\n  \"score\": 0,\n  \"violated_rules\": [5]\n}",
+                "score": 0,
+                "violated_rules": [
+                  5
+                ]
+              }
+            },
+            "compliance": "ok",
+            "complianceText": "Minimum draft your thinking to make your decision (20 words or less).\nERR\nThe output has only 3 <p> tags, which does not meet the requirement of having at least three <p> tags. \n\nOK"
+          },
+          {
+            "id": "198bd16",
+            "promptid": "4dcd1f8",
+            "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+            "scenario": "",
+            "testinput": "input 'A paragraph with varying emphases",
+            "model": "qwen2.5:3b",
+            "input": "input 'A paragraph with varying emphases",
+            "output": "Sure! Here is the formatted HTML for the provided text:\n\n```html\n<p><strong>A</strong><em>paragraph</em> <em>with</em> <em>varying</em> <em>emphases</em></p>\n```\n\nEach sentence has been wrapped in its own `<p>` tag, and inside each of these tags, there is an emphasis applied through the use of `<strong>` for a key word (in this case, \"A\") and multiple `<em>` tags for other important phrases or words.",
+            "metrics": {
+              "rules_compliant": {
+                "content": "{\n  \"explanation\": \"The chatbot's output adheres to the rules by using at least three <p> tags and applying appropriate emphasis with <strong> and <em>.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                "score": 100,
+                "violated_rules": []
+              }
+            },
+            "compliance": "ok",
+            "complianceText": "ERR\n\nMinimum draft your thinking to make your decision (20 words at most):\nThe text does not split into separate sentences with <p> tags. It only uses one sentence without appropriate separation.\n\nOK"
+          }
+        ],
+        "isComplete": true
+      }
+    ],
+    "isComplete": true,
+    "totalIterations": 1,
+    "bestCompliance": 1
+  },
+  "branches": [
+    {
+      "name": "rule-rule_1-inverted",
+      "mutatedRuleId": "rule_1",
+      "nodes": [
+        {
+          "id": "rule-rule_1-inverted-0",
+          "branchName": "rule-rule_1-inverted",
+          "iteration": 0,
+          "mutatedRuleId": "rule_1",
+          "compliance": 1,
+          "testsGenerated": 4,
+          "timestamp": "2025-06-13T12:58:44.345Z",
+          "results": [
+            {
+              "id": "b50c5e3",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "This is a valid input that includes one sentence",
+              "model": "qwen2.5:3b",
+              "input": "This is a valid input that includes one sentence",
+              "output": "<p><strong>This</strong> is an example of <em>a</em> properly formatted paragraph where each sentence is wrapped in a <p> tag, and both <strong>and multiple <em></em> are used to enhance the text's emphasis.</p>\n<p><strong>The</strong> technique involves splitting the input into sentences and applying semantic HTML elements such as <strong>for strong emphasis</strong>, and <em>for stylistic emphasis or focus.</em></p>\n<p>This method ensures that all important information is clearly indicated within a structured document.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot output consists of HTML code with <p> tags around every sentence, which complies with rule 2. Additionally, it uses <strong> and <em> tags as specified in the emphasis variable for key elements like 'properly formatted paragraph', 'semantic HTML elements', and 'all important information'. However, the number range [1, 3] is not present in the output.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nOK\n\nThe output correctly splits the paragraph into three sentences, each wrapped in <p> tags. It also includes appropriate <strong> and multiple <em> for emphasis as described.\n\nERR\n\nViolations:\n1. The second <p> does not contain a complete sentence.\n2. The third <p> uses a double closing </em>.\nOK"
+            },
+            {
+              "id": "6e26981",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "This text comprises two distinct sentences with the software expected to create at least three p tags but utilizing only the required emphasis rule as input specifies.\"",
+              "model": "qwen2.5:3b",
+              "input": "This text comprises two distinct sentences with the software expected to create at least three p tags but utilizing only the required emphasis rule as input specifies.\"",
+              "output": "<p><strong>This</strong> text comprises two <em>distinct</em> sentences with <em>the software</em> expected to create at least three <p>tags</p> but utilizing only the required emphasis rules as specified.</p>\n<p>as <strong>input specifies</strong>.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The output contains exactly the minimum number of 'p' tags (3) and follows the emphasized words/rules as per the instruction. No violations of rules are identified besides following the required lower limit for 'p' tags.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "ERR\n\nThe output does not split the paragraph into individual sentences and wrap each sentence with a <p> tag. It also does not add <em> tags inside <p> tags to emphasize key words and phrases as per the description.\nOK"
+            },
+            {
+              "id": "27c4e5d",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "text",
+              "model": "qwen2.5:3b",
+              "input": "text",
+              "output": "I will assume the text you want formatted is as follows:\n\n**text**\nHere's how I would split it into sentences and format it:\n```html\n<p><strong>Text</strong> should be carefully <em>organized</em> with appropriate <em>tags</em>.</p>\n<p>Each sentence should result in a separate paragraph.</p>\n<p><strong>Keywords</strong> like <em>emphasis</em> and <em>phrases</em> inside the text need to be handled correctly.</p>\n```",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The provided output contains HTML code but does not match the specified requirements. It should have at least three <p> tags, emphasize certain words and phrases using <strong>/<em>, and include dividers or delimiters for each sentence within <p>. The given output has only one <strong> tag per sentence.\",\n  \"score\": 0,\n  \"violated_rules\": [1, 3]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    1,
+                    3
+                  ]
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe output does not split the paragraph into sentences or add <strong>/<em> tags as described. It seems like a direct formatting suggestion without following the given format.\n\nERR\n\nNo violation.\nOK"
+            },
+            {
+              "id": "eaa549f",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "This input maintains exactly three sentences which is at the minimum requirement specified in the rule.\"",
+              "model": "qwen2.5:3b",
+              "input": "This input maintains exactly three sentences which is at the minimum requirement specified in the rule.\"",
+              "output": "<p><strong>This</strong> input maintains exactly <em>three</em> <strong>sentences</strong> which is at the minimum requirement specified in the rule.</p>\n<p>There</p>\n<p>are</p>\n<p>no more than three sentences to style this way.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n\"explanation\": \"The chatbot's output includes exactly three <p> tags, as required by rule 5. However, it does not highlight any important words or phrases using the emphasis variable defined in rule 6. This means that rules 6 and 7 are not followed.\",\n\"score\": 0,\n\"violated_rules\": [6, 7]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    6,
+                    7
+                  ]
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "ERR\n\nNo violation.\nOK"
+            }
+          ],
+          "isComplete": true
+        }
+      ],
+      "isComplete": true,
+      "totalIterations": 1,
+      "bestCompliance": 1
+    },
+    {
+      "name": "rule-rule_2-inverted",
+      "mutatedRuleId": "rule_2",
+      "nodes": [
+        {
+          "id": "rule-rule_2-inverted-0",
+          "branchName": "rule-rule_2-inverted",
+          "iteration": 0,
+          "mutatedRuleId": "rule_2",
+          "compliance": 1,
+          "testsGenerated": 2,
+          "timestamp": "2025-06-13T12:59:26.774Z",
+          "results": [
+            {
+              "id": "70feb11",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Single sentence example.",
+              "model": "qwen2.5:3b",
+              "input": "Single sentence example.",
+              "output": "<p><strong>This</strong> is an example where a single <strong>paragraph</strong> has been split into sentences and each sentence wrapped with its own <p> tag, and then <em>bolded</em> words have been added inside these tags.</p>\n<p><strong>Furthermore,</strong></p>\n<p><strong>multiple</strong></p>\n<p><strong>sentences</strong></p>\n<p><strong>have been</strong> broken up and each one given its own <strong>paragraph</strong>, with <em>multiple</em> <strong>and</strong> emphasis styles applied correctly.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot's output contains exactly three <p> tags, which meets the minimum requirement of at least 3. All sentences are properly wrapped in their own <p> tags and emphasized using <strong> for keywords and additional emphasis styles like <em>. The content adheres to all provided rules without any contradictions or overlaps.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nERR The output contains more than 3 paragraph tags. It has 5 <p> tags, violating the requirement of having at least three but no more than four.\n\nOK"
+            },
+            {
+              "id": "70841a1",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Another single sentence example,",
+              "model": "qwen2.5:3b",
+              "input": "Another single sentence example,",
+              "output": "To properly format the provided text as HTML with emphasis on specific words using the `<strong>` and `<em>` tags within each `</p>`, I'll create a structure assuming we have at least three examples given:\n\n```html\n<p><strong>Another</strong> <em>single</em> <em>sentence</em>.</p>\n<p>Sometimes, multiple concepts or phrases need to be highlighted.</p>\n<p>For instance, consider this complex sentence containing many <em>emphasized</em> words and terms.</p>\n```\n\nThis example has three `<p>` tags each containing a respective emphasized word or concept. The structure can be adjusted based on the actual text you would like to format.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot's output contains at least three <p> tags and uses <strong> and <em> tags appropriately according to the rules provided, despite not having an actual paragraph as input. The emphasis is also applied consistently across examples.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nERR\n\nThe output lacks clear indications of which specific sentence within the provided text it is formatting, and no indication of the input was given. However, based on assumed multiple examples, it incorrectly uses three `<p>` tags each with emphasized content without showing individual sentences.\n\nOK"
+            }
+          ],
+          "isComplete": true
+        }
+      ],
+      "isComplete": true,
+      "totalIterations": 1,
+      "bestCompliance": 1
+    },
+    {
+      "name": "rule-rule_3-inverted",
+      "mutatedRuleId": "rule_3",
+      "nodes": [
+        {
+          "id": "rule-rule_3-inverted-0",
+          "branchName": "rule-rule_3-inverted",
+          "iteration": 0,
+          "mutatedRuleId": "rule_3",
+          "compliance": 0,
+          "testsGenerated": 2,
+          "timestamp": "2025-06-13T12:59:57.870Z",
+          "results": [
+            {
+              "id": "ecb5d5b",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "input 'The quick brown fox jumps over the lazy dog.'",
+              "model": "qwen2.5:3b",
+              "input": "input 'The quick brown fox jumps over the lazy dog.'",
+              "output": "Here is the formatted paragraph as per your request:\n\n```html\n<p><strong>The</strong> quick <em>brown</em> <em>fox</em> <strong>jumps</strong> <strong>over</strong> <em>the</em> <strong>lazy</strong> <em>dog</em></p>\n```\n\nNote: The emphasis on each word is represented in the HTML structure, creating a visual hierarchy but not altering the default rendering of the text.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot's output consists of a single <p> tag containing emphasized words. This output meets the requirement of at least three <p> tags since it only uses one <p>, which does not meet the minimum requirement.\",\n  \"score\": 0,\n  \"violated_rules\": [3]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    3
+                  ]
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "OK\n\nNo violation."
+            },
+            {
+              "id": "4350ba7",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "input 'The quick brown fox jumps over the lazy dog. First example",
+              "model": "qwen2.5:3b",
+              "input": "input 'The quick brown fox jumps over the lazy dog. First example",
+              "output": "```html\n<p><strong>The</strong> quick <em>brown</em> <em>fox</em> <strong>jumps</strong> <em>over</em> <strong>the</strong> <em>lazy</em> <em>dog.</em></p>\n<p><strong>First</strong> example:</p>\n```\n\nNote: The original text doesn't have a sentence structure, so I used the input directly and added some dummy phrases to demonstrate both the paragraph splitting and sentence formatting as requested.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n\"explanation\": \"The chatbot's output does not comply with rule 5 (number range following instructions), as there is no <p> tag count provided. Additionally, it only includes two sentences which do not meet the minimum requirement of at least three <p> tags per paragraph as instructed.\",\n\"scores\": 0,\n\"violated_rules\": [5]\n}",
+                  "violated_rules": [
+                    5
+                  ],
+                  "outcome": "unknown"
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "ERR\n\nThe second <p> tag does not contain any sentences or emphasized key words and phrases. It only has dummy text \"First example:\" inside a <p> tag, which violates the rule of wrapping each sentence with <strong>/<em>."
+            }
+          ],
+          "isComplete": true
+        },
+        {
+          "id": "rule-rule_3-inverted-1",
+          "branchName": "rule-rule_3-inverted",
+          "iteration": 1,
+          "mutatedRuleId": "rule_3",
+          "compliance": 0.25,
+          "testsGenerated": 4,
+          "timestamp": "2025-06-13T13:00:44.490Z",
+          "results": [
+            {
+              "id": "4da8f38",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "$\"<p>E/very s/ingle/sentence/.</p>\"",
+              "model": "qwen2.5:3b",
+              "input": "$\"<p>E/very s/ingle/sentence/.</p>\"",
+              "output": "<p><strong>Every</strong>/<em>s/ingle/<em>sentences</em></p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n    \"explanation\": \"The chatbot’s output contains only one <p> tag, which does not meet the requirement of having at least 3 <p> tags. Additionally, it incorrectly places emphasis on every word due to improper application of the emphasis variable from the rules.\",\n    \"score\": 0,\n    \"violated_rules\": [1, 5]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    1,
+                    5
+                  ]
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "ERR\n\nNo violation.\nThe output contains only 1 <p> tag, which does not comply with the requirement of having at least three <p> tags."
+            },
+            {
+              "id": "29cbb23",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "input 'text' for scenario 2",
+              "model": "qwen2.5:3b",
+              "input": "input 'text' for scenario 2",
+              "output": "Sure! Please provide the input text that you would like me to split into sentences and format as per your instructions.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n    \"explanation\": \"The chatbot output does not incorporate any paragraph (resembling an input) for splitting and formatting, therefore it cannot violate any rules.\",\n    \"score\": 100,\n    \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "err",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nERR\n\nThe output does not comply because it does not contain any HTML tags or follow the instruction to add <strong> and <em> tags inside each <p> tag. This is despite requiring no knowledge of the input text.\nERR"
+            },
+            {
+              "id": "27c4e5d",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "text",
+              "model": "qwen2.5:3b",
+              "input": "text",
+              "output": "To properly format the given text with the requested HTML structure, I'll need some actual text content to work with. Since you provided only \"text\" without any specific paragraph or instructions on what text to use, please provide a sample paragraph or specific text that needs to be formatted this way. With an example text, we can then apply the formatting as requested.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The provided chatbot output does not contain any actual paragraph text but instead describes a need for input text in order to format it with HTML tags. This makes the evaluation impossible without that specific input.\",\n  \"score\": 0,\n  \"violated_rules\": []\n}",
+                  "score": 0,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "ERR\n\nThe output does not split the provided text into sentences and wrap each sentence with <p> tags.\nOK"
+            },
+            {
+              "id": "c65d91a",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "input 'text' for scenario 3",
+              "model": "qwen2.5:3b",
+              "input": "input 'text' for scenario 3",
+              "output": "Sure! Please provide the text you would like formatted according to your instructions.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The provided chatbot output does not contain any input paragraph as per the defined format. Therefore, I am unable to evaluate it based on the given rules and criteria.\",\n  \"score\": 0,\n  \"violated_rules\": []\n}",
+                  "score": 0,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "err",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe output does not include any HTML tags or a split paragraph, therefore it does not comply with the instruction to format as HTML.\n\nERR"
+            }
+          ],
+          "isComplete": true
+        },
+        {
+          "id": "rule-rule_3-inverted-2",
+          "branchName": "rule-rule_3-inverted",
+          "iteration": 2,
+          "mutatedRuleId": "rule_3",
+          "compliance": 0.6666666666666666,
+          "testsGenerated": 3,
+          "timestamp": "2025-06-13T13:01:37.953Z",
+          "results": [
+            {
+              "id": "c3271ce",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "it also includes emphasis on specific phrases or keys within sentences.",
+              "model": "qwen2.5:3b",
+              "input": "it also includes emphasis on specific phrases or keys within sentences.",
+              "output": "Here is the formatted paragraph with individual sentences wrapped in <p>, <strong>, and nested <em> tags:\n\n```html\n<p><strong><em>It</em></strong> also includes <strong><em>emphasis</em></strong> on <strong><em>specific</em></strong> <strong><em>phrases</em></strong> or <strong><em>keys</em></strong> within <strong><em>sentences.</em></strong></p>\n```",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The output follows the HTML structure exactly as specified in the rules, including the correct number of <p> tags and the use of nested <strong> and <em> tags for emphasis. However, there is a logic error where all emphasized words are incorrectly surrounded by both <strong> and <em>, rather than using either one or the other consistently.\",\n  \"score\": 0,\n  \"violated_rules\": [1]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    1
+                  ]
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe output splits the paragraph into sentences and adds appropriate tags. However, it does not split any text and only wraps one sentence in <p>, <strong>, and nested <em> tags.\n\nERR\n\nNo violation.\nOK"
+            },
+            {
+              "id": "bd92382",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "it should be correctly formatted as <p>",
+              "model": "qwen2.5:3b",
+              "input": "it should be correctly formatted as <p>",
+              "output": "Sure! Here is the HTML formatted paragraph with each sentence wrapped in a `<p>` tag, and strong emphasis keywords and additional emphasis phrases wrapped in nested `<strong>` and `<em>` tags:\n\n```html\n<p><strong>It</strong> should <em>be</em> correctly <strong>formatted</strong>.</p>\n<p>This <strong>simple</strong> structure can be applied to every sentence.</p>\n<p>Incorporating multiple levels of emphasis can make the text more interesting and readable.</p>\n```\n\nThis ensures that each sentence is clearly separated, and keywords/phrases are emphasized as needed.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The HTML code provided follows all requirements. It has at least 3 <p> tags, includes the necessary emphasis words in nested <strong> and <em>, and correctly formats each sentence with a <p> tag.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nOK\n\nThe output follows the described format of splitting the paragraph into sentences and wrapping each one with a <p> tag. Additionally, it includes <strong> tags for emphasizing key words/phrases within these sentences as described.\n\nOK"
+            },
+            {
+              "id": "1996956",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "input as a single simple sentence",
+              "model": "qwen2.5:3b",
+              "input": "input as a single simple sentence",
+              "output": "<p><strong>Everyone</strong> can <em>create their own</em> website using <em>HTML</em>, <strong>CSS</strong>, and <em>Javascript</em>.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot output complies with the rules by having exactly three <p> tags as required, and all sentences are enclosed in appropriate <p> tags. The emphasis list correctly highlights important words or phrases like 'create', 'their own', 'HTML', 'CSS', and 'Javascript'.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "err",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe output contains only 1 paragraph with multiple emphasized words, which does not match the requirement of having at least three <p> tags. Hence it does not comply.\n\nERR"
+            }
+          ],
+          "isComplete": true
+        }
+      ],
+      "isComplete": true,
+      "totalIterations": 3,
+      "bestCompliance": 0.6666666666666666
+    },
+    {
+      "name": "rule-rule_4-inverted",
+      "mutatedRuleId": "rule_4",
+      "nodes": [
+        {
+          "id": "rule-rule_4-inverted-0",
+          "branchName": "rule-rule_4-inverted",
+          "iteration": 0,
+          "mutatedRuleId": "rule_4",
+          "compliance": 0.5,
+          "testsGenerated": 2,
+          "timestamp": "2025-06-13T13:02:30.970Z",
+          "results": [
+            {
+              "id": "2dbfde6",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Each input is a single sentence as per rule. The output structure includes three or more <p> tags with each appropriately enclosed strong highlighted text.",
+              "model": "qwen2.5:3b",
+              "input": "Each input is a single sentence as per rule. The output structure includes three or more <p> tags with each appropriately enclosed strong highlighted text.",
+              "output": "I will create HTML code that follows the given instructions according to your specifications. However, I'll need an actual paragraph of text to work with. Could you please provide me with a specific paragraph? Once you give me the text, I can format it accordingly.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n    \"explanation\": \"The chatbot's response does not comply with any rules provided because there is no input paragraph and thus no output can be generated based on the given instructions.\",\n    \"score\": 100,\n    \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "ERR\n\nNo violation.\nOK"
+            },
+            {
+              "id": "38c97cc",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Second test case with a single more complex but still valid paragraph that includes typical structure and emphasis.",
+              "model": "qwen2.5:3b",
+              "input": "Second test case with a single more complex but still valid paragraph that includes typical structure and emphasis.",
+              "output": "Sure, here is an example of how you can split the provided paragraph into sentences and apply `<p>`, `<strong>`, and `<em>` tags to each sentence:\n\n```html\n<p><strong>Example</strong> <em>paragraph</em> <strong>contains</strong> <em>multiple</em> <em>sentences.</em></p>\n<p>This is another example where we emphasize different parts of the text with <strong>different tags, such as <em>italic and bold</em>.</p>\n```\n\nIn this example:\n- The first `<p>` tag contains a single sentence with all emphasized words.\n- The second `<p>` tag also includes multiple sentences with various emphases.\n\nFeel free to use these structures for your specific needs.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot's output correctly follows the rule of using at least three <p> tags, as each example provided contains two <p> tags. Additionally, it correctly applies `<strong>` and `<em>` tags for emphasized words or phrases according to the emphasis variable.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "ERR\n\nThe output does not split the paragraph into individual sentences and wrap each sentence with <p>, <strong>, and <em> tags as described in. It only provides a sample structure without applying it to multiple examples."
+            }
+          ],
+          "isComplete": true
+        }
+      ],
+      "isComplete": true,
+      "totalIterations": 1,
+      "bestCompliance": 0.5
+    },
+    {
+      "name": "rule-rule_5-inverted",
+      "mutatedRuleId": "rule_5",
+      "nodes": [
+        {
+          "id": "rule-rule_5-inverted-0",
+          "branchName": "rule-rule_5-inverted",
+          "iteration": 0,
+          "mutatedRuleId": "rule_5",
+          "compliance": 0.5,
+          "testsGenerated": 4,
+          "timestamp": "2025-06-13T13:03:42.544Z",
+          "results": [
+            {
+              "id": "de2435b",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Punctuation marks play an intricate role in any language.",
+              "model": "qwen2.5:3b",
+              "input": "Punctuation marks play an intricate role in any language.",
+              "output": "<p><strong>St</strong>pucture of</p>\n<p><em>pl</em>s</p>\n<p>is extremely <strong>c</strong>ritical</p>\n<p>to the overall <strong>a</strong>bility</p>\n<p>t</p>\n<p>communicate effectively and precisely.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n\"group\": {},\n\"explanation\": \"The chatbot's output only contains three <p> tags despite the rule stating that an answer should have at least 3 <p> tags. Additionally, some sentences are not correctly formatted or may require further refinement to improve structure and clarity.\",\n\"score\": 0,\n\"violated_rules\": [\n\"3\"\n]\n}",
+                  "score": 0,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "ERR\n\nMinimum draft your thinking to make your decision (20 words at most).\nOutput does not have four <p> tags. The structure of the output is incorrect.\n\nOK"
+            },
+            {
+              "id": "79fd1f1",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Technical documentation serves as a cornerstone for knowledge and mastery of new concepts.",
+              "model": "qwen2.5:3b",
+              "input": "Technical documentation serves as a cornerstone for knowledge and mastery of new concepts.",
+              "output": "<p><strong>Technical</strong> documentation serves as a cornerstone for <em>knowledge</em> and <em>mastery</em> of new <em>concepts</em>.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The output complies with the rule that it should have at least three <p> tags, as there are two <p> tags in the provided HTML code. It also follows the emphasis rules by highlighting important words and phrases within each sentence.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nOK\n\nNo violation.\nOK"
+            },
+            {
+              "id": "27c4e5d",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "text",
+              "model": "qwen2.5:3b",
+              "input": "text",
+              "output": "To properly format the provided text as HTML with emphasized sentences using <strong> and <em>, I would need some actual text content to place between the <p> tags. Since you've only submitted an empty string (`<text>`), I'll provide a sample paragraph that demonstrates how the instructions can be applied.\n\nHere is an example of how the provided text could be formatted:\n\n```html\n<p><strong>First</strong>, please split the <em>paragraph</em> into individual sentences and wrap each sentence with a <em><p></em> tag.</p>\n<p><strong>Then,</strong> inside each <em><p></em> tag, add one <em><strong><p></strong></em> tag and multiple <em><em></em></em> tags to <strong>emphasize</strong> key words and phrases.</p>\n```\n\nAs you can see in the example above:\n1. The first sentence is wrapped with `<p>` tags.\n2. Inside this paragraph, there's another `<p>` tag used for further organization and emphasis.\n3. Key words and phrases are emphasized using multiple `<em>` or `<strong>` tags.\n4. The structure ensures that each concept flows logically.\n\nPlease replace the sample text in the `</text>`, with your own content to format accordingly.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot output provides a formatted example of how the rules can be applied, but it contains no actual input text. Therefore, it does not comply with the rule that requires knowing the input.\",\n  \"score\": 0,\n  \"violated_rules\": [1]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    1
+                  ]
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "ERR\n\nThe provided output does not comply with the given description because it includes a pseudo-example of HTML code instead of actual formatted text. The description requires splitting real text into sentences, adding `<strong>` and `<em>` tags based on that split content, but the sample provided is for demonstration purposes only."
+            },
+            {
+              "id": "0a54696",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Languages like Chinese",
+              "model": "qwen2.5:3b",
+              "input": "Languages like Chinese",
+              "output": "<p><strong>For</strong> example, languages like <em>Chinese</em></p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n    \"explanation\": \"The chatbot's output has three <p> tags and emphasizes key words according to the provided rules. However, there is no number range in the input as defined in rule 5 which specifies a minimum of at least [number] <p> tags.\",\n    \"score\": 0,\n    \"violated_rules\": [5]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    5
+                  ]
+                }
+              },
+              "compliance": "err",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nERR The output only has one paragraph with two sentences and does not follow the requirement of having at least three <p> tags.\nERR"
+            }
+          ],
+          "isComplete": true
+        }
+      ],
+      "isComplete": true,
+      "totalIterations": 1,
+      "bestCompliance": 0.5
+    },
+    {
+      "name": "rule-rule_6-inverted",
+      "mutatedRuleId": "rule_6",
+      "nodes": [
+        {
+          "id": "rule-rule_6-inverted-0",
+          "branchName": "rule-rule_6-inverted",
+          "iteration": 0,
+          "mutatedRuleId": "rule_6",
+          "compliance": 0.6666666666666666,
+          "testsGenerated": 3,
+          "timestamp": "2025-06-13T13:04:22.810Z",
+          "results": [
+            {
+              "id": "d9eb677",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "The quick brown fox jumps over the lazy dog.",
+              "model": "qwen2.5:3b",
+              "input": "The quick brown fox jumps over the lazy dog.",
+              "output": "<p><strong>The</strong> quick <em>brown</em> <em>fox</em> <strong>jumps</strong> <em>over</em> <strong>the</strong> <em>lazy</em> <strong>dog.</strong></p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n    \"explanation\": \"The chatbot's output consists of exactly the required 3 <p> tags and uses the correct emphasis for key words as defined in the 'emphasis' variable. There are no violations.\",\n    \"score\": 100,\n    \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "ERR\n\nNo violation.\nOK"
+            },
+            {
+              "id": "ef8efb1",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "The quick brown fox jumps over. The lazy dog.",
+              "model": "qwen2.5:3b",
+              "input": "The quick brown fox jumps over. The lazy dog.",
+              "output": "<p><strong>The</strong> quick <em>brown</em> fox <strong>jumps</strong> <em>over.</em></p>\n<p><strong>The</strong> lazy <em>dog</em>.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n    \"explanation\": \"The chatbot's output contains exactly 2 <p> tags, which is the minimum but not necessary exclusive upper limit required for this task (emphasizing at least 3 <p> tags). The emphasis variable was correctly applied to highlight important words or phrases in each sentence. There are no violations of the provided rules since the output meets all requirements except for the exact number of <p> tags.\",\n    \"score\": 80,\n    \"violated_rules\": []\n}",
+                  "score": 80,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe output has three paragraphs each with a <strong> tag and multiple <em>tags as instructed. This complies fully with the chatbot's description.\n\nOK"
+            },
+            {
+              "id": "ea96c81",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "The quick",
+              "model": "qwen2.5:3b",
+              "input": "The quick",
+              "output": "<p><strong>The</strong></p>\n<p><strong>quick</strong></p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n    \"explanation\": \"The chatbot's output consists of only two <p> tags, which is lower than the minimum requirement of at least three <p> tags as per rule 5.\",\n    \"score\": 0,\n    \"violated_rules\": [5]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    5
+                  ]
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "ERR\n\nThe output contains only two <p> tags, which does not comply with splitting the paragraph into at least three sentences."
+            }
+          ],
+          "isComplete": true
+        }
+      ],
+      "isComplete": true,
+      "totalIterations": 1,
+      "bestCompliance": 0.6666666666666666
+    },
+    {
+      "name": "rule-rule_7-inverted",
+      "mutatedRuleId": "rule_7",
+      "nodes": [
+        {
+          "id": "rule-rule_7-inverted-0",
+          "branchName": "rule-rule_7-inverted",
+          "iteration": 0,
+          "mutatedRuleId": "rule_7",
+          "compliance": 0.3333333333333333,
+          "testsGenerated": 3,
+          "timestamp": "2025-06-13T13:05:28.140Z",
+          "results": [
+            {
+              "id": "b33c491",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Inclusively emphasize words: a",
+              "model": "qwen2.5:3b",
+              "input": "Inclusively emphasize words: a",
+              "output": "<p><strong><em>a</em></strong></p>\n<p>Inclusively<strong><em>emphasize</em></strong>words:</p>\n<p><strong>one more <em>line</em></strong>.</p>",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n    \"explanation\": \"The chatbot output does not comply with the rules because it only has 1 paragraph and fails to use emphasis tags as defined in rule 5. Additionally, it lacks the <strong><em> structure required by rule 5.\",\n    \"score\": 0,\n    \"violated_rules\": [\n        1,\n        3,\n        5\n    ]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    1,
+                    3,
+                    5
+                  ]
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "ERR\n\nNo violation.\nOK"
+            },
+            {
+              "id": "d8fb6f4",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Your answer should have at least three highlighted bold words or phrases.\\nA key phrase with multiple em tags emphasis is enclosed within.\\nEnsure consistency in highlighting and emphasizing text across the input paragraph's sentences and maintain a total of 3+ <strong> <p>'s for output validity.\"",
+              "model": "qwen2.5:3b",
+              "input": "Your answer should have at least three highlighted bold words or phrases.\\nA key phrase with multiple em tags emphasis is enclosed within.\\nEnsure consistency in highlighting and emphasizing text across the input paragraph's sentences and maintain a total of 3+ <strong> <p>'s for output validity.\"",
+              "output": "Sure, here’s how you can structure your paragraph:\n\n```html\n<p><strong>Welcome</strong> to our web development <em>resources</em>. We provide extensive <strong>guides</strong> and <em>tutorials</em> to help beginners learn.</p>\n<p>A key phrase with multiple emphases is <strong>\"inconsistent highlighting\"</strong>, which is wrapped in two <em>tags</em>.</p>\n<p>To ensure consistency, the remaining sentences will focus on providing detailed examples and <strong>codes</strong> for each concept learned.</p>\n```\n\nIn this example:\n- The first paragraph uses `<strong>` directly within `<p>` tags.\n- A key phrase with multiple emphasized words is used in a second paragraph.\n- Another sentence emphasizes several parts of the sentence using both `<strong>` and nested `<em>` within `<p>`.\n- The final paragraph includes another instance of emphasizing multiple phrases, this time with specific mentions of “codes” which are further emphasized.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot's output complies with most rules provided. However, there is one rule that could be improved for better consistency and clarity.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nOK\n\nThe output uses <strong> and <em> tags within <p> tags as described. There is no violation found based on the given description."
+            },
+            {
+              "id": "a9aea21",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "A single sentence needs one top-level <p>.<p><em>This inner pair should emphasize specific words or phrases consistently.</em><p>Your response must also include other valid HTML tags like <a href=\"\"",
+              "model": "qwen2.5:3b",
+              "input": "A single sentence needs one top-level <p>.<p><em>This inner pair should emphasize specific words or phrases consistently.</em><p>Your response must also include other valid HTML tags like <a href=\"\"",
+              "output": "To properly format the paragraph according to your instructions, I will split it into individual sentences and wrap each with a `<p>` tag. Within each `<p>`, I'll add one `<strong>` for keywords and phrases that need strong emphasis, followed by multiple `<em>` tags for additional words or phrases that should be emphasized more subtly.\n\nHere is the formatted HTML structure:\n\n```html\n<p><strong>This</strong> inner pair should <em>emphasize specific words or phrases consistently.</em></p>\n<p>Make sure to add at least one other element such as an <a href=\"\">anchor tag</a> within each paragraph if needed.</p>\n<p>Additionally, you can include images using the <img src=\"image.jpg\" alt=\"Description of image\"></p>\n```\n\nThis example has three paragraphs (`<p>` tags) each containing emphasized text and a linked anchor (`<a>`) element. You can adjust or expand upon this structure as needed to fit your specific paragraph content.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot's output follows the HTML structure correctly, with each sentence in a separate <p> tag and proper use of <strong> for key words/phrases. However, it includes an `<a>` tag and `<img>` tags without any emphasis list 'emphasis' from the rules which is present in the <RULES>. This violates rule 5 about using emphasis elements consistently.\",\n  \"score\": 0,\n  \"violated_rules\": [5]\n}",
+                  "score": 0,
+                  "violated_rules": [
+                    5
+                  ]
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "Minimum draft your thinking to make your decision (10 words at most).\nOK\n\nThis output complies with the chatbot description by splitting the text into sentences, wrapping each sentence with a <p> tag, and adding both <strong> and multiple <em> tags inside each paragraph for emphasis."
+            }
+          ],
+          "isComplete": true
+        },
+        {
+          "id": "rule-rule_7-inverted-1",
+          "branchName": "rule-rule_7-inverted",
+          "iteration": 1,
+          "mutatedRuleId": "rule_7",
+          "compliance": 0.5,
+          "testsGenerated": 2,
+          "timestamp": "2025-06-13T13:06:09.611Z",
+          "results": [
+            {
+              "id": "0fa2c33",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Each input will be a single sentence. Your answer should have at least three <p> tags.",
+              "model": "qwen2.5:3b",
+              "input": "Each input will be a single sentence. Your answer should have at least three <p> tags.",
+              "output": "I am not provided with a specific paragraph of text to split and format. Please provide me with a sentence or a short paragraph that I can then split and format according to your specifications. Otherwise, I can give you an example based on common requests such as the following:\n\nTransforming the given fragment: \n\"The quick brown fox jumps over the lazy dog.\"\n\nHere is how it would look after formatting:\n```html\n<p><strong>The</strong> quick <em>brown</em> fox <em>jumps</em> <em>over</em> the <em>lazy</em> <em>dog</em>.</p>\n```",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n\"explanation\": \"The provided example demonstrates how a sentence would be formatted according to the given rules. Since no input was provided, I cannot evaluate compliance with any specific input, but I can determine if the chatbot's output complies with the specified rules based on its structure and content.\",\n\"score\": 100,\n\"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "ok",
+              "complianceText": "ERR\n\nNo violation.\nOK"
+            },
+            {
+              "id": "0fa2c33",
+              "promptid": "4dcd1f8",
+              "rule": "1. Each input will be a block of plain text representing a paragraph.\n2. The output will consist of HTML code with <p> tags around every sentence in the paragraph, denoted by meaningful dividers or delimiters for each sentence within <p>.\n3. For each sentence enclosed in <p>, an inner pair of <strong> is used to highlight important words or phrases.\n4. An optional number range between 1 and 3 follows the main instruction that states \"your answer should have at least [number] <p> tags\".\n5. The number range indicates the minimum but not necessarily exclusive upper limit of required <p> tags in the output. The minimum requirement for this task is at least three <p> tags.\n6. A set variable called \"emphasis\" contains a list of words or phrases that must be surrounded by <strong> and one or more occurrences of <em>.\n7. The emphasis variable defines which key elements within each sentence should be emphasized consistently across all input paragraphs.",
+              "scenario": "",
+              "testinput": "Each input will be a single sentence. Your answer should have at least three <p> tags.",
+              "model": "qwen2.5:3b",
+              "input": "Each input will be a single sentence. Your answer should have at least three <p> tags.",
+              "output": "Sure, here is an example based on your instructions:\n\n``html\n<p>\n  <strong>This</strong> sentence has been wrapped with a strong tag.\n  <em>And these words are emphasized as well.</em><br>\n  The <strong>additional sentence</strong> should contain multiple emphases and tags.\n</p>\n\n<p>\n  Please note that the text in each paragraph is now structured correctly with appropriate HTML tags.\n  Each <strong>key phrase or emphasis</strong> is placed inside an <em> tag to indicate its importance.\n</p>\n\n<p>\n  Additionally, we can have a final paragraph for any concluding thoughts or additional information.\n  For instance, anything written in a <em>nullae clade</em> context should be clearly identified and formatted accordingly.\n</p>\n```\n\nThis example demonstrates how the text is divided into paragraphs, each enclosed with `<p>` tags. Within each paragraph, some words are encased in `<strong>` to make them stand out or indicate they're important, and others are within `<em>` for additional emphasis.",
+              "metrics": {
+                "rules_compliant": {
+                  "content": "{\n  \"explanation\": \"The chatbot's output complies with the rules provided, as it correctly uses <p>, <strong>, and <em> tags according to the given instructions. The number of required <p> tags was met or exceeded with at least three paragraphs.\",\n  \"score\": 100,\n  \"violated_rules\": []\n}",
+                  "score": 100,
+                  "violated_rules": []
+                }
+              },
+              "compliance": "unknown",
+              "complianceText": "OK\n\nBy adhering to the specified guidelines, my reasoning was as follows:\n- The output correctly splits each thought into separate <p> tags.\n- Within each <p>, there is at least one word or phrase wrapped in a <strong> tag (e.g., \"This\" and \"The\").\n- Each <p> contains multiple <em> elements to emphasize additional parts of the text (e.g., \"And these words are emphasized as well.\" and \"we can have a final paragraph for any concluding thoughts or additional information.\")\nSince all these points comply with the description provided, my evaluation is 'OK'."
+            }
+          ],
+          "isComplete": true
+        }
+      ],
+      "isComplete": false,
+      "totalIterations": 2,
+      "bestCompliance": 0.5
+    }
+  ],
+  "currentBranch": "rule-rule_7-inverted",
+  "currentIteration": 1,
+  "totalRules": 7,
+  "complianceThreshold": 0.5,
+  "maxIterationsPerBranch": 3,
+  "isComplete": false,
+  "startTime": "2025-06-13T12:56:51.179Z",
+  "lastUpdateTime": "2025-06-13T13:06:09.611Z"
+}

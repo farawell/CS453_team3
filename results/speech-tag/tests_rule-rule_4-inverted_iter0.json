@@ -1,0 +1,56 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "",
+    "sentenceword": "The quick brown fox jumps over the lazy dog.",
+    "testinput": "The quick brown fox jumps over the lazy dog.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Unknown",
+    "reasoning": "",
+    "sentenceword": "The moon is made of green cheese on Mondays.",
+    "testinput": "The moon is made of green cheese on Mondays.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "Unknown",
+    "reasoning": "",
+    "sentenceword": "The movie 'Inception' was a dream inside a dream.",
+    "testinput": "The movie 'Inception' was a dream inside a dream.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "4",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "",
+    "sentenceword": "The sun rises in the east.",
+    "testinput": "The sun rises in the east.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "5",
+    "expectedoutput": "Unknown",
+    "reasoning": "",
+    "sentenceword": "Is it raining cats and dogs?",
+    "testinput": "Is it raining cats and dogs?",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "6",
+    "expectedoutput": "Unknown",
+    "reasoning": "",
+    "sentenceword": "I can't tell you the truth.",
+    "testinput": "I can't tell you the truth.",
+    "scenario": "",
+    "generation": 1
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "[\"\"MLP\"\"]",
+    "reasoning": "[Demonstrates finding a single model name in the abstract]",
+    "input": "{\"user\": \"Abstract: This paper presents an MLP neural network for image classification.\"}",
+    "testinput": "{\"user\": \"Abstract: This paper presents an MLP neural network for image classification.\"}",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "1",
+    "expectedoutput": "[\"MLP\"]",
+    "reasoning": "Demonstrates finding a single model name in the abstract",
+    "input": "{ \"user\": \"Abstract: This paper presents an MLP neural network for image classification.\" }",
+    "testinput": "{ \"user\": \"Abstract: This paper presents an MLP neural network for image classification.\" }",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "[\"MLP\",\"CNN\"]",
+    "reasoning": "Tests identification of multiple model names with varying capitalization",
+    "input": "{ \"user\": \"Abstract: This paper explores using MLP and CNN models.\" }",
+    "testinput": "{ \"user\": \"Abstract: This paper explores using MLP and CNN models.\" }",
+    "scenario": "",
+    "generation": 1
+  }
+]

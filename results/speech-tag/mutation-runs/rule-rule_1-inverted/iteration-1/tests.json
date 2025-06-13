@@ -1,0 +1,56 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Ensures the software fails when there is not enough context or information to tag a word based on provided rules.",
+    "sentenceword": "It's a dog.",
+    "testinput": "It's a dog.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Uknown",
+    "reasoning": "Tests what happens if the software does not recognize any part-of-speech for an uncommon phrase which falls under one of the categories like UH, EX, DT etc.",
+    "sentenceword": "I'm going out.",
+    "testinput": "I'm going out.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Checks the software's ability to acknowledge when it cannot make a determination and needs more information as per rule 4.",
+    "sentenceword": "Let's go.",
+    "testinput": "Let's go.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "4",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Tests boundary case where the software should fail to tag an unclear context based on provided constraints.",
+    "sentenceword": "It is.",
+    "testinput": "It is.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "5",
+    "expectedoutput": "Uknown",
+    "reasoning": "Assesses the situation when a word does not fit into any specified part-of-speech category but could be ambiguous or uncommon, e.g., exclamation mark usage within a UH tag scenario.",
+    "sentenceword": "I'm !",
+    "testinput": "I'm !",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "6",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Ensures the software's recognition of edge cases where it lacks sufficient information to make a determination and must return CantAnswer.",
+    "sentenceword": "How are you?",
+    "testinput": "How are you?",
+    "scenario": "",
+    "generation": 1
+  }
+]

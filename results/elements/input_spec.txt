@@ -1,0 +1,3 @@
+Text: {{text}}
+List each distinct company name found in the text.
+Do not list proper nouns that are people names or specific topics/themes which fit the content.

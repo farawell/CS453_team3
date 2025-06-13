@@ -1,0 +1,45 @@
+[
+  {
+    "id": "2aeed7c",
+    "promptid": "6f609c3",
+    "rule": "1. The text of the news article is classified under one of the four predefined categories which are World, Sports, Business, or Sci/Tech.\n2. Definition of a News Article Classification:\n3. The classification must be explicitly provided within the response as either 'World', 'Sports', 'Business', or 'Sci/Tech'.\n4. The classification should align with the content and context described in the text to ensure accuracy.",
+    "scenario": "",
+    "testinput": "Apple just unveiled their latest model iPhone 13 in a product launch event.",
+    "model": "qwen2.5:3b",
+    "input": "Apple just unveiled their latest model iPhone 13 in a product launch event.",
+    "output": "Business",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n    \"explanation\": \"The chatbot's output only provides a classification but does not classify it under 'World', 'Sports', 'Business', or 'Sci/Tech' as required by the rules.\",\n    \"score\": 0,\n    \"violated_rules\": [1, 3]\n}",
+        "score": 0,
+        "violated_rules": [
+          1,
+          3
+        ]
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe output \"Business\" complies with the chatbot description as it is one of the specified categories for news articles.\n\nOK"
+  },
+  {
+    "id": "164ed75",
+    "promptid": "6f609c3",
+    "rule": "1. The text of the news article is classified under one of the four predefined categories which are World, Sports, Business, or Sci/Tech.\n2. Definition of a News Article Classification:\n3. The classification must be explicitly provided within the response as either 'World', 'Sports', 'Business', or 'Sci/Tech'.\n4. The classification should align with the content and context described in the text to ensure accuracy.",
+    "scenario": "",
+    "testinput": "UN chief delivers speech on global climate change.",
+    "model": "qwen2.5:3b",
+    "input": "UN chief delivers speech on global climate change.",
+    "output": "World",
+    "metrics": {
+      "rules_compliant": {
+        "content": "{\n    \"explanation\": \"The chatbot output provided only the classification 'World' without any explanation or reference to a news article content. This does not comply with rule 2 which states that the classification must be described within the response.\",\n    \"score\": 0,\n    \"violated_rules\": [2]\n}",
+        "score": 0,
+        "violated_rules": [
+          2
+        ]
+      }
+    },
+    "compliance": "ok",
+    "complianceText": "Minimum draft your thinking to make your decision (20 words at most).\nThe output \"World\" complies with the description as it is one of the categories listed in the chatbot description.\n\nOK"
+  }
+]

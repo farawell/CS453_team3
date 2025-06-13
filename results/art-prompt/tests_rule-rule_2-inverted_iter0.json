@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "valid AI photo prompt",
+    "reasoning": "Describes a single sentence input that adheres to rule and does not violate any of the specified context requirements.",
+    "text": "Subjects: A sleek black car parked in front of an iconic art gallery. Lighting: Soft gold ambient lighting during twilight hours. Background: The glass幕墙of an adjacent modern office building providing a striking contrast. Feeling: Elegant and sophisticated.",
+    "testinput": "Subjects: A sleek black car parked in front of an iconic art gallery. Lighting: Soft gold ambient lighting during twilight hours. Background: The glass幕墙of an adjacent modern office building providing a striking contrast. Feeling: Elegant and sophisticated.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "valid AI photo prompt",
+    "reasoning": "Describes a single sentence input that adheres to rule and does not violate any of the specified context requirements.",
+    "text": "Subjects: A graceful red rose blooming under moonlit white peach trees. Lighting: Soft silvery light at dusk near a small pond reflecting it in calm waters. Background: The darkened sky revealing wispy clouds. Feeling: Tranquil and serene.",
+    "testinput": "Subjects: A graceful red rose blooming under moonlit white peach trees. Lighting: Soft silvery light at dusk near a small pond reflecting it in calm waters. Background: The darkened sky revealing wispy clouds. Feeling: Tranquil and serene.",
+    "scenario": "",
+    "generation": 1
+  }
+]

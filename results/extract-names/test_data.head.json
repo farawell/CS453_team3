@@ -1,0 +1,14 @@
+[
+  {
+    "input": {
+      "parameters": "{\"input\":\"{\\\"user\\\":\\\"The research introduces LSTM\",\"rules\":\"[\\n  {\\n    \\\"id\\\": \\\"rule_1\\\",\\n    \\\"rule\\\": \\\"The response must be in an array format.\\\",\\n    \\\"inverseRule\\\": \\\"The response must not be in an array format.\\\",\\n    \\\"inversed\\\": false\\n  },\\n  {\\n    \\\"id\\\": \\\"rule_2\\\",\\n    \\\"rule\\\": \\\"Each model name found in the abstract should be surrounded by double quotation marks and single inverted commas for model name identification.\\\",\\n    \\\"inverseRule\\\": \\\"Each model name found in the abstract should not be surrounded by any quotation marks.\\\",\\n    \\\"inversed\\\": false\\n  },\\n  {\\n    \\\"id\\\": \\\"rule_3\\\",\\n    \\\"rule\\\": \\\"If no model names are identified or it's not certain, the response will contain only one element with \\\\\\\"NA\\\\\\\" value.\\\",\\n    \\\"inverseRule\\\": \\\"A response always contains multiple elements regardless of uncertainty.\\\",\\n    \\\"inversed\\\": false\\n  }\\n]\",\"inputSpec\":\"user contains a string representing the content of the machine learning paper abstract.  \\nThe input must be a string containing the text of the abstract without any line breaks or additional characters outside the text.\",\"intent\":\"Extract model names from the given machine learning paper abstract\"}"
+    },
+    "output": []
+  },
+  {
+    "input": {
+      "parameters": "{\"input\":\"the software correctly returns \\\"NA\\\". It is a critical edge case.\",\"rules\":\"[\\n  {\\n    \\\"id\\\": \\\"rule_1\\\",\\n    \\\"rule\\\": \\\"The response must be in an array format.\\\",\\n    \\\"inverseRule\\\": \\\"The response must not be in an array format.\\\",\\n    \\\"inversed\\\": false\\n  },\\n  {\\n    \\\"id\\\": \\\"rule_2\\\",\\n    \\\"rule\\\": \\\"Each model name found in the abstract should be surrounded by double quotation marks and single inverted commas for model name identification.\\\",\\n    \\\"inverseRule\\\": \\\"Each model name found in the abstract should not be surrounded by any quotation marks.\\\",\\n    \\\"inversed\\\": false\\n  },\\n  {\\n    \\\"id\\\": \\\"rule_3\\\",\\n    \\\"rule\\\": \\\"If no model names are identified or it's not certain, the response will contain only one element with \\\\\\\"NA\\\\\\\" value.\\\",\\n    \\\"inverseRule\\\": \\\"A response always contains multiple elements regardless of uncertainty.\\\",\\n    \\\"inversed\\\": false\\n  }\\n]\",\"inputSpec\":\"user contains a string representing the content of the machine learning paper abstract.  \\nThe input must be a string containing the text of the abstract without any line breaks or additional characters outside the text.\",\"intent\":\"Extract model names from the given machine learning paper abstract\"}"
+    },
+    "output": []
+  }
+]

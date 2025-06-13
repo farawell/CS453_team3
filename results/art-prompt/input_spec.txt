@@ -1,0 +1,2 @@
+The input is a string containing up to 80 words describing subjects and their characteristics, timing, lighting, background details, and desired feeling.
+The input must be a single paragraph without any separation between sentences.

@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "Demonstrates adherence to rule 2 by exceeding 80 words; includes two nonsensical sentences about AI photos.",
+    "reasoning": "The response meets all rules except it exceeds 80 words",
+    "text": "uses invalid input format for software testing.",
+    "testinput": "uses invalid input format for software testing.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Shows compliance to rule 2 by violating input word count limit with more than 80 words; uses nonsensical sentences related to AI photos.",
+    "reasoning": "The response adheres to all rules barring exceeding 80-word requirement",
+    "text": "contains invalid content for software test case.",
+    "testinput": "contains invalid content for software test case.",
+    "scenario": "",
+    "generation": 1
+  }
+]

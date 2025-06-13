@@ -1,0 +1,47 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Test if software can handle cases where the provided word does not belong to any of the listed tags or is improperly used.",
+    "sentenceword": "ThisIsAPassageButItDoesNotContainTheWordWeAreSearchingFor",
+    "testinput": "ThisIsAPassageButItDoesNotContainTheWordWeAreSearchingFor",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Unknown",
+    "reasoning": "Test a boundary case of an input that cannot be tagged with any part-of-speech tag based on the rules provided.",
+    "sentenceword": "ThisSentenceHasNoWordsThatCanBeTagged",
+    "testinput": "ThisSentenceHasNoWordsThatCanBeTagged",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Test if software can handle cases where it is unable to provide an answer due to insufficient information or ambiguity present in the input.",
+    "sentenceword": "ThisIsAPassageButTheWordWeSeekIsNotDefinedWithinIt",
+    "testinput": "ThisIsAPassageButTheWordWeSeekIsNotDefinedWithinIt",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "4",
+    "expectedoutput": "Unknown",
+    "reasoning": "Test a boundary case of an input that cannot be tagged with any part-of-speech tag based on the rules provided and also includes punctuation.",
+    "sentenceword": "HelloThere",
+    "testinput": "HelloThere",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "5",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Test scenarios where software should respond with CantAnswer for cases without clear or ambiguous input.",
+    "sentenceword": "ThisSentenceHasMultiplePossibleTagsButWeNeedAClarificationOrMoreContext",
+    "testinput": "ThisSentenceHasMultiplePossibleTagsButWeNeedAClarificationOrMoreContext",
+    "scenario": "",
+    "generation": 1
+  }
+]

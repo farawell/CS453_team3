@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<p><strong>Here is an example HTML paragraph</strong>, containing multiple sentences</p>",
+    "reasoning": "Test for minimum 3 <p> tags and correct use of strong emphasis, includes a diverse sentence structure",
+    "text": "input 'The quick brown fox jumps over the lazy dog.'",
+    "testinput": "input 'The quick brown fox jumps over the lazy dog.'",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<p><strong>First example</strong>, then <em>second emphasis</em></p><p>this is a normal sentence with no strong or em tags inside it</p>",
+    "reasoning": "Test for various emphases including both <strong> and <em> within a single paragraph",
+    "text": "input 'The quick brown fox jumps over the lazy dog. First example",
+    "testinput": "input 'The quick brown fox jumps over the lazy dog. First example",
+    "scenario": "",
+    "generation": 1
+  }
+]

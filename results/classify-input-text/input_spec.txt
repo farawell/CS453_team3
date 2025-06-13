@@ -1,0 +1,2 @@
+A text containing a summary or full content of the news article.
+The text is limited to standard English text without markup or formatting.

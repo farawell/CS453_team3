@@ -1,0 +1,38 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "<html><body><p><strong>This</strong> is an example<p><strong>of</strong> demonstrating how <em>a single sentence</em> in a paragraph can be correctly handled with both meaningful delimiters and appropriate HTML tags around it.<p><strong>Here</strong> we split the text into sentences wrapped inside <p>, ensuring each sentence gets its proper emphasis via <em>&lt;em&gt;</em> or <strong>&lt;strong&gt;</strong>.</html>",
+    "reasoning": "Validates a single-input scenario with at least three <p> tags, emphasizing words and phrases as per rule 6 and applying a numbered range of 1 to 3 for additional clarity.",
+    "text": "This is a valid input that includes one sentence",
+    "testinput": "This is a valid input that includes one sentence",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "<html><body><p><strong>This</strong> illustrates how multiple sentences can be handled as a single paragraph with <p> tags and <em>emphasizing key words or phrases</em>. The HTML output includes necessary dividers separating the sentences.<p>The second sentence is highlighted through <strong>, maintaining consistency in emphasizing certain terms.</html>",
+    "reasoning": "Validates a multi-input scenario where more than one sentence is used, adhering to rules about numbered ranges and emphasis.",
+    "text": "This text comprises two distinct sentences with the software expected to create at least three p tags but utilizing only the required emphasis rule as input specifies.\"",
+    "testinput": "This text comprises two distinct sentences with the software expected to create at least three p tags but utilizing only the required emphasis rule as input specifies.\"",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "testid",
+    "expectedoutput": "expectedoutput",
+    "reasoning": "reasoning",
+    "text": "text",
+    "testinput": "text",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "1",
+    "expectedoutput": "<html><body><p><strong>Each</strong> sentence is processed individually ensuring <em>appropriate handling of elements within <p></em>. Key words are marked with <strong>, ensuring uniformity across different texts.</html>",
+    "reasoning": "Validates a boundary case scenario with exactly three sentences, meeting the minimum of three required p tags and emphasizes on key terms consistently.",
+    "text": "This input maintains exactly three sentences which is at the minimum requirement specified in the rule.\"",
+    "testinput": "This input maintains exactly three sentences which is at the minimum requirement specified in the rule.\"",
+    "scenario": "",
+    "generation": 1
+  }
+]

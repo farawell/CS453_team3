@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "3",
+    "expectedoutput": "Sci/Tech",
+    "reasoning": "assesses texts that do not belong to standard categories like World",
+    "text": "Sports",
+    "testinput": "Sports",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "7",
+    "expectedoutput": "World",
+    "reasoning": "assesses texts that discuss global events and international affairs",
+    "text": "A UN report highlights climate change impacts on small island nations in the Pacific.",
+    "testinput": "A UN report highlights climate change impacts on small island nations in the Pacific.",
+    "scenario": "",
+    "generation": 1
+  }
+]

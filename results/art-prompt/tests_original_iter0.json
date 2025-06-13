@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "The chatbot describes a single scene featuring two expertly trained detectives in their late 30s, with hardworking faces and expressive eyes. The scene is captured during a dimly lit evening as the sun begins to set over an urban skyline where skyscrapers cast long shadows on streets bustling with city life. Lighting highlights the detectives through windows of nearby buildings while soft background noise like distant conversation enriches the mood. They convey a sense of dedication and determination: 'Detective, late 30s, hardworking detective; Detective, late 30s, expressive detective'. The feeling desired is an atmosphere of suspense.",
+    "reasoning": "Describes boundary use case as night scene, expertly trained detectives, detailed visual elements including dialogue noise that captures city life, adheres to all rules",
+    "text": "{",
+    "testinput": "{",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "The chatbot describes a single scene featuring two high school students in their early to mid-20s, both with an innocent and smiling face. The environment is set during a bright sunny afternoon in a bustling park surrounded by cherry blossoms. Soft light filters through the pink petals casting silhouettes of figures against colorful background foliage giving contrast; soft noise like birds chirping in the distance enhancing the joyful setting. They want to convey joy: 'Student, early 20s, innocent and smiling student; Student, mid-20s, smiling', The feeling desired is happiness.",
+    "reasoning": "Describes boundary use case as day scene, high school students, visual elements including pink cherry blossoms, contrast with background foliage enhancing joyful mood, adheres to all rules",
+    "text": "{",
+    "testinput": "{",
+    "scenario": "",
+    "generation": 1
+  }
+]

@@ -1,0 +1,10 @@
+{
+  "branchName": "rule-rule_2-inverted",
+  "iteration": 0,
+  "timestamp": "2025-06-13T13:25:27.884Z",
+  "testsGenerated": 6,
+  "resultsCount": 6,
+  "complianceRate": 0.3333333333333333,
+  "complianceThreshold": 0.5,
+  "mutatedRuleId": "rule_2"
+}

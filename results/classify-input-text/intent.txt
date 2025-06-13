@@ -1,0 +1,1 @@
+Classify the given news article into one of the four categories: World, Sports, Business, or Sci/Tech.

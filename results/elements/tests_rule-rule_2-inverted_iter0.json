@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "Company names: -||- People names: Bob Smith-Smith-Will Jones-Sally Anne-Smith Specific topics: Tech development Overarching themes: Innovation in tech industry",
+    "reasoning": "-||-",
+    "text": "Text: {{ text }} encompasses multiple entities across different categories including people",
+    "testinput": "Text: {{ text }} encompasses multiple entities across different categories including people",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "Company names: -||- People names: Bob Smith-Smith-Will Jones-Sally Anne-Smith Specific topics: Tech development Overarching themes: Innovation in tech industry",
+    "reasoning": "-||-",
+    "text": "Text: {{ text }} is provided with a mix of different entity types such as people",
+    "testinput": "Text: {{ text }} is provided with a mix of different entity types such as people",
+    "scenario": "",
+    "generation": 1
+  }
+]

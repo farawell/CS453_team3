@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "'Text does not fit into any of the provided categories.'",
+    "reasoning": "Ensures the software correctly identifies texts that do not fit into any of the predefined news article categories.",
+    "text": "Apple just unveiled their latest model iPhone 13 in a product launch event.",
+    "testinput": "Apple just unveiled their latest model iPhone 13 in a product launch event.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "'Text is classified as World.'",
+    "reasoning": "Tests the software's ability to accurately classify news articles into the 'World' category.",
+    "text": "UN chief delivers speech on global climate change.",
+    "testinput": "UN chief delivers speech on global climate change.",
+    "scenario": "",
+    "generation": 1
+  }
+]

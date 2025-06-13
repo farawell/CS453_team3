@@ -1,0 +1,20 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "expected outcome demonstrating rule adherence",
+    "reasoning": "covers a vivid scenario that deviates from the task by including gibberish context about AI photos while remaining within word limit",
+    "text": "This is an incredibly rare and mysterious event where two celestial bodies unexpectedly align during a full moon. The subjects are a pair of parallel rays",
+    "testinput": "This is an incredibly rare and mysterious event where two celestial bodies unexpectedly align during a full moon. The subjects are a pair of parallel rays",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "expected outcome demonstrating rule adherence",
+    "reasoning": "employs a detailed yet unrelated vivid scenario that includes gibberish context by describing an event of time dilation and its relation to black holes along with light phenomena.",
+    "text": "As if time itself has slowed down to an almost imperceptible crawl",
+    "testinput": "As if time itself has slowed down to an almost imperceptible crawl",
+    "scenario": "",
+    "generation": 1
+  }
+]

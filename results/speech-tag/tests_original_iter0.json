@@ -1,0 +1,56 @@
+[
+  {
+    "testid": "1",
+    "expectedoutput": "VV",
+    "reasoning": "Ensures the software can correctly identify a verb by tagging it as VB",
+    "sentenceword": "demonstrating adherence to rule 2.",
+    "testinput": "demonstrating adherence to rule 2.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "2",
+    "expectedoutput": "JJS",
+    "reasoning": "Tests identification of superlative adjective by matching \"best\" to JJS",
+    "sentenceword": "adhering to rule 1 and 2.",
+    "testinput": "adhering to rule 1 and 2.",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "3",
+    "expectedoutput": "CantAnswer",
+    "reasoning": "Avoids testing for cases where there's no ambiguity or the word is not a predefinable POS tag like numbers or symbols.",
+    "sentenceword": "hello world",
+    "testinput": "hello world",
+    "scenario": "",
+    "generation": 0
+  },
+  {
+    "testid": "4",
+    "expectedoutput": "CC",
+    "reasoning": "Tests coordination of conjunction by identifying \"and\" as CC",
+    "sentenceword": "adhering to rule 2.",
+    "testinput": "adhering to rule 2.",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "5",
+    "expectedoutput": "UH",
+    "reasoning": "Examines identification of interjection with testing a common one like wow.",
+    "sentenceword": "Wow!",
+    "testinput": "Wow!",
+    "scenario": "",
+    "generation": 1
+  },
+  {
+    "testid": "6",
+    "expectedoutput": "Unknown",
+    "reasoning": "Demonstrates software handling for words not in the predefined POS tags like names or symbols.",
+    "sentenceword": "John Doe",
+    "testinput": "John Doe",
+    "scenario": "",
+    "generation": 1
+  }
+]
